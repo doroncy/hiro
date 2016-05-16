@@ -16,6 +16,8 @@
     "node-sass": "^3.7.0",
     "react": "^15.0.1",
     "react-dom": "^15.0.1",
+    "react-scroll": "^1.0.16",
+    "react-slick": "^0.12.2",
     "sass-loader": "^3.2.0",
     "style-loader": "^0.13.1",
     "svg-url-loader": "^1.0.3",
@@ -24,7 +26,9 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "prebuild": "rm -rf dist && mkdir dist",
+    "build": "NODE_ENV=production webpack"
   },
   "author": "Doron Cy",
   "license": "ISC"

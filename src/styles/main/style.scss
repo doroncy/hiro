@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+@import '../foundation/foundation.scss';
 @import './fonts';
 @import './animation';
 
@@ -9,27 +10,107 @@ body {
   padding: 0;
   margin: 0;
   background: #ccc;
+  font-size:12px;
 }
-
+.full-width {
+  width: 100% !important;
+}
 .run-font {
   font-family: 'Oswald', sans-serif;
   font-weight: normal;
   color: $black;
-  font-size: 1.5em;
+  font-size: 1.3em;
+  -webkit-font-smoothing: antialiased;
+  @include breakpoint(medium down) {
+    font-size: 1.2em;
+  }
 }
 .run-font-medium {
   font-family: 'Oswald', sans-serif;
   font-weight: bold;
   color: $black;
-  font-size: 1.5em;
+  font-size: 1.4em;
+  -webkit-font-smoothing: antialiased;
+  @include breakpoint(medium down) {
+    font-size: 1.2em;
+  }
 }
 .run-font-large {
   font-family: 'MixedBreed', 'Oswald', sans-serif;
-  font-weight: bold;
   color: $black;
-  font-size: 2.75em;
+  font-size: 2em;
+  -webkit-font-smoothing: antialiased;
+  @include breakpoint(medium down) {
+    font-size: 1.8em;
+  }
+}
+.run-font-xlarge {
+  font-family: 'MixedBreed', 'Oswald', sans-serif;
+  color: $black;
+  font-size: 2.2em;
+  -webkit-font-smoothing: antialiased;
+  @include breakpoint(medium down) {
+    font-size: 2em;
+  }
+}
+.img-svg {
+  width: auto !important;
+  height: 100% !important;
+}
+a {
+  color: #000 !important;
+}
+img {
+  width: 100%;
+}
+.pos-relative {
+  position: relative !important;
+}
+.reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.small-half-padding-columns {
+  @include breakpoint(small down) {
+    .columns {
+      &:not(:first-child) {
+        padding-left: 2px;
+      }
+      &:not(:last-child) {
+        padding-right: 2px;
+      }
+    }
+  }
 }
 
+.section-content {
+  margin: 0 auto;
+
+  @include breakpoint(small down) {
+    width: 90%;
+  }
+  @include breakpoint(medium up) {
+    width: 80%;
+  }
+  @include breakpoint(large up) {
+    width: 80%;
+    max-width: 850px;
+  }
+  .section-content-item {
+    margin: 0 5px;
+    &.right {
+      @include breakpoint(medium up) {
+        float: right;
+      }
+    }
+    &.left {
+      @include breakpoint(medium up) {
+        float: left;
+      }
+    }
+  }
+}
 .section {
   width: 100%;
   height: 100vh;
@@ -37,4 +118,21 @@ body {
 }
 #nav-spacer {
     height: 100vh;
+}
+.curtain-removed {
+  #nav-spacer {
+      height: 50vh;
+  }
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.space-bottom {
+  margin-bottom: 10px;
+}
+.space-bottom-md {
+  margin-bottom: 20px;
+}
+.space-right {
+  margin-right: 10px;
 }

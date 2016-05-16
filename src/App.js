@@ -2,9 +2,14 @@ import React from 'react';
 import Translate from 'i18n-react';
 import enText from './i18n/en';
 import style from './styles/main/style.scss';
+import consts from './consts';
 // Components
+import NavBar from './components/navbar/navbar';
 import Welcome from './components/welcome/welcome';
 import Ramen from './components/ramen/ramen';
+import Aharoni from './components/aharoni/aharoni';
+import Menu from './components/menu/menu';
+import Gallery from './components/gallery/gallery';
 
 let viewportHeight;
 
@@ -12,8 +17,9 @@ class App extends React.Component {
   constructor(){
     super();
     Translate.setTexts(enText);
+
     this.state = {
-      curtainRemoved: false
+      scrollPosition: consts.scrollPositions.CURTAIN
     };
 
     this.handleScroll = this.handleScroll.bind(this);
@@ -33,27 +39,37 @@ class App extends React.Component {
   handleScroll(event) {
     let scrollTop = event.srcElement.body.scrollTop;
     this.setState({
-      curtainRemoved: this.isCurtainRemoved(scrollTop)
+      scrollPosition: this.getScrollPosition(scrollTop)
     });
   }
 
   handleResize() {
     viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
     this.setState({
-      curtainRemoved: this.isCurtainRemoved(document.body.scrollTop)
+      scrollPosition: this.getScrollPosition(document.body.scrollTop)
     });
   }
 
-  isCurtainRemoved(scrollTop) {
-    return scrollTop >= viewportHeight-100;
+  getScrollPosition(scrollTop) {
+    let scrollPosition = consts.scrollPositions.CURTAIN;
+    if (scrollTop >= viewportHeight) {
+      scrollPosition = consts.scrollPositions.CURTAIN_REMOVED;
+    } else if(scrollTop >= viewportHeight-100){
+      scrollPosition = consts.scrollPositions.CURTAIN_ALMOST_REMOVED;
+    }
+    return scrollPosition;
   }
 
   render(){
     return (
-      <div>
-        <Welcome curtainRemoved={this.state.curtainRemoved}></Welcome>
+      <div className={this.state.scrollPosition}>
+        <NavBar scrollPosition={this.state.scrollPosition}></NavBar>
+        <Welcome scrollPosition={this.state.scrollPosition}></Welcome>
         <div id="nav-spacer"></div>
         <Ramen></Ramen>
+        <Aharoni></Aharoni>
+        <Menu></Menu>
+        <Gallery></Gallery>
       </div>
     )
   }
