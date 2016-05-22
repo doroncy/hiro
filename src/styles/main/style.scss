@@ -136,3 +136,22 @@ img {
 .space-right {
   margin-right: 10px;
 }
+
+.scroll-anim {
+  will-change: transform;
+  transition: transform .51s cubic-bezier(.19,1,.22,1);
+}
+.parallax-wrap {
+    display: block;
+    will-change: transform;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: -webkit-transform .62s cubic-bezier(.19,1,.22,1) .31s;
+    -moz-transition: -moz-transform .62s cubic-bezier(.19,1,.22,1) .31s;
+    -o-transition: -o-transform .62s cubic-bezier(.19,1,.22,1) .31s;
+    -ms-transition: -ms-transform .62s cubic-bezier(.19,1,.22,1) .31s;
+    transition: transform .62s cubic-bezier(.19,1,.22,1) .31s;
+ }

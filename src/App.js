@@ -39,14 +39,17 @@ class App extends React.Component {
   handleScroll(event) {
     let scrollTop = event.srcElement.body.scrollTop;
     this.setState({
-      scrollPosition: this.getScrollPosition(scrollTop)
+      scrollPosition: this.getScrollPosition(scrollTop),
+      scrollTop: 2*viewportHeight - scrollTop
     });
   }
 
   handleResize() {
     viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+    let newScrollPosition = this.getScrollPosition(document.body.scrollTop);
     this.setState({
-      scrollPosition: this.getScrollPosition(document.body.scrollTop)
+      scrollPosition: newScrollPosition,
+      scrollTop: 2*viewportHeight - (document.body.scrollTop)
     });
   }
 
@@ -66,10 +69,12 @@ class App extends React.Component {
         <NavBar scrollPosition={this.state.scrollPosition}></NavBar>
         <Welcome scrollPosition={this.state.scrollPosition}></Welcome>
         <div id="nav-spacer"></div>
-        <Ramen></Ramen>
-        <Aharoni></Aharoni>
-        <Menu></Menu>
-        <Gallery></Gallery>
+        <div className="parallax-wrap">
+          <Ramen scrollTop={this.state.scrollTop}></Ramen>
+          <Aharoni></Aharoni>
+          <Menu></Menu>
+          <Gallery></Gallery>
+        </div>
       </div>
     )
   }
