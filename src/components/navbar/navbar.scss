@@ -1,0 +1,85 @@
+@import '../../styles/foundation/foundation.scss';
+
+.navbar {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  font-size: 12px;
+  padding: 0 !important;
+  top: 0;
+  height: 40px;
+
+  .active {
+    color: $pink !important;
+  }
+
+  .header-logo {
+    position: relative;
+    width: 80px;
+    padding: 0 !important;
+      .header-logo-img {
+        position: absolute;
+        top: 10px;
+
+        @include breakpoint(small down) {
+          left: 20px;
+        }
+      }
+  }
+  .menu {
+    font-size: 15px !important;
+  }
+  .menu > li {
+    padding: 0 10px;
+    &.menu-link {
+      cursor: pointer;
+      color: $black;
+      text-transform: uppercase;
+
+      &:hover a{
+        color: $pink !important;
+
+      }
+    }
+  }
+  .lang-selection {
+    .lang-selection-item {
+      display:table-cell;
+      padding-right:4px;
+      padding-left:4px;
+    }
+    .vertical-seperator {
+      display:table-cell;
+      margin: 0 4px;
+      width: 1px;
+      border-left: 1px solid #000;
+    }
+  }
+  .social-btns {
+    li {
+      padding: 0;
+      cursor: pointer;
+      a {
+        padding-right:0;
+        margin-right: 0;
+      }
+
+      &:last-child {
+        padding-right: 10px;
+      }
+    }
+
+    .instagram-btn {
+    }
+
+    img {
+      height: 18px;
+    }
+  }
+
+  .toggle-mobile-nav-btn {
+    float: right;
+    margin: 12px 20px;
+    outline: 0 !important;
+  }
+}

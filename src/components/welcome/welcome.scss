@@ -1,0 +1,78 @@
+@import '../../styles/foundation/foundation.scss';
+
+.welcome-wrap {
+  .curtain {
+    z-index: 20;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../../assets/h_w_curtain_large.png');
+    @include breakpoint(medium down) {
+      background-image: url('../../assets/h_w_curtain_small.png');
+    }
+  }
+
+  .video-bg {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    border-left:8px solid #fff;
+    border-right:8px solid #fff;
+  }
+}
+
+.welcome-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+.welcome-logos-wrap {
+  max-width: 750px;
+  margin: 0 auto;
+  padding-top: 150px;
+
+  .aharoni-head-image {
+    background-color: $pink;
+    padding: 30px 50px;
+    max-width: 300px;
+    max-height: 380px;
+    float: right;
+  }
+
+  .welcome-text-wrap {
+    margin-top:140px;
+  }
+  .welcome-full-logo-wrap {
+    margin-top:10px;
+  }
+
+  // Mobile
+  @include breakpoint(small down) {
+    padding-top:60px;
+    .aharoni-head-image {
+      float: none;
+      max-width: none;
+      max-height: none;
+    }
+    .welcome-text-wrap {
+      margin: 0 auto;
+      margin-top:10px;
+      text-align: center;
+      .text-contentbox-wrap {
+        width: 100%;
+      }
+    }
+  }
+  @include breakpoint(medium up) {
+    padding-top:150px;
+  }
+}

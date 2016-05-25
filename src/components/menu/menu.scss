@@ -1,0 +1,56 @@
+@import '../../styles/foundation/foundation.scss';
+
+.menu-wrap {
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 150px 0 50px;
+  width: 100%;
+  position: relative;
+
+  .menu-item:not(:last-child) {
+    .menu-contentbox-wrap {
+      border-bottom-width: 0;
+    }
+  }
+
+  .menu-title {
+    margin: 0 0 10px;
+  }
+
+  .menu-icon-image {
+    background: $whiteOpacity;
+    padding: 10px;
+
+    &.menu-icon-image-ramen {
+      height: 332px;
+    }
+    &.menu-icon-image-starter {
+      height: 260px;
+    }
+    &.menu-icon-image-salad {
+      height: 454px;
+    }
+
+    @include breakpoint(medium down) {
+      &.menu-icon-image-ramen {
+        height: 318px;
+      }
+      &.menu-icon-image-starter {
+        height: 248px;
+      }
+      &.menu-icon-image-salad {
+        height: 433px;
+      }
+    }
+    img {
+      height: 100% !important;
+    }
+  }
+
+  // Mobile
+  @include breakpoint(small down) {
+    padding-top: 40px;
+    width: 90%;
+  }
+}

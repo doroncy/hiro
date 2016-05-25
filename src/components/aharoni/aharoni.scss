@@ -1,0 +1,60 @@
+@import '../../styles/foundation/foundation.scss';
+
+.aharoni-wrap {
+  width: 70%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding-top: 150px;
+
+  .aharoni-head-image {
+    background-color: $pink;
+    padding: 30px 50px;
+    max-width: 300px;
+    max-height: 380px;
+    float: right;
+  }
+
+  .aharoni-content-box {
+    width:100%;
+  }
+  .aharoni-content-box-margin {
+    margin: 0 10px 10px 0;
+  }
+  .aharoni-content-box-description {
+    margin-top: 10px;
+    .text-contentbox-wrap {
+      margin-left: 100px;
+    }
+  }
+
+  // tablet
+  @include breakpoint(medium down) {
+    width: 60%;
+  }
+
+  // Mobile
+  @include breakpoint(small down) {
+    width: 90%;
+    padding-top: 40px;
+    .text-contentbox-wrap {
+      padding: 8px 10px;
+      width: 80% !important;
+    }
+    .aharoni-title .text-contentbox-wrap.full-width{
+      width: initial !important;
+      font-size: 1.7em;
+      padding: 4px 10px;
+    }
+    .aharoni-content-box {
+      .space-bottom {
+        margin-bottom: 5px;
+      }
+    }
+    .aharoni-content-box-description {
+      margin: 5px 2px;
+      .text-contentbox-wrap {
+        margin-left: 0 !important;
+      }
+    }
+  }
+}

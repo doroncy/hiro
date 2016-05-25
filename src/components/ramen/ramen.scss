@@ -1,0 +1,53 @@
+@import '../../styles/foundation/foundation.scss';
+
+.ramen-wrap {
+  //width: 70%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding-top: 150px;
+  .noodles-image {
+    float: right;
+    background-color: $black;
+    padding: 15px;
+  }
+  .ramen-content-box {
+    width:100%;
+  }
+  .ramen-content-box-margin {
+    margin: 0 10px 10px 0;
+  }
+  .ramen-content-box-description {
+    margin-top: 200px;
+    @include breakpoint(medium down) {
+      margin-top: 150px;
+    }
+  }
+  .ramen-subtitle {
+    @include breakpoint(medium down) {
+      word-spacing: 2px;
+      line-height: 1.8;
+    }
+  }
+
+  // Mobile
+  @include breakpoint(small down) {
+    width: 90%;
+    .text-contentbox-wrap {
+      padding: 8px 10px;
+    }
+    .ramen-title .text-contentbox-wrap.full-width{
+      width: initial !important;
+      font-size: 1.7em;
+      padding: 4px 10px;
+    }
+    .ramen-content-box {
+      .space-bottom {
+        margin-bottom: 5px;
+      }
+    }
+    .ramen-content-box-description {
+      margin: 5px 2px;
+      width: 80%;
+    }
+  }
+}
