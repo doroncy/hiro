@@ -10,6 +10,7 @@ import Ramen from './components/ramen/ramen';
 import Aharoni from './components/aharoni/aharoni';
 import Menu from './components/menu/menu';
 import Gallery from './components/gallery/gallery';
+import VisitUs from './components/visitUs/visitUs';
 
 let viewportHeight;
 
@@ -24,6 +25,7 @@ class App extends React.Component {
 
     this.handleScroll = this.handleScroll.bind(this);
     this.handleResize = this.handleResize.bind(this);
+    this.setScrollPositionState = this.setScrollPositionState.bind(this);
   }
 
   componentDidMount() {
@@ -38,19 +40,20 @@ class App extends React.Component {
 
   handleScroll(event) {
     let scrollTop = event.srcElement.body.scrollTop;
-    this.setState({
-      scrollPosition: this.getScrollPosition(scrollTop),
-      scrollTop: 2*viewportHeight - scrollTop
-    });
+    this.setScrollPositionState(this.getScrollPosition(scrollTop));
+  }
+
+  setScrollPositionState(newScrollPosition) {
+    if (this.state.scrollPosition !== newScrollPosition) {
+      this.setState({
+        scrollPosition: newScrollPosition
+      });
+    }
   }
 
   handleResize() {
     viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-    let newScrollPosition = this.getScrollPosition(document.body.scrollTop);
-    this.setState({
-      scrollPosition: newScrollPosition,
-      scrollTop: 2*viewportHeight - (document.body.scrollTop)
-    });
+    this.setScrollPositionState(this.getScrollPosition(document.body.scrollTop));
   }
 
   getScrollPosition(scrollTop) {
@@ -70,10 +73,11 @@ class App extends React.Component {
         <Welcome scrollPosition={this.state.scrollPosition}></Welcome>
         <div id="nav-spacer"></div>
         <div className="parallax-wrap">
-          <Ramen scrollTop={this.state.scrollTop}></Ramen>
+          <Ramen></Ramen>
           <Aharoni></Aharoni>
           <Menu></Menu>
           <Gallery></Gallery>
+          <VisitUs></VisitUs>
         </div>
       </div>
     )

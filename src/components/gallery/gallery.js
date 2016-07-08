@@ -40,9 +40,9 @@ class Gallery extends React.Component {
     let sliderElem = this.refs.slider;
     $(sliderElem).slick({
       dots: false,
-      arrows: true,
+      arrows: false,
       autoplay: true,
-      autoplaySpeed: 5000,
+      autoplaySpeed: 4000,
       initialSlide:0,
       infinite: true,
       speed: 700,
@@ -50,8 +50,6 @@ class Gallery extends React.Component {
       slidesToScroll: 1,
       centerMode: true,
       centerPadding: '15%',
-      prevArrow: '#prev-button',
-      nextArrow: '#next-button'
     });
   }
 
@@ -65,12 +63,6 @@ class Gallery extends React.Component {
           <div className="pos-relative">
             <div ref="slider" className="slider-wrap">
               {galleryImagesHtml}
-            </div>
-            <div id="prev-button" className="gallery-nav-button prev">
-              <img src={galleryBtnSvg} />
-            </div>
-            <div id="next-button" className="gallery-nav-button next">
-              <img src={galleryBtnSvg} />
             </div>
           </div>
         </Element>

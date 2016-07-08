@@ -16,7 +16,8 @@ class NavBar extends React.Component {
       {path: 'ramen', title: 'ramen.title'},
       {path: 'aharoni', title: 'aharoni.title'},
       {path: 'menu', title: 'menu.title'},
-      {path: 'gallery', title: 'gallery.title'}
+      {path: 'gallery', title: 'gallery.title'},
+      {path: 'visitus', title: 'visitUs.title'}
     ];
 
     this.state = {

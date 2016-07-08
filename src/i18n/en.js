@@ -71,7 +71,11 @@ const texts = {
   },
   "gallery": {
     "title": "GALLERY"
+  },
+  "visitUs": {
+    "title": "Visit Us"
   }
+
 }
 
 export default texts;

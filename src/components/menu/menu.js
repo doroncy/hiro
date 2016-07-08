@@ -1,6 +1,11 @@
 import React from 'react';
 import Translate from 'i18n-react';
 import {Element} from'react-scroll';
+
+import cx from 'classnames';
+import {TrackedDiv, TrackDocument} from 'react-track';
+import {topBottom, getDocumentRect, getDocumentElement, calculateScrollY} from 'react-track/tracking-formulas';
+
 import Style from './menu.scss';
 import TextContentBox from '../textContentBox/textContentBox';
 import MenuContentBox from '../menuContentBox/menuContentBox';
@@ -43,23 +48,39 @@ const Menu = (props) => {
   let menuStarterItems = menuItemsBuilder(starterItems);
   let menuSaladItems = menuItemsBuilder(saladItems);
   return (
+    <TrackDocument formulas={[getDocumentElement, getDocumentRect, calculateScrollY, topBottom]}>
+      {(documentElement, documentRect, scrollY, topBottom) =>
       <Element name="menu">
         <div className="row">
           <div className="small-10 small-centered columns">
             <div className="menu-wrap">
-              <div className="menu-title">
-                <TextContentBox text='menu.title' css="run-font-large text-center full-width"/>
-              </div>
+              <TrackedDiv formulas={[topBottom]}>
+                {(posTopBottom) =>
+                  <div className={cx("menu-title scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+150})}>
+                    <TextContentBox text='menu.title' css="run-font-large text-center full-width"/>
+                  </div>
+                }
+              </TrackedDiv>
               <div className="row space-bottom-md">
                 <div className="medium-4 large-4 columns show-for-medium">
-                  <div className="menu-icon-image menu-icon-image-ramen">
-                    <img src={menuRamenSvg}/>
-                  </div>
+                  <TrackedDiv formulas={[topBottom]}>
+                    {(posTopBottom) =>
+                      <div className={cx("menu-icon-image menu-icon-image-ramen scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+150})}>
+                        <img src={menuRamenSvg}/>
+                      </div>
+                    }
+                  </TrackedDiv>
                 </div>
                 <div className="small-12 medium-8 large-8 columns">
                   <div className="row">
                     <div className="small-12 columns">
-                      <ul className="reset">{menuRamenItems}</ul>
+                      <TrackedDiv formulas={[topBottom]}>
+                        {(posTopBottom) =>
+                          <div className={cx("scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+300})}>
+                            <ul className="reset">{menuRamenItems}</ul>
+                          </div>
+                        }
+                      </TrackedDiv>
                     </div>
                   </div>
                 </div>
@@ -68,28 +89,48 @@ const Menu = (props) => {
                 <div className="small-12 medium-10 small-centered columns">
                   <div className="row small-half-padding-columns space-bottom-md">
                     <div className="medium-4 columns show-for-medium">
-                      <div className="menu-icon-image menu-icon-image-starter">
-                        <img src={menuStarterSvg} className="thumbnail"/>
-                      </div>
+                      <TrackedDiv formulas={[topBottom]}>
+                        {(posTopBottom) =>
+                          <div className={cx("menu-icon-image menu-icon-image-starter scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+150})}>
+                            <img src={menuStarterSvg} className="thumbnail"/>
+                          </div>
+                        }
+                      </TrackedDiv>
                     </div>
                     <div className="small-12 medium-8 columns">
                       <div className="row">
                         <div className="small-12 small-centered columns">
-                          <ul className="reset">{menuStarterItems}</ul>
+                          <TrackedDiv formulas={[topBottom]}>
+                            {(posTopBottom) =>
+                              <div className={cx("scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+250})}>
+                                <ul className="reset">{menuStarterItems}</ul>
+                              </div>
+                            }
+                          </TrackedDiv>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div className="row small-half-padding-columns">
                     <div className="medium-4 columns show-for-medium">
-                      <div className="menu-icon-image menu-icon-image-salad">
-                        <img src={menuSaladSvg} className="thumbnail"/>
-                      </div>
+                      <TrackedDiv formulas={[topBottom]}>
+                        {(posTopBottom) =>
+                          <div className={cx("menu-icon-image menu-icon-image-salad scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+150})}>
+                            <img src={menuSaladSvg} className="thumbnail"/>
+                          </div>
+                        }
+                      </TrackedDiv>
                     </div>
                     <div className="small-12 medium-8 columns">
                       <div className="row">
                         <div className="small-12 small-centered columns">
-                          <ul className="reset">{menuSaladItems}</ul>
+                          <TrackedDiv formulas={[topBottom]}>
+                            {(posTopBottom) =>
+                              <div className={cx("scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+250})}>
+                                <ul className="reset">{menuSaladItems}</ul>
+                              </div>
+                            }
+                          </TrackedDiv>
                         </div>
                       </div>
                     </div>
@@ -100,6 +141,7 @@ const Menu = (props) => {
           </div>
         </div>
       </Element>
+      }</TrackDocument>
     );
 }
 
