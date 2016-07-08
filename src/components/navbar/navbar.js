@@ -26,6 +26,8 @@ class NavBar extends React.Component {
 
     this.scrollToTop = this.scrollToTop.bind(this);
     this.toggleMobileNav = this.toggleMobileNav.bind(this);
+    this.getMenuNav = this.getMenuNav.bind(this);
+    this.closeMobileNav = this.closeMobileNav.bind(this);
   }
 
   scrollToTop() {
@@ -38,20 +40,37 @@ class NavBar extends React.Component {
     });
   }
 
-  render() {
-    let fadeClassName = this.props.scrollPosition === consts.scrollPositions.CURTAIN_REMOVED ? 'fadeIn' : 'fadeOut';
-    let menuItems = this.menuItems.map((menuItem, index) => {
+  closeMobileNav() {
+    if (this.state.mobileNavVisible) {
+      this.setState({
+        mobileNavVisible: false
+      });
+    }
+  }
+
+
+  getMenuNav() {
+    return this.menuItems.map((menuItem, index) => {
         return (
           <li key={index} className="menu-link">
-            <Link activeClass="active" to={menuItem.path} spy={true} smooth={true} duration={800}>
+            <Link activeClass="active" to={menuItem.path} spy={true} smooth={true} duration={800} onClick={this.closeMobileNav}>
               <Translate text={menuItem.title} />
             </Link>
           </li>
         );
       });
+  }
+
+  render() {
+    let fadeClassName = this.props.scrollPosition === consts.scrollPositions.CURTAIN_REMOVED ? 'fadeIn' : 'fadeOut';
+    let menuItems = this.getMenuNav();
 
     let mobileNav = this.state.mobileNavVisible
-      ? (<div>doron</div>)
+      ? (
+        <ul className="menu mobile-menu run-font animated-fast fadeIn">
+          {this.getMenuNav()}
+        </ul>
+      )
       : '';
 
     return (
@@ -89,7 +108,9 @@ class NavBar extends React.Component {
             onClick={this.toggleMobileNav}>
           </button>
         </div>
-        {mobileNav}
+        <div className={`animated ${fadeClassName}`}>
+          {mobileNav}
+        </div>
       </div>
       );
   }

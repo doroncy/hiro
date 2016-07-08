@@ -12,6 +12,9 @@
     max-width: 300px;
     max-height: 380px;
     float: right;
+    @include breakpoint(small down) {
+      margin-bottom: 10px;
+    }
   }
 
   .aharoni-content-box {
@@ -37,8 +40,7 @@
     width: 90%;
     padding-top: 40px;
     .text-contentbox-wrap {
-      padding: 8px 10px;
-      width: 80% !important;
+      padding: 8px 10px;      
     }
     .aharoni-title .text-contentbox-wrap.full-width{
       width: initial !important;

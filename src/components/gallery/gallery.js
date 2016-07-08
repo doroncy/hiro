@@ -33,10 +33,11 @@ const galleryImagesHtml = galleryImages.map((image, index)=> {
 class Gallery extends React.Component {
   constructor(props){
     super();
+
+    this.nextSlide = this.nextSlide.bind(this);
   }
 
   componentDidMount() {
-    console.log('componentDidMount');
     let sliderElem = this.refs.slider;
     $(sliderElem).slick({
       dots: false,
@@ -50,7 +51,13 @@ class Gallery extends React.Component {
       slidesToScroll: 1,
       centerMode: true,
       centerPadding: '15%',
+      mobileFirst: true
     });
+  }
+
+  nextSlide() {
+    let sliderElem = this.refs.slider;
+    $(sliderElem).slick('slickNext');
   }
 
   render() {
@@ -61,7 +68,7 @@ class Gallery extends React.Component {
             <TextContentBox text='gallery.title' css="run-font-large text-center full-width"/>
           </div>
           <div className="pos-relative">
-            <div ref="slider" className="slider-wrap">
+            <div ref="slider" className="slider-wrap" onClick={this.nextSlide}>
               {galleryImagesHtml}
             </div>
           </div>

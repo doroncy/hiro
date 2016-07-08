@@ -2,10 +2,18 @@
 
 .gallery-wrap {
   padding-top: 150px;
+  padding-left: 10px;
+  padding-right: 10px;
+  user-select: none;
 
   // Mobile
   @include breakpoint(small down) {
     padding-top: 40px;
+  }
+
+  .slider-wrap img{
+    user-select:none;
+    -webkit-user-select: none;
   }
 
   .gallery-nav-button {
