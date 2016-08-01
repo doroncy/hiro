@@ -11,6 +11,14 @@ body {
   margin: 0;
   background: #ccc;
   font-size:12px;
+  overflow-x: hidden;
+  &:after {
+    content: url('../../assets/background/h_t_gallery_01.jpg') url('../../assets/background/h_t_gallery_02.jpg') url('../../assets/background/h_t_gallery_03.jpg')
+    url('../../assets/background/h_t_gallery_04.jpg') url('../../assets/background/h_t_gallery_05.jpg');
+    position: absolute;
+    right: 1000000px;
+    display: none;
+  }
 }
 .full-width {
   width: 100% !important;
@@ -124,6 +132,9 @@ img {
       height: 50vh;
   }
 }
+.height100 {
+  height:100%;
+}
 .text-uppercase {
   text-transform: uppercase;
 }
@@ -163,4 +174,33 @@ img {
     -o-transition: -o-transform .62s cubic-bezier(.19,1,.22,1) .31s;
     -ms-transition: -ms-transform .62s cubic-bezier(.19,1,.22,1) .31s;
     transition: transform .62s cubic-bezier(.19,1,.22,1) .31s;
+ }
+
+ .background {
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: center;
+   position: relative;
+   overflow-y: auto;
+   -webkit-overflow-scrolling: touch;
+   &.background-fade {
+     transition: all 1s ease;
+   }
+ }
+
+ .bg_1 {
+   background-image: url('../../assets/background/h_t_gallery_01.jpg');
+ }
+ .bg_2 {
+   background-image: url('../../assets/background/h_t_gallery_02.jpg');
+ }
+ .bg_3 {
+   background-image: url('../../assets/background/h_t_gallery_03.jpg');
+ }
+ .bg_4 {
+   background-image: url('../../assets/background/h_t_gallery_04.jpg');
+ }
+ .bg_5 {
+   background-image: url('../../assets/background/h_t_gallery_05.jpg');
  }

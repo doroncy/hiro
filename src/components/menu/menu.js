@@ -14,6 +14,7 @@ import menuStarterSvg from '../../assets/icons/h_w_menu_2.svg';
 import menuSaladSvg from '../../assets/icons/h_w_menu_3.svg';
 
 const ramenItems = [
+  {title: 'menu.ramen.gochu.title', description: 'menu.ramen.gochu.description'},
   {title: 'menu.ramen.dandan.title', description: 'menu.ramen.dandan.description'},
   {title: 'menu.ramen.chicken.title', description: 'menu.ramen.chicken.description'},
   {title: 'menu.ramen.tofu.title', description: 'menu.ramen.tofu.description'}
@@ -30,7 +31,8 @@ const saladItems = [
   {title: 'menu.salad.eggplant.title', description: 'menu.salad.eggplant.description'},
   {title: 'menu.salad.cucumber.title', description: 'menu.salad.cucumber.description'},
   {title: 'menu.salad.beans.title', description: 'menu.salad.beans.description'},
-  {title: 'menu.salad.vegetables.title', description: 'menu.salad.vegetables.description'}
+  {title: 'menu.salad.vegetables.title', description: 'menu.salad.vegetables.description'},
+  {title: 'menu.salad.kombu.title', description: 'menu.salad.kombu.description'}
 ];
 
 

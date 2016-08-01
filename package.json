@@ -11,9 +11,12 @@
     "css-loader": "^0.23.1",
     "file-loader": "^0.8.5",
     "foundation-sites": "^6.2.1",
+    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.22.0",
     "i18n-react": "^0.1.9",
     "image-webpack-loader": "^1.8.0",
     "jquery": "^2.2.3",
+    "lodash": "^4.14.1",
     "node-sass": "^3.7.0",
     "react": "^15.0.1",
     "react-dom": "^15.0.1",
@@ -29,11 +32,10 @@
     "webpack": "^1.12.8",
     "webpack-dev-server": "^1.12.1"
   },
-  "devDependencies": {},
   "scripts": {
     "start": "webpack-dev-server",
     "prebuild": "rm -rf dist && mkdir dist",
-    "build": "NODE_ENV=production webpack"
+    "build": "NODE_ENV=production webpack -p"
   },
   "author": "Doron Cy",
   "license": "ISC"

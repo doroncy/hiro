@@ -19,6 +19,10 @@ const texts = {
   "menu": {
     "title": "MENU",
     "ramen": {
+      "gochu": {
+        "title": "GOCHU RAMEN (BRAISED BRISKET / STEAMED CHICKEN BREAST)",
+        "description": "Korean fermented chili paste (Spicy), pak choi, shitake mushroom, takuan, daikon radish, spring onion, nori seaweed, soy marinated egg."
+      },
       "dandan": {
         "title": "DAN DAN RAMEN",
         "description": "Ground beef, pak choi, shitake mushrooms, pickled daikon, sprauts, spring onion and soy egg"
@@ -66,6 +70,10 @@ const texts = {
       "vegetables": {
         "title": "￼￼GREEN VEGETABLES SALAD",
         "description": "Snow peas, broccoli, peas and spring onion with a lemon and miso dressing"
+      },
+      "kombu": {
+        "title": "￼￼KOMBU SALAD",
+        "description": "Marinated kombu seaweed, bean noodles, spring onion, pickled garlic, chili and sesame."
       }
     }
   },

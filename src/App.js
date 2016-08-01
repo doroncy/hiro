@@ -13,6 +13,7 @@ import Gallery from './components/gallery/gallery';
 import VisitUs from './components/visitUs/visitUs';
 
 let viewportHeight;
+let bgCarouselInterval;
 
 class App extends React.Component {
   constructor(){
@@ -20,7 +21,8 @@ class App extends React.Component {
     Translate.setTexts(enText);
 
     this.state = {
-      scrollPosition: consts.scrollPositions.CURTAIN
+      scrollPosition: consts.scrollPositions.CURTAIN,
+      currentBgImgIndex: 1
     };
 
     this.handleScroll = this.handleScroll.bind(this);
@@ -32,10 +34,21 @@ class App extends React.Component {
     window.addEventListener('scroll', this.handleScroll);
     window.addEventListener('resize', this.handleResize);
     this.handleResize();
+
+    bgCarouselInterval = setInterval(()=> {
+      let newBgImgIndex = this.state.currentBgImgIndex === 5
+        ? 1
+        : this.state.currentBgImgIndex + 1;
+
+      this.setState({
+        currentBgImgIndex: newBgImgIndex
+      });
+    }, 7000);
   }
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
+    clearInterval(bgCarouselInterval);
   }
 
   handleScroll(event) {
@@ -67,17 +80,21 @@ class App extends React.Component {
   }
 
   render(){
+    let bgClassName = `animated fadeIn height100 background background-fade bg_${this.state.currentBgImgIndex}`;
+
     return (
-      <div className={this.state.scrollPosition}>
-        <NavBar scrollPosition={this.state.scrollPosition}></NavBar>
-        <Welcome scrollPosition={this.state.scrollPosition}></Welcome>
-        <div id="nav-spacer"></div>
-        <div className="parallax-wrap">
-          <Ramen></Ramen>
-          <Aharoni></Aharoni>
-          <Menu></Menu>
-          <Gallery></Gallery>
-          <VisitUs></VisitUs>
+      <div>
+        <div className={bgClassName}>
+          <NavBar scrollPosition={this.state.scrollPosition}></NavBar>
+          <Welcome scrollPosition={this.state.scrollPosition}></Welcome>
+          <div id="nav-spacer"></div>
+          <div className="parallax-wrap">
+              <Ramen></Ramen>
+              <Aharoni></Aharoni>
+              <Menu></Menu>
+              <Gallery></Gallery>
+              <VisitUs></VisitUs>
+          </div>
         </div>
       </div>
     )

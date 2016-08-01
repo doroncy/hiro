@@ -1,3 +1,6 @@
+var webpack = require("webpack");
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
   entry: './main.js',
   output: {
@@ -8,6 +11,22 @@ module.exports = {
     inline: true,
     port: 3333
   },
+  plugins:[
+    new webpack.DefinePlugin({
+      'process.env':{
+        'NODE_ENV': JSON.stringify('production')
+      }
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      compress:{
+        warnings: true
+      }
+    }),
+    new HtmlWebpackPlugin({
+      template: './index.html',
+      hash: true
+    })
+  ],
   module: {
     loaders: [
       {
@@ -32,6 +51,10 @@ module.exports = {
       {
         test   : /\.(ttf|eot|woff(2)?)(\?[a-z0-9=&.]+)?$/,
         loader : 'file-loader'
+      },
+      {
+        test: /\.html$/,
+        loader: 'html'
       }
     ]
   }

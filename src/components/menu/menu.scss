@@ -23,24 +23,24 @@
     padding: 10px;
 
     &.menu-icon-image-ramen {
-      height: 332px;
+      height: 467px;
     }
     &.menu-icon-image-starter {
       height: 260px;
     }
     &.menu-icon-image-salad {
-      height: 454px;
+      height: 563px;
     }
 
     @include breakpoint(medium down) {
       &.menu-icon-image-ramen {
-        height: 318px;
+        height: 420px;
       }
       &.menu-icon-image-starter {
         height: 248px;
       }
       &.menu-icon-image-salad {
-        height: 433px;
+        height: 537px;
       }
     }
     img {

@@ -3,7 +3,6 @@ import Translate from 'i18n-react';
 import Style from './welcome.scss';
 import consts from '../../consts';
 import TextContentBox from '../textContentBox/textContentBox';
-import bgImage from '../../assets/gallery/h_w_gallery_1.jpg';
 import curtainImgLarge from '../../assets/h_w_curtain_large.png';
 import aharoniHeadSvg from '../../assets/icons/h_w_aharoni_head.svg';
 import fullLogSvg from '../../assets/icons/h_w_full_logo.svg';
@@ -11,12 +10,10 @@ import TakeAwayGif from '../../assets/hiro_takeaway.gif';
 
 const Welcome = (props) => {
   let welcomeLogosClass = getWelcomeLogosClassName(props.scrollPosition);
-
   return (
       <div className='welcome-wrap'>
-        <div className={`takeaway-gif animated-fast ${welcomeLogosClass}`}><img src={TakeAwayGif} /></div>
+        <div className={`hide-for-small-only takeaway-gif animated-fast ${welcomeLogosClass}`}><img src={TakeAwayGif} /></div>
         <div className="curtain"></div>
-        <img src={bgImage} className="video-bg" />
         <div className={`row welcome-container animated-fast ${welcomeLogosClass}`}>
           <div className="small-10 small-centered columns">
             <div className={`welcome-logos-wrap`}>
@@ -43,6 +40,7 @@ const Welcome = (props) => {
           </div>
         </div>
       </div>
+
     );
 }
 
