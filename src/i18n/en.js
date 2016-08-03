@@ -36,6 +36,20 @@ const texts = {
         "description": "Marinated tofu cubes, pak choi, shitake mushrooms, pickled daikon, sprauts, spring onion, wakame seaweed and soy egg"
       }
     },
+    "bun": {
+      "beef": {
+        "title": "BEEF BUN",
+        "description": "Steamed bun with long cooked beef breast, kimchi mayonnaise, crispy lettuce, cucumbers marinated easy, pickled radishes, green onions."
+      },
+      "chicken": {
+        "title": "CHICKEN BUN",
+        "description": "Steamed bun with chicken breast marinated chili honey mayonnaise, crispy lettuce, pickled daikon, green onions and crispy shallots."
+      },
+      "vegan": {
+        "title": "VEGAN BUN",
+        "description": "Steamed bun with roasted eggplant, sake and mirin, sweet miso, lemon confit garlic, toasted sesame seeds, green onions and shiso leaf."
+      }
+    },
     "starter": {
       "wings": {
         "title": "GLAZED CHICKEN WINGS",

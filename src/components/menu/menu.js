@@ -12,12 +12,20 @@ import MenuContentBox from '../menuContentBox/menuContentBox';
 import menuRamenSvg from '../../assets/icons/h_w_menu_1.svg';
 import menuStarterSvg from '../../assets/icons/h_w_menu_2.svg';
 import menuSaladSvg from '../../assets/icons/h_w_menu_3.svg';
+import menuBunSvg from '../../assets/icons/h_w_menu_4.svg';
+
 
 const ramenItems = [
   {title: 'menu.ramen.gochu.title', description: 'menu.ramen.gochu.description'},
   {title: 'menu.ramen.dandan.title', description: 'menu.ramen.dandan.description'},
   {title: 'menu.ramen.chicken.title', description: 'menu.ramen.chicken.description'},
   {title: 'menu.ramen.tofu.title', description: 'menu.ramen.tofu.description'}
+];
+
+const bunItems = [
+  {title: 'menu.bun.beef.title', description: 'menu.bun.beef.description'},
+  {title: 'menu.bun.chicken.title', description: 'menu.bun.chicken.description'},
+  {title: 'menu.bun.vegan.title', description: 'menu.bun.vegan.description'}
 ];
 
 const starterItems = [
@@ -47,6 +55,7 @@ const menuItemsBuilder = (items) => {
 }
 const Menu = (props) => {
   let menuRamenItems = menuItemsBuilder(ramenItems);
+  let menuBunItems = menuItemsBuilder(bunItems);
   let menuStarterItems = menuItemsBuilder(starterItems);
   let menuSaladItems = menuItemsBuilder(saladItems);
   return (
@@ -89,7 +98,33 @@ const Menu = (props) => {
               </div>
               <div className="row">
                 <div className="small-12 medium-10 small-centered columns">
-                  <div className="row small-half-padding-columns space-bottom-md">
+
+                <div className="row small-half-padding-columns space-bottom-md">
+                  <div className="medium-4 columns show-for-medium">
+                    <TrackedDiv formulas={[topBottom]}>
+                      {(posTopBottom) =>
+                        <div className={cx("menu-icon-image menu-icon-image-bun scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+150})}>
+                          <img src={menuBunSvg} className="thumbnail"/>
+                        </div>
+                      }
+                    </TrackedDiv>
+                  </div>
+                  <div className="small-12 medium-8 columns">
+                    <div className="row">
+                      <div className="small-12 small-centered columns">
+                        <TrackedDiv formulas={[topBottom]}>
+                          {(posTopBottom) =>
+                            <div className={cx("scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+250})}>
+                              <ul className="reset">{menuBunItems}</ul>
+                            </div>
+                          }
+                        </TrackedDiv>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="row small-half-padding-columns space-bottom-md">
                     <div className="medium-4 columns show-for-medium">
                       <TrackedDiv formulas={[topBottom]}>
                         {(posTopBottom) =>
@@ -113,6 +148,7 @@ const Menu = (props) => {
                       </div>
                     </div>
                   </div>
+
                   <div className="row small-half-padding-columns">
                     <div className="medium-4 columns show-for-medium">
                       <TrackedDiv formulas={[topBottom]}>

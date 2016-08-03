@@ -7,6 +7,9 @@ import {Link, Element, animateScroll} from'react-scroll';
 import headerLogoSvg from '../../assets/icons/h_w_header_logo.svg';
 import instagramSvg from '../../assets/icons/h_w_instagram_b.svg';
 import facebookSvg from '../../assets/icons/h_w_facebook_b.svg';
+import headerLogoMobileSvg from '../../assets/icons/h_w_m_logo.svg';
+import instagramMobileSvg from '../../assets/icons/h_w_m_instagram.svg';
+import facebookMobileSvg from '../../assets/icons/h_w_m_facebook.svg';
 
 class NavBar extends React.Component {
   constructor(props){
@@ -67,9 +70,24 @@ class NavBar extends React.Component {
 
     let mobileNav = this.state.mobileNavVisible
       ? (
-        <ul className="menu mobile-menu run-font animated-fast fadeIn">
-          {this.getMenuNav()}
-        </ul>
+        <div className="mobile-nav-wrap">
+          <div>
+            <img src={headerLogoMobileSvg} className="header-logo-img"/>
+          </div>
+          <ul className="menu mobile-menu run-font animated-fast fade">
+            {this.getMenuNav()}
+          </ul>
+          <div className="mobile-nav-social">
+            <div className="mobile-nav-social-inner">
+              <a href="https://www.instagram.com/hirotlv/" target="_blank">
+                <img src={instagramMobileSvg} className="mobile-nav-social-img"/>
+              </a>
+              <a href="https://www.facebook.com/HiroramenbyAharoni/" target="_blank">
+                <img src={facebookMobileSvg} className="mobile-nav-social-img"/>
+              </a>
+            </div>
+          </div>
+        </div>
       )
       : '';
 

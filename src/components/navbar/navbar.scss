@@ -84,13 +84,46 @@
     outline: 0 !important;
   }
 
-  .mobile-menu {
+  .mobile-nav-wrap {
+    height: 100vh;
+    background: rgba(0,0,0,0.9);
     margin-top: 40px;
-
-    .menu-link {
-      display: block !important;
-      text-align: center;
-      opacity: .9;
+    position: relative;
+    .header-logo-img {
+      height: 170px;
+      padding-top:30px;
+    }
+    .mobile-nav-social {
+      position: absolute;
+      bottom: 70px;
+      left:32%;
+      .mobile-nav-social-inner {
+        width: 120px;
+        margin: 0 auto;
+      }
+      .mobile-nav-social-img {
+        width: 30px;
+        height: 30px;
+        margin: 0 10px;
+      }
+    }
+    .mobile-menu {
+      margin-top: 40px;
+      background: transparent !important;
+      .menu-link {
+        display: block !important;
+        text-align: center;
+        a {
+          color: #fff !important;
+          font-weight: bold;
+          font-size: 1.4em;
+          padding-bottom: 1em;
+        }
+        &:hover a{
+          color: $pink !important;
+        }
+      }
     }
   }
+
 }

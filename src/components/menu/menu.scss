@@ -25,6 +25,9 @@
     &.menu-icon-image-ramen {
       height: 467px;
     }
+    &.menu-icon-image-bun {
+      height: 404px;
+    }
     &.menu-icon-image-starter {
       height: 260px;
     }
@@ -35,6 +38,9 @@
     @include breakpoint(medium down) {
       &.menu-icon-image-ramen {
         height: 420px;
+      }
+      &.menu-icon-image-bun {
+        height: 387px;
       }
       &.menu-icon-image-starter {
         height: 248px;

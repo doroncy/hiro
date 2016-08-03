@@ -63,7 +63,7 @@ class Gallery extends React.Component {
   render() {
 
     return (
-        <Element name="gallery" className='gallery-wrap section'>
+        <Element name="gallery" className='gallery-wrap section-margin'>'
           <div className="gallery-title">
             <TextContentBox text='gallery.title' css="run-font-large text-center full-width"/>
           </div>

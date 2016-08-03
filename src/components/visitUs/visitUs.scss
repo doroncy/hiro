@@ -4,6 +4,17 @@
 .visitus {
   border-bottom: 10px solid #fff;
   margin-top:30px;
+
+  .google-map-wrap {
+    height: 350px;
+    width: 600px;
+    padding-bottom:10px;
+
+    @include breakpoint(medium down) {
+      width: 100% !important;
+    }
+
+  }
 }
 .visitus-wrap {
   width: 70%;
@@ -13,6 +24,10 @@
 
   .visitus-right-pane {
     padding-top: 75px;
+  }
+
+  .visit-us-open-hours {
+    width: 200px;
   }
 
   // tablet

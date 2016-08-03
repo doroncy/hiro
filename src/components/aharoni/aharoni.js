@@ -13,7 +13,7 @@ const Ramen = (props) => {
   return (
     <TrackDocument formulas={[getDocumentElement, getDocumentRect, calculateScrollY, topBottom]}>
       {(documentElement, documentRect, scrollY, topBottom) =>
-      <Element name="aharoni" className='section'>
+      <Element name="aharoni" className='section-margin'>
         <div className="row">
           <div className="small-10 small-centered columns">
             <div className="aharoni-wrap">
