@@ -15,14 +15,16 @@
 
   .header-logo {
     position: relative;
-    width: 80px;
+    width: 98px;
     padding: 0 !important;
     z-index: 99;
       .header-logo-img {
         position: absolute;
         top: 10px;
-
-        @include breakpoint(small down) {
+      }
+      @include breakpoint(small down) {
+        width: 80px;
+        .header-logo-img {
           left: 20px;
         }
       }
@@ -83,7 +85,12 @@
     margin: 12px 20px;
     outline: 0 !important;
   }
-
+  .mobile-nav-visible {
+    &:after {
+      background: $pink !important;
+      box-shadow: 0 7px 0 $pink,0 14px 0 $pink !important;
+    }
+  }
   .mobile-nav-wrap {
     height: 100vh;
     background: rgba(0,0,0,0.9);
@@ -96,9 +103,10 @@
     .mobile-nav-social {
       position: absolute;
       bottom: 70px;
-      left:32%;
+      left: 50%;
+      margin-left: -50px;
       .mobile-nav-social-inner {
-        width: 120px;
+        width: 100px;
         margin: 0 auto;
       }
       .mobile-nav-social-img {

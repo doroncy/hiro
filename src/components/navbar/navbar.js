@@ -6,7 +6,9 @@ import consts from '../../consts';
 import {Link, Element, animateScroll} from'react-scroll';
 import headerLogoSvg from '../../assets/icons/h_w_header_logo.svg';
 import instagramSvg from '../../assets/icons/h_w_instagram_b.svg';
+import instagramSvgPink from '../../assets/icons/h_w_instagram_b_p.svg';
 import facebookSvg from '../../assets/icons/h_w_facebook_b.svg';
+import facebookSvgPink from '../../assets/icons/h_w_facebook_b_p.svg';
 import headerLogoMobileSvg from '../../assets/icons/h_w_m_logo.svg';
 import instagramMobileSvg from '../../assets/icons/h_w_m_instagram.svg';
 import facebookMobileSvg from '../../assets/icons/h_w_m_facebook.svg';
@@ -24,14 +26,49 @@ class NavBar extends React.Component {
     ];
 
     this.state = {
-      mobileNavVisible: false
+      mobileNavVisible: false,
+      instagramIcon: instagramSvg,
+      facebookIcon: facebookSvg
     };
 
     this.scrollToTop = this.scrollToTop.bind(this);
     this.toggleMobileNav = this.toggleMobileNav.bind(this);
     this.getMenuNav = this.getMenuNav.bind(this);
     this.closeMobileNav = this.closeMobileNav.bind(this);
+    this.setInstagramIconHover = this.setInstagramIconHover.bind(this);
+    this.setInstagramIconNotHover = this.setInstagramIconNotHover.bind(this);
   }
+
+  setInstagramIconHover() {
+    this.setState({
+      instagramIcon: instagramSvgPink
+    });
+  }
+
+  setInstagramIconNotHover() {
+    this.setState({
+      instagramIcon: instagramSvg
+    });
+  }
+
+  setInstagramIconHover() {
+    this.setState({
+      instagramIcon: instagramSvgPink
+    });
+  }
+
+  setFacebookIconNotHover() {
+    this.setState({
+      facebookIcon: facebookSvg
+    });
+  }
+
+  setFacebookIconHover() {
+    this.setState({
+      facebookIcon: facebookSvgPink
+    });
+  }
+
 
   scrollToTop() {
     animateScroll.scrollToTop();
@@ -52,10 +89,11 @@ class NavBar extends React.Component {
   }
 
 
-  getMenuNav() {
+  getMenuNav(isMobile) {
     return this.menuItems.map((menuItem, index) => {
-        return (
-          <li key={index} className="menu-link">
+        return ( isMobile && menuItem.path === 'gallery'
+          ? ''
+          : <li key={index} className="menu-link">
             <Link activeClass="active" to={menuItem.path} spy={true} smooth={true} duration={800} onClick={this.closeMobileNav}>
               <Translate text={menuItem.title} />
             </Link>
@@ -67,6 +105,7 @@ class NavBar extends React.Component {
   render() {
     let fadeClassName = this.props.scrollPosition === consts.scrollPositions.CURTAIN_REMOVED ? 'fadeIn' : 'fadeOut';
     let menuItems = this.getMenuNav();
+    let mobileNavVisibleClass = this.state.mobileNavVisible ? 'mobile-nav-visible' : '';
 
     let mobileNav = this.state.mobileNavVisible
       ? (
@@ -75,7 +114,7 @@ class NavBar extends React.Component {
             <img src={headerLogoMobileSvg} className="header-logo-img"/>
           </div>
           <ul className="menu mobile-menu run-font animated-fast fade">
-            {this.getMenuNav()}
+            {this.getMenuNav(true)}
           </ul>
           <div className="mobile-nav-social">
             <div className="mobile-nav-social-inner">
@@ -111,18 +150,18 @@ class NavBar extends React.Component {
         </div>
         <div className="top-bar-right">
           <ul className="menu social-btns show-for-medium">
-            <li className="instagram-btn">
+            <li className="instagram-btn" onMouseOver={() => this.setInstagramIconHover()} onMouseOut={() => this.setInstagramIconNotHover()}>
               <a href="https://www.instagram.com/hirotlv/" target="_blank">
-                <img src={instagramSvg} />
+                <img src={this.state.instagramIcon} />
               </a>
             </li>
-            <li>
+            <li onMouseOver={() => this.setFacebookIconHover()} onMouseOut={() => this.setFacebookIconNotHover()}>
               <a href="https://www.facebook.com/HiroramenbyAharoni/" target="_blank">
-                <img src={facebookSvg} />
+                <img src={this.state.facebookIcon} />
               </a>
             </li>
           </ul>
-          <button className="toggle-mobile-nav-btn menu-icon dark hide-for-medium" type="button"
+          <button className={`toggle-mobile-nav-btn menu-icon dark hide-for-medium ${mobileNavVisibleClass}`} type="button"
             onClick={this.toggleMobileNav}>
           </button>
         </div>

@@ -11,7 +11,8 @@
     padding: 30px 50px;
     max-width: 300px;
     max-height: 380px;
-    float: right;
+    //float: right;
+    margin: 0 auto;
     @include breakpoint(small down) {
       margin-bottom: 10px;
     }
@@ -30,17 +31,21 @@
     }
   }
 
-  // tablet
-  @include breakpoint(medium down) {
-    width: 60%;
+  @include breakpoint(xxlarge up) {
+    max-width: 900px !important;
   }
+
+  // tablet
+  // @include breakpoint(medium down) {
+  //   width: 60%;
+  // }
 
   // Mobile
   @include breakpoint(small down) {
     width: 90%;
     padding-top: 40px;
     .text-contentbox-wrap {
-      padding: 8px 10px;      
+      padding: 8px 10px;
     }
     .aharoni-title .text-contentbox-wrap.full-width{
       width: initial !important;

@@ -18,7 +18,7 @@ const Ramen = (props) => {
           <div className="small-10 small-centered columns">
             <div className="aharoni-wrap">
               <div className="row small-half-padding-columns">
-                <div className="small-12 small-centered medium-uncentered large-4 columns">
+                <div className="small-12 small-centered medium-uncentered medium-5 columns">
                   <TrackedDiv formulas={[topBottom]}>
                     {(posTopBottom) =>
                       <div className={cx("aharoni-head-image scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+150})}>
@@ -27,7 +27,7 @@ const Ramen = (props) => {
                     }
                   </TrackedDiv>
                 </div>
-                <div className="small-12 small-centered medium-uncentered large-8 columns">
+                <div className="small-12 small-centered medium-uncentered medium-7 columns">
                   <div className="row">
                     <div className="small-12 medium-11 columns">
                       <TrackedDiv formulas={[topBottom]}>

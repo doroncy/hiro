@@ -6,7 +6,7 @@
   margin: 0 auto;
   padding-top: 150px;
   .noodles-image {
-    float: right;
+    margin: 0 auto;
     background-color: $blackOpacity;
     padding: 15px;
   }
@@ -30,9 +30,17 @@
     }
   }
 
+  @include breakpoint(xxlarge up) {
+    max-width: 900px !important;
+  }
+
   // Mobile
   @include breakpoint(small down) {
     width: 90%;
+    .noodles-image {
+      padding: 50px 100px;
+      margin-bottom: 10px;
+    }
     .text-contentbox-wrap {
       padding: 8px 10px;
     }
@@ -48,7 +56,6 @@
     }
     .ramen-content-box-description {
       margin: 5px 2px;
-      width: 80%;
     }
   }
 }

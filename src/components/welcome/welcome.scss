@@ -63,4 +63,8 @@
   @include breakpoint(medium up) {
     padding-top:150px;
   }
+
+  @include breakpoint(xxlarge up) {
+    max-width: 900px !important;
+  }
 }

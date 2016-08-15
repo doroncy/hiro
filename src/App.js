@@ -80,11 +80,14 @@ class App extends React.Component {
   }
 
   render(){
-    let bgClassName = `animated fadeIn height100 background background-fade bg_${this.state.currentBgImgIndex}`;
+    let bgClassName = `animated height100 fadeIn background background-fade bg_${this.state.currentBgImgIndex}`;
 
     return (
-      <div className={this.state.scrollPosition}>
-        <div className={bgClassName}>
+      <div className={`${this.state.scrollPosition}`}>
+        <div className="background-wrap">
+          <div className={bgClassName}></div>
+        </div>
+        <div>
           <NavBar scrollPosition={this.state.scrollPosition}></NavBar>
           <Welcome scrollPosition={this.state.scrollPosition}></Welcome>
           <div id="nav-spacer"></div>

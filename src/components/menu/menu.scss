@@ -8,6 +8,12 @@
   width: 100%;
   position: relative;
 
+  .menu-icon-wrap {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+
   .menu-item:not(:last-child) {
     .menu-contentbox-wrap {
       border-bottom-width: 0;
@@ -22,33 +28,6 @@
     background: $whiteOpacity;
     padding: 10px;
 
-    &.menu-icon-image-ramen {
-      height: 467px;
-    }
-    &.menu-icon-image-bun {
-      height: 404px;
-    }
-    &.menu-icon-image-starter {
-      height: 260px;
-    }
-    &.menu-icon-image-salad {
-      height: 563px;
-    }
-
-    @include breakpoint(medium down) {
-      &.menu-icon-image-ramen {
-        height: 420px;
-      }
-      &.menu-icon-image-bun {
-        height: 387px;
-      }
-      &.menu-icon-image-starter {
-        height: 248px;
-      }
-      &.menu-icon-image-salad {
-        height: 537px;
-      }
-    }
     img {
       height: 100% !important;
     }
@@ -58,5 +37,9 @@
   @include breakpoint(small down) {
     padding-top: 40px;
     width: 90%;
+  }
+
+  @include breakpoint(xxlarge up) {
+    max-width: 900px !important;
   }
 }

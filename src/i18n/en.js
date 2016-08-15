@@ -101,6 +101,9 @@ const texts = {
       "address": "KALMAN MAGEN 3, SARONA MARKET, TEL AVIV",
       "phone": "03-5583505",
       "openHours": "EVERY DAY 11:00 - 22:00 FRIDAY TILL 15:00"
+    },
+    "hashmal": {
+      "name": "GAN HASHMAL"
     }
   }
 

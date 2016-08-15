@@ -13,12 +13,12 @@ const Ramen = (props) => {
   return (
     <TrackDocument formulas={[getDocumentElement, getDocumentRect, calculateScrollY, topBottom]}>
       {(documentElement, documentRect, scrollY, topBottom) =>
-      <Element name="ramen">
+      <Element name="ramen" className='section-margin'>
         <div className="row">
           <div className="small-10 small-centered columns">
             <div className="ramen-wrap">
               <div className="row small-half-padding-columns">
-                <div className="small-5 medium-3 columns">
+                <div className="small-12 medium-3 columns">
                   <TrackedDiv formulas={[topBottom]}>
                     {(posTopBottom) =>
                       <div className={cx("noodles-image scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+150})}>
@@ -27,7 +27,7 @@ const Ramen = (props) => {
                     }
                   </TrackedDiv>
                 </div>
-                <div className="small-7 medium-9 columns">
+                <div className="small-12 medium-9 columns">
                   <div className="row">
                     <div className="small-12 medium-6 columns">
                       <TrackedDiv formulas={[topBottom]}>
@@ -54,9 +54,13 @@ const Ramen = (props) => {
                 </div>
               </div>
               <div className="row hide-for-medium">
-                  <div className="ramen-content-box-description float-right">
-                    <TextContentBox text='ramen.description' css="run-font full-width"/>
-                  </div>
+                <TrackedDiv formulas={[topBottom]}>
+                  {(posTopBottom) =>
+                    <div className={cx("ramen-content-box-description scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+300})}>
+                      <TextContentBox text='ramen.description' css="run-font full-width"/>
+                    </div>
+                  }
+                </TrackedDiv>
               </div>
             </div>
           </div>

@@ -10,54 +10,59 @@ body {
   padding: 0;
   margin: 0;
   background: #ccc;
-  font-size:12px;
+  font-size: 12px;
   overflow-x: hidden;
   &:after {
-    content: url('../../assets/background/h_t_gallery_01.jpg') url('../../assets/background/h_t_gallery_02.jpg') url('../../assets/background/h_t_gallery_03.jpg')
-    url('../../assets/background/h_t_gallery_04.jpg') url('../../assets/background/h_t_gallery_05.jpg');
+    content: url('../../assets/background/h_t_gallery_01.jpg') url('../../assets/background/h_t_gallery_02.jpg')
+    url('../../assets/background/h_t_gallery_03.jpg') url('../../assets/background/h_t_gallery_04.jpg') url('../../assets/background/h_t_gallery_05.jpg');
     position: absolute;
     right: 1000000px;
     display: none;
   }
 }
+
 .full-width {
   width: 100% !important;
 }
+.page-wrap {
+  height:100vh;
+}
+
 .run-font {
   font-family: 'Oswald', sans-serif;
   font-weight: normal;
   color: $black;
-  font-size: 1.3em;
+  font-size: 1.4em;
   -webkit-font-smoothing: antialiased;
-  @include breakpoint(medium down) {
-    font-size: 1.2em;
+  @include breakpoint(small down) {
+    font-size: 1.3em;
   }
 }
 .run-font-medium {
   font-family: 'Oswald', sans-serif;
   font-weight: bold;
   color: $black;
-  font-size: 1.4em;
+  font-size: 1.5em;
   -webkit-font-smoothing: antialiased;
-  @include breakpoint(medium down) {
-    font-size: 1.2em;
+  @include breakpoint(small down) {
+    font-size: 1.3em;
   }
 }
 .run-font-large {
   font-family: 'MixedBreed', 'Oswald', sans-serif;
   color: $black;
-  font-size: 2em;
+  font-size: 2.1em;
   -webkit-font-smoothing: antialiased;
-  @include breakpoint(medium down) {
-    font-size: 1.8em;
+  @include breakpoint(small down) {
+    font-size: 1.9em;
   }
 }
 .run-font-xlarge {
   font-family: 'MixedBreed', 'Oswald', sans-serif;
   color: $black;
-  font-size: 2.2em;
+  font-size: 2.3em;
   -webkit-font-smoothing: antialiased;
-  @include breakpoint(medium down) {
+  @include breakpoint(small down) {
     font-size: 2em;
   }
 }
@@ -133,11 +138,14 @@ img {
 }
 .curtain-removed {
   #nav-spacer {
-      height: 50vh;
+      height: 20vh;
   }
 }
 .height100 {
   height:100%;
+}
+.height100vh {
+  height: 100vh;
 }
 .text-uppercase {
   text-transform: uppercase;
@@ -157,7 +165,7 @@ img {
 .takeaway-gif {
   position: fixed !important;
   bottom: 24px;
-  left: 40px;
+  left: 66px;
   z-index: 9999;
   width: 100px;
 }
@@ -180,10 +188,17 @@ img {
     transition: transform .62s cubic-bezier(.19,1,.22,1) .31s;
  }
 
+.background-wrap {
+  position: fixed;
+  top:0;
+  left:10px;
+  right:10px;
+  z-index:0;
+  height:100vh;
+}
  .background {
    background-repeat: no-repeat;
    background-size: cover;
-   background-attachment: fixed;
    background-position: center;
    position: relative;
    overflow-y: auto;

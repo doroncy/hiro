@@ -5,6 +5,7 @@ import GoogleMap from 'google-map-react';
 import Style from './visitUs.scss';
 import TextContentBox from '../textContentBox/textContentBox';
 import headerLogoSvg from '../../assets/icons/h_w_header_logo.svg';
+import comingSoonSvg from '../../assets/icons/h_w_coming_soon.svg';
 
 import cx from 'classnames';
 import {TrackedDiv, TrackDocument} from 'react-track';
@@ -55,6 +56,33 @@ const VisitUs = (props) => {
                             </div>
                             <div className="visit-us-open-hours">
                               <TextContentBox text='visitUs.sarona.openHours' css="run-font-medium text-center full-width space-bottom"/>
+                            </div>
+                          </div>
+                        }
+                      </TrackedDiv>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="row small-half-padding-columns coming-soon-wrap">
+                <div className="small-12 small-centered medium-uncentered large-3 columns">
+                  <TrackedDiv formulas={[topBottom]}>
+                    {(posTopBottom) =>
+                      <div className={cx("scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+150})}>
+                        <img src={headerLogoSvg} className="header-logo-img space-bottom"/>
+                        <TextContentBox text='visitUs.hashmal.name' css="run-font-medium text-center full-width space-bottom"/>
+                      </div>
+                    }
+                  </TrackedDiv>
+                </div>
+                <div className="small-12 small-centered medium-uncentered large-9 columns">
+                  <div className="row">
+                    <div className="small-12 medium-11 columns">
+                      <TrackedDiv formulas={[topBottom]}>
+                        {(posTopBottom) =>
+                          <div className={cx("visitus-comingsoon-right-pane scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+200})}>
+                            <div className="coming-soon-img">
+                              <img src={comingSoonSvg} className="space-bottom"/>
                             </div>
                           </div>
                         }

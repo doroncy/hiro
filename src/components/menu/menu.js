@@ -72,11 +72,11 @@ const Menu = (props) => {
                   </div>
                 }
               </TrackedDiv>
-              <div className="row space-bottom-md">
-                <div className="medium-4 large-4 columns show-for-medium">
-                  <TrackedDiv formulas={[topBottom]}>
+              <div className="row space-bottom-md pos-relative">
+                <div className="medium-4 large-4 columns show-for-medium menu-icon-wrap">
+                  <TrackedDiv formulas={[topBottom]} className="height100">
                     {(posTopBottom) =>
-                      <div className={cx("menu-icon-image menu-icon-image-ramen scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+150})}>
+                      <div className={cx("menu-icon-image menu-icon-image-ramen scroll-anim-item height100",{'animate-out-bottom':scrollY < posTopBottom+150})}>
                         <img src={menuRamenSvg}/>
                       </div>
                     }
@@ -99,36 +99,36 @@ const Menu = (props) => {
               <div className="row">
                 <div className="small-12 medium-10 small-centered columns">
 
-                <div className="row small-half-padding-columns space-bottom-md">
-                  <div className="medium-4 columns show-for-medium">
-                    <TrackedDiv formulas={[topBottom]}>
-                      {(posTopBottom) =>
-                        <div className={cx("menu-icon-image menu-icon-image-bun scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+150})}>
-                          <img src={menuBunSvg} className="thumbnail"/>
+                  <div className="row small-half-padding-columns space-bottom-md pos-relative">
+                    <div className="medium-4 columns show-for-medium menu-icon-wrap">
+                      <TrackedDiv formulas={[topBottom]} className="height100">
+                        {(posTopBottom) =>
+                          <div className={cx("menu-icon-image menu-icon-image-bun scroll-anim-item height100",{'animate-out-bottom':scrollY < posTopBottom+150})}>
+                            <img src={menuBunSvg} className="thumbnail"/>
+                          </div>
+                        }
+                      </TrackedDiv>
+                    </div>
+                    <div className="small-12 medium-8 columns">
+                      <div className="row">
+                        <div className="small-12 small-centered columns">
+                          <TrackedDiv formulas={[topBottom]}>
+                            {(posTopBottom) =>
+                              <div className={cx("scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+250})}>
+                                <ul className="reset">{menuBunItems}</ul>
+                              </div>
+                            }
+                          </TrackedDiv>
                         </div>
-                      }
-                    </TrackedDiv>
-                  </div>
-                  <div className="small-12 medium-8 columns">
-                    <div className="row">
-                      <div className="small-12 small-centered columns">
-                        <TrackedDiv formulas={[topBottom]}>
-                          {(posTopBottom) =>
-                            <div className={cx("scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+250})}>
-                              <ul className="reset">{menuBunItems}</ul>
-                            </div>
-                          }
-                        </TrackedDiv>
                       </div>
                     </div>
                   </div>
-                </div>
 
-                <div className="row small-half-padding-columns space-bottom-md">
-                    <div className="medium-4 columns show-for-medium">
-                      <TrackedDiv formulas={[topBottom]}>
+                  <div className="row small-half-padding-columns space-bottom-md pos-relative">
+                    <div className="medium-4 columns show-for-medium menu-icon-wrap">
+                      <TrackedDiv formulas={[topBottom]} className="height100">
                         {(posTopBottom) =>
-                          <div className={cx("menu-icon-image menu-icon-image-starter scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+150})}>
+                          <div className={cx("menu-icon-image menu-icon-image-starter scroll-anim-item height100",{'animate-out-bottom':scrollY < posTopBottom+150})}>
                             <img src={menuStarterSvg} className="thumbnail"/>
                           </div>
                         }
@@ -149,11 +149,11 @@ const Menu = (props) => {
                     </div>
                   </div>
 
-                  <div className="row small-half-padding-columns">
-                    <div className="medium-4 columns show-for-medium">
-                      <TrackedDiv formulas={[topBottom]}>
+                  <div className="row small-half-padding-columns pos-relative">
+                    <div className="medium-4 columns show-for-medium menu-icon-wrap">
+                      <TrackedDiv formulas={[topBottom]} className="height100">
                         {(posTopBottom) =>
-                          <div className={cx("menu-icon-image menu-icon-image-salad scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+150})}>
+                          <div className={cx("menu-icon-image menu-icon-image-salad scroll-anim-item height100",{'animate-out-bottom':scrollY < posTopBottom+150})}>
                             <img src={menuSaladSvg} className="thumbnail"/>
                           </div>
                         }

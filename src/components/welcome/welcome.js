@@ -25,7 +25,7 @@ const Welcome = (props) => {
                 </div>
                 <div className="small-12 small-centered medium-uncentered medium-7 columns">
                   <div className="row">
-                    <div className="small-8 small-centered medium-uncentered columns">
+                    <div className="small-10 small-centered medium-uncentered columns">
                       <div className="welcome-text-wrap run-font-xlarge">
                         <TextContentBox text='welcome.title'/>
                       </div>

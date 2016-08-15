@@ -26,8 +26,8 @@
     padding-top: 75px;
   }
 
-  .visit-us-open-hours {
-    width: 200px;
+  @include breakpoint(xxlarge up) {
+    max-width: 900px !important;
   }
 
   // tablet
@@ -42,5 +42,18 @@
     .text-contentbox-wrap {
       padding: 8px 10px;
     }
+  }
+}
+.coming-soon-wrap {
+  margin-top: 150px;
+  margin-bottom: 200px;
+
+  .coming-soon-img {
+    padding: 45px 30px;
+    background-color: #fff;
+  }
+
+  .visitus-comingsoon-right-pane {
+    padding-top: 65px;
   }
 }
