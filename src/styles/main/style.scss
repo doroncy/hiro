@@ -13,8 +13,9 @@ body {
   font-size: 12px;
   overflow-x: hidden;
   &:after {
-    content: url('../../assets/background/h_t_gallery_01.jpg') url('../../assets/background/h_t_gallery_02.jpg')
-    url('../../assets/background/h_t_gallery_03.jpg') url('../../assets/background/h_t_gallery_04.jpg') url('../../assets/background/h_t_gallery_05.jpg');
+    content:  url('../../assets/h_w_curtain_large.png') url('../../assets/background/h_t_gallery_01.jpg') url('../../assets/background/h_t_gallery_02.jpg')
+    url('../../assets/background/h_t_gallery_03.jpg') url('../../assets/background/h_t_gallery_04.jpg') url('../../assets/background/h_t_gallery_05.jpg')
+    url('../../assets/icons/h_w_facebook_b_p.svg') url('../../assets/icons/h_w_instagram_b_p.svg');
     position: absolute;
     right: 1000000px;
     display: none;
@@ -166,7 +167,7 @@ img {
   position: fixed !important;
   bottom: 24px;
   left: 66px;
-  z-index: 9999;
+  z-index: 0;
   width: 100px;
 }
 .scroll-anim {

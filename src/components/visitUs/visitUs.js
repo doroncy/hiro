@@ -6,6 +6,7 @@ import Style from './visitUs.scss';
 import TextContentBox from '../textContentBox/textContentBox';
 import headerLogoSvg from '../../assets/icons/h_w_header_logo.svg';
 import comingSoonSvg from '../../assets/icons/h_w_coming_soon.svg';
+import markerSvg from '../../assets/icons/h_w_google_maps.svg';
 
 import cx from 'classnames';
 import {TrackedDiv, TrackDocument} from 'react-track';
@@ -48,10 +49,11 @@ const VisitUs = (props) => {
                               <GoogleMap
                                 center={saronaMapOptions.cord}
                                 zoom={saronaMapOptions.zoom}
+                                minZoom={saronaMapOptions.zoom}
                                 maxZoom={saronaMapOptions.zoom}
                                 scrollWheel={false}
                                 draggable={false}>
-                                <div className="markerSarona" lat={32.071401} lng={34.786942}>Hiro</div>
+                                <img src={markerSvg} className="hiro-map-marker" lat={32.071401} lng={34.786942}/>
                               </GoogleMap>
                             </div>
                             <div className="visit-us-open-hours">
@@ -92,6 +94,14 @@ const VisitUs = (props) => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="row site-footer">
+          <div className="small-12 medium-6 small-centered medium-uncentered columns">
+            <div className="text-center">COPYRIGHT 2016 HIRO. ALL RIGHTS RESERVED</div>
+          </div>
+          <div className="small-12 medium-6 small-centered medium-uncentered columns">
+            <div className="text-center">DESIGNED BY STUDIO Y&O | DEV BY DORON CYNGISER</div>
           </div>
         </div>
       </Element>

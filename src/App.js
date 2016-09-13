@@ -96,7 +96,7 @@ class App extends React.Component {
               <Aharoni></Aharoni>
               <Menu></Menu>
               <Gallery></Gallery>
-              <VisitUs></VisitUs>
+              <VisitUs></VisitUs>            
           </div>
         </div>
       </div>
