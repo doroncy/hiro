@@ -7,10 +7,11 @@
   font-size: 12px;
   padding: 0 !important;
   top: 0;
-  height: 40px;
+  height: 60px;
 
   .active {
     color: $pink !important;
+    text-decoration: underline;
   }
 
   .header-logo {
@@ -22,7 +23,7 @@
         position: absolute;
         top: 10px;
       }
-      @include breakpoint(small down) {
+      @include breakpoint(medium down) {
         width: 80px;
         .header-logo-img {
           left: 20px;
@@ -30,18 +31,22 @@
       }
   }
   .menu {
-    font-size: 15px !important;
+    font-size: 18px !important;
   }
   .menu > li {
-    padding: 0 10px;
+    padding: 10px 10px;
     &.menu-link {
       cursor: pointer;
       color: $black;
       text-transform: uppercase;
 
+      a {
+        border-bottom: none;
+        transition: all 0.3s ease;
+      }
+
       &:hover a{
         color: $pink !important;
-
       }
     }
   }
@@ -50,6 +55,9 @@
       display:table-cell;
       padding-right:4px;
       padding-left:4px;
+      &:hover a{
+        color: $pink !important;
+      }
     }
     .vertical-seperator {
       display:table-cell;
@@ -60,10 +68,10 @@
   }
   .social-btns {
     li {
-      padding: 0;
+      padding: 10px;
       cursor: pointer;
       a {
-        padding-right:0;
+        padding: 10px 0;
         margin-right: 0;
       }
 
@@ -80,11 +88,15 @@
     }
   }
 
-  .toggle-mobile-nav-btn {
-    float: right;
-    margin: 12px 20px;
-    outline: 0 !important;
+  .toggle-mobile-nav-btn-wrap {
+    padding-top: 10px;
+    .toggle-mobile-nav-btn {
+      float: right;
+      margin: 12px 20px;
+      outline: 0 !important;
+    }
   }
+
   .mobile-nav-visible {
     &:after {
       background: $pink !important;
@@ -125,7 +137,8 @@
           color: #fff !important;
           font-weight: bold;
           font-size: 1.4em;
-          padding-bottom: 1em;
+          //padding-bottom: 1em;
+          padding: 5px;
         }
         &:hover a{
           color: $pink !important;

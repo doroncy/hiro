@@ -1,10 +1,10 @@
 const texts = {
   "languages": {
-    "english": "EN",
-    "hebrew": "HE"
+    "english": "En",
+    "hebrew": "עב"
   },
   "welcome": {
-    "title": "HELLO AND WELCOME TO"
+    "title": "HELLO AND WELCOME TO HIRO"
   },
   "ramen": {
     "title": "THE RAMEN SOUP",

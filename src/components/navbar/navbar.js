@@ -133,23 +133,23 @@ class NavBar extends React.Component {
     return (
       <div className={`top-bar navbar animated-fast ${fadeClassName}`}>
         <div className="top-bar-left">
-          <ul className="menu run-font show-for-medium">
+          <ul className="menu run-font show-for-large">
             <li className="menu-link lang-selection">
               <div className="lang-selection-item active"><Translate text="languages.english" /></div>
               <div className="vertical-seperator"></div>
-              <div className="lang-selection-item"><Translate text="languages.hebrew" /></div>
+              <div className="lang-selection-item assistant-bold"><Translate text="languages.hebrew" /></div>
             </li>
             <li className="menu-link header-logo" onClick={this.scrollToTop}>
               <img src={headerLogoSvg} className="header-logo-img"/>
             </li>
             {menuItems}
           </ul>
-          <div className="menu-link header-logo hide-for-medium" onClick={this.scrollToTop}>
+          <div className="menu-link header-logo hide-for-large" onClick={this.scrollToTop}>
             <img src={headerLogoSvg} className="header-logo-img"/>
           </div>
         </div>
         <div className="top-bar-right">
-          <ul className="menu social-btns show-for-medium">
+          <ul className="menu social-btns show-for-large">
             <li className="instagram-btn" onMouseOver={() => this.setInstagramIconHover()} onMouseOut={() => this.setInstagramIconNotHover()}>
               <a href="https://www.instagram.com/hirotlv/" target="_blank">
                 <img src={this.state.instagramIcon} />
@@ -161,9 +161,11 @@ class NavBar extends React.Component {
               </a>
             </li>
           </ul>
-          <button className={`toggle-mobile-nav-btn menu-icon dark hide-for-medium ${mobileNavVisibleClass}`} type="button"
-            onClick={this.toggleMobileNav}>
-          </button>
+          <div className="toggle-mobile-nav-btn-wrap">
+            <button className={`toggle-mobile-nav-btn menu-icon dark hide-for-large ${mobileNavVisibleClass}`} type="button"
+              onClick={this.toggleMobileNav}>
+            </button>
+          </div>
         </div>
         <div className={`animated ${fadeClassName}`}>
           {mobileNav}

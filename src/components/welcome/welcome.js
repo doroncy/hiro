@@ -7,12 +7,18 @@ import curtainImgLarge from '../../assets/h_w_curtain_large.png';
 import aharoniHeadSvg from '../../assets/icons/h_w_aharoni_head.svg';
 import fullLogSvg from '../../assets/icons/h_w_full_logo.svg';
 import TakeAwayGif from '../../assets/hiro_takeaway.gif';
+import TakeAwayTitleSvg from '../../assets/h_w_ta_coming_soon.svg';
 
 const Welcome = (props) => {
   let welcomeLogosClass = getWelcomeLogosClassName(props.scrollPosition);
   return (
       <div className='welcome-wrap'>
-        <div className={`hide-for-small-only takeaway-gif animated-fast ${welcomeLogosClass}`}><img src={TakeAwayGif} /></div>
+        <div className={`hide-for-small-only takeaway-gif animated-fast ${welcomeLogosClass}`}>
+          <div className="take-away-title">
+            <img src={TakeAwayTitleSvg} />
+          </div>
+          <img src={TakeAwayGif} />
+        </div>
         <div className="curtain"></div>
         <div className={`row welcome-container animated-fast ${welcomeLogosClass}`}>
           <div className="small-10 small-centered columns">
