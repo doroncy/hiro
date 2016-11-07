@@ -8,8 +8,18 @@ const texts = {
   },
   "ramen": {
     "title": "THE RAMEN SOUP",
-    "subtitle": "Ramen is a japanese noodle soup dish. it consists of chinese-style wheat noodles served in a meat - or fish-based broth, Often flavored with soy souce or miso, and uses toppings such as sliced pork, Dried seaweed, menma, and green onions",
-    "description": "￼Ramen soup is generally made from stock based on chicken or pork, combined with a variety of ingredients such as kombu (kelp), katsuobushi (skipjack tuna flakes), niboshi (dried baby sardines), beef bones, shiitake, and onions, and then flavored with salt, miso, or soy sauce."
+    "subtitle": "The Ramen Soup is the Japanese version of numerous Asian noodle soup dishes.",
+    "descriptions": {
+      "what": "It is difficult to estimate the number of noodle soup dishes in diverse Asian cuisines. Noodle Soup is an umbrella name for a large, central and highly popular group of dishes in the Chinese, Vietnamese, Korean and Thai cuisines, as well as other East Asian cuisines, each of whom has abundant versions of this dish.",
+      "where": "Noodles arrived to Japan only during the 16th century. They arrived from China, which is considered the source for this food type, and the Chinese cuisine includes the largest and widest variety of noodle soup dishes. As always, the Japanese took the basic idea of noodles served in stock with various additions, deconstructed it, and reconstructed it while making each of its elements more accurate, improved and refined to its best. This is how they created a unique and refined noodle soup with Japanese characteristics that distinguish it from all other noodle soup dishes in East Asia cuisines.",
+      "toMe": "To me, among all Asian noodle soup dishes I’ve known, the Ramen is the most elaborate and refined one.",
+      "begin": "Ramen begins with a basic sauce: it cooks for long hours, and is delicate yet deep and sophisticated in taste. After pouring this sauce into the serving bowl, the “Tare” is added: a blend of liquids with a concentrated, deep and complex combination of tastes, which includes, among others, soy sauce, mirin, sake, konbu kelp and bonito, all cooked slowly together in a special method. This blend adds a rich layer of tastes to the basic sauce that widens and deepens its taste range.",
+      "texture": "The noodles are also accurately made. They have a specific texture and a clear ability to absorb tastes. The egg is cooked in a precise manner, soaked in a gentle blend of liquids that are absorbed into it overnight. The variety of meats is carefully handled and so is any other element of the dish. The result is delightful, harmonious and complete, full of textures and layered with gentle tastes.",
+      "oneBowl": "The Ramen soup dish is, in fact, an entire meal in one bowl, and it has numerous versions.",
+      "versions": "The Japanese are very meticulous about their Ramen; a bit like the obsession to Humus in Israel. There are many versions to Ramen: each province in Japan has its own typical version, and more than that, each Ramen stand has its own special version and each Ramen master their own personal touch, their own little tweak that distinguishes their dish from those of others. The result is a spectacular puzzle of various and diverse Ramen dishes, which share a mutual DNA, yet differ from one another in their unique nuances of taste.",
+      "idea": "The idea of a complete, yet light, meal in a bowl is highly compliant with contemporary culinary concepts worldwide. In a very short time Ramen became a global hit; it is tasty, inexpensive, deserving of the title “health food”, and most importantly, it creates a unique and specific dining experience.",
+      "nothingLike": "There is nothing like Ramen."
+    }
   },
   "aharoni": {
     "title": "ISRAEL AHARONI",
