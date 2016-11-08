@@ -1,6 +1,6 @@
 import React from 'react';
 import Translate from 'i18n-react';
-import enText from './i18n/en';
+import TranslatedText from './i18n/text';
 import style from './styles/main/style.scss';
 import consts from './consts';
 // Components
@@ -18,11 +18,12 @@ let bgCarouselInterval;
 class App extends React.Component {
   constructor(){
     super();
-    Translate.setTexts(enText);
 
+    Translate.setTexts(TranslatedText);
     this.state = {
       scrollPosition: consts.scrollPositions.CURTAIN,
-      currentBgImgIndex: 1
+      currentBgImgIndex: 1,
+      language: "heb"
     };
 
     this.handleScroll = this.handleScroll.bind(this);
@@ -79,6 +80,13 @@ class App extends React.Component {
     return scrollPosition;
   }
 
+  changeLanguage(newLanguage) {
+    console.log('changeLanguage', newLanguage);
+    this.setState({
+      language: newLanguage
+    });
+  }
+
   render(){
     let bgClassName = `animated height100 fadeIn background background-fade bg_${this.state.currentBgImgIndex}`;
 
@@ -88,15 +96,18 @@ class App extends React.Component {
           <div className={bgClassName}></div>
         </div>
         <div>
-          <NavBar scrollPosition={this.state.scrollPosition}></NavBar>
-          <Welcome scrollPosition={this.state.scrollPosition}></Welcome>
+          <NavBar scrollPosition={this.state.scrollPosition}
+            language={this.state.language}
+            onChangeLanguage={this.changeLanguage.bind(this)}>
+          </NavBar>
+          <Welcome scrollPosition={this.state.scrollPosition} language={this.state.language}></Welcome>
           <div id="nav-spacer"></div>
           <div className="parallax-wrap">
-              <Ramen></Ramen>
-              <Aharoni></Aharoni>
-              <Menu></Menu>
-              <Gallery></Gallery>
-              <VisitUs></VisitUs>            
+              <Ramen language={this.state.language}></Ramen>
+              <Aharoni language={this.state.language}></Aharoni>
+              <Menu language={this.state.language}></Menu>
+              <Gallery language={this.state.language}></Gallery>
+              <VisitUs language={this.state.language}></VisitUs>
           </div>
         </div>
       </div>

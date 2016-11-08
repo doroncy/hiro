@@ -30,10 +30,10 @@ const VisitUs = (props) => {
                   <TrackedDiv formulas={[topBottom]}>
                     {(posTopBottom) =>
                       <div className={cx("scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+150})}>
-                        <TextContentBox text='visitUs.title' css="run-font-large text-center full-width space-bottom"/>
+                        <TextContentBox text={`${props.language}.visitUs.title`} css="run-font-large text-center full-width space-bottom"/>
                         <img src={headerLogoSvg} className="header-logo-img space-bottom"/>
-                        <TextContentBox text='visitUs.sarona.name' css="run-font-medium text-center full-width space-bottom"/>
-                        <TextContentBox text='visitUs.sarona.phone' css="run-font-medium text-center full-width space-bottom"/>
+                        <TextContentBox text={`${props.language}.visitUs.sarona.name`} css="run-font-medium text-center full-width space-bottom"/>
+                        <TextContentBox text={`${props.language}.visitUs.sarona.phone`} css="run-font-medium text-center full-width space-bottom"/>
                       </div>
                     }
                   </TrackedDiv>
@@ -44,7 +44,7 @@ const VisitUs = (props) => {
                       <TrackedDiv formulas={[topBottom]}>
                         {(posTopBottom) =>
                           <div className={cx("visitus-right-pane scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+350})}>
-                            <TextContentBox text='visitUs.sarona.address' css="run-font-medium text-center full-width space-bottom"/>
+                            <TextContentBox text={`${props.language}.visitUs.sarona.address`} css="run-font-medium text-center full-width space-bottom"/>
                             <div className="google-map-wrap">
                               <GoogleMap
                                 center={saronaMapOptions.cord}
@@ -57,7 +57,7 @@ const VisitUs = (props) => {
                               </GoogleMap>
                             </div>
                             <div className="visit-us-open-hours">
-                              <TextContentBox text='visitUs.sarona.openHours' css="run-font-medium text-center full-width space-bottom"/>
+                              <TextContentBox text={`${props.language}.visitUs.sarona.openHours`} css="run-font-medium text-center full-width space-bottom"/>
                             </div>
                           </div>
                         }
@@ -72,7 +72,7 @@ const VisitUs = (props) => {
                     {(posTopBottom) =>
                       <div className={cx("scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+150})}>
                         <img src={headerLogoSvg} className="header-logo-img space-bottom"/>
-                        <TextContentBox text='visitUs.hashmal.name' css="run-font-medium text-center full-width space-bottom"/>
+                        <TextContentBox text={`${props.language}.visitUs.hashmal.name`} css="run-font-medium text-center full-width space-bottom"/>
                       </div>
                     }
                   </TrackedDiv>
@@ -101,7 +101,9 @@ const VisitUs = (props) => {
             <div className="text-center">COPYRIGHT 2016 HIRO. ALL RIGHTS RESERVED</div>
           </div>
           <div className="small-12 medium-6 small-centered medium-uncentered columns">
-            <div className="text-center">DESIGNED BY STUDIO Y&O | DEV BY DORON CYNGISER</div>
+            <div className="text-center">
+              <a href="http://studio-y-o.com/" target="_blank" className="white">DESIGNED BY STUDIO Y&O | DEV BY DORON CYNGISER</a>
+            </div>
           </div>
         </div>
       </Element>

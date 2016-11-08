@@ -2,7 +2,6 @@ import React from 'react';
 import Translate from 'i18n-react';
 import navbarStyle from './navbar.scss';
 import consts from '../../consts';
-
 import {Link, Element, animateScroll} from'react-scroll';
 import headerLogoSvg from '../../assets/icons/h_w_header_logo.svg';
 import instagramSvg from '../../assets/icons/h_w_instagram_b.svg';
@@ -18,11 +17,11 @@ class NavBar extends React.Component {
     super();
 
     this.menuItems = [
-      {path: 'ramen', title: 'ramen.title'},
-      {path: 'aharoni', title: 'aharoni.title'},
-      {path: 'menu', title: 'menu.title'},
-      {path: 'gallery', title: 'gallery.title'},
-      {path: 'visitus', title: 'visitUs.title'}
+      {path: 'ramen', title: 'en.ramen.title'},
+      {path: 'aharoni', title: 'en.aharoni.title'},
+      {path: 'menu', title: 'en.menu.title'},
+      {path: 'gallery', title: 'en.gallery.title'},
+      {path: 'visitus', title: 'en.visitUs.title'}
     ];
 
     this.state = {
@@ -37,6 +36,7 @@ class NavBar extends React.Component {
     this.closeMobileNav = this.closeMobileNav.bind(this);
     this.setInstagramIconHover = this.setInstagramIconHover.bind(this);
     this.setInstagramIconNotHover = this.setInstagramIconNotHover.bind(this);
+    this.setLanguage = this.setLanguage.bind(this);
   }
 
   setInstagramIconHover() {
@@ -88,7 +88,6 @@ class NavBar extends React.Component {
     }
   }
 
-
   getMenuNav(isMobile) {
     return this.menuItems.map((menuItem, index) => {
         return ( isMobile && menuItem.path === 'gallery'
@@ -100,6 +99,10 @@ class NavBar extends React.Component {
           </li>
         );
       });
+  }
+
+  setLanguage(language) {
+    this.props.onChangeLanguage(language);
   }
 
   render() {
@@ -135,9 +138,9 @@ class NavBar extends React.Component {
         <div className="top-bar-left">
           <ul className="menu run-font show-for-large">
             <li className="menu-link lang-selection">
-              <div className="lang-selection-item active"><Translate text="languages.english" /></div>
+              <div className="lang-selection-item" onClick={() => this.setLanguage('en')}><Translate text="languages.english" /></div>
               <div className="vertical-seperator"></div>
-              <div className="lang-selection-item assistant-bold"><Translate text="languages.hebrew" /></div>
+              <div className="lang-selection-item assistant-bold" onClick={() => this.setLanguage('heb')}><Translate text="languages.hebrew" /></div>
             </li>
             <li className="menu-link header-logo" onClick={this.scrollToTop}>
               <img src={headerLogoSvg} className="header-logo-img"/>

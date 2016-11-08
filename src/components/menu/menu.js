@@ -44,20 +44,20 @@ const saladItems = [
 ];
 
 
-const menuItemsBuilder = (items) => {
+const menuItemsBuilder = (items, language) => {
   return items.map((item, index) => {
       return (
         <li key={index} className="menu-item">
-          <MenuContentBox title={item.title} description={item.description}/>
+          <MenuContentBox title={`${language}.${item.title}`} description={`${language}.${item.description}`} />
         </li>
       );
     });
 }
 const Menu = (props) => {
-  let menuRamenItems = menuItemsBuilder(ramenItems);
-  let menuBunItems = menuItemsBuilder(bunItems);
-  let menuStarterItems = menuItemsBuilder(starterItems);
-  let menuSaladItems = menuItemsBuilder(saladItems);
+  let menuRamenItems = menuItemsBuilder(ramenItems, props.language);
+  let menuBunItems = menuItemsBuilder(bunItems, props.language);
+  let menuStarterItems = menuItemsBuilder(starterItems, props.language);
+  let menuSaladItems = menuItemsBuilder(saladItems, props.language);
   return (
     <TrackDocument formulas={[getDocumentElement, getDocumentRect, calculateScrollY, topBottom]}>
       {(documentElement, documentRect, scrollY, topBottom) =>
@@ -68,7 +68,7 @@ const Menu = (props) => {
               <TrackedDiv formulas={[topBottom]}>
                 {(posTopBottom) =>
                   <div className={cx("menu-title scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+150})}>
-                    <TextContentBox text='menu.title' css="run-font-large text-center full-width"/>
+                    <TextContentBox text={`${props.language}.menu.title`} css="run-font-large text-center full-width"/>
                   </div>
                 }
               </TrackedDiv>

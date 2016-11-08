@@ -21,6 +21,16 @@ body {
     display: none;
   }
 }
+.en {
+
+}
+.heb {
+  .text-contentbox-wrap {
+    font-family: 'AssistantRegular', sans-serif !important;
+    direction: rtl !important
+  }
+}
+
 .full-width {
   width: 100% !important;
 }

@@ -65,7 +65,7 @@ class Gallery extends React.Component {
     return (
         <Element name="gallery" className='gallery-wrap section-margin hide-for-small-only'>'
           <div className="gallery-title">
-            <TextContentBox text='gallery.title' css="run-font-large text-center full-width"/>
+            <TextContentBox text={`${this.props.language}.gallery.title`} css="run-font-large text-center full-width"/>
           </div>
           <div className="pos-relative">
             <div ref="slider" className="slider-wrap" onClick={this.nextSlide}>

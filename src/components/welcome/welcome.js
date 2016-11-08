@@ -33,7 +33,7 @@ const Welcome = (props) => {
                   <div className="row">
                     <div className="small-10 small-centered medium-uncentered columns">
                       <div className="welcome-text-wrap run-font-xlarge">
-                        <TextContentBox text='welcome.title'/>
+                        <TextContentBox text={`${props.language}.welcome.title`}/>
                       </div>
                     </div>
                   </div>

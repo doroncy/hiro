@@ -34,11 +34,11 @@ const Ramen = (props) => {
                         {(posTopBottom) =>
                           <div className={cx("aharoni-content-box scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+350})}>
                             <div className="space-bottom aharoni-title">
-                              <TextContentBox text='aharoni.title' css="run-font-large text-center full-width"/>
+                              <TextContentBox text={`${props.language}.aharoni.title`} css="run-font-large text-center full-width"/>
                             </div>
-                            <TextContentBox text='aharoni.subtitle' css="aharoni-subtitle text-uppercase run-font-medium full-width"/>
+                            <TextContentBox text={`${props.language}.aharoni.subtitle`} css="aharoni-subtitle text-uppercase run-font-medium full-width"/>
                             <div className="aharoni-content-box-description">
-                              <TextContentBox text='ramen.description' css="run-font full-width"/>
+                              <TextContentBox text={`${props.language}.aharoni.description`} css="run-font full-width"/>
                             </div>
                           </div>
                         }

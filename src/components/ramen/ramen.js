@@ -16,7 +16,7 @@ const Ramen = (props) => {
       <Element name="ramen" className='section-margin'>
         <div className="row">
           <div className="small-10 small-centered columns">
-            <div className="ramen-wrap">
+            <div className={`${props.language} ramen-wrap`}>
               <div className="row small-half-padding-columns space-bottom">
                 <div className="small-12 medium-3 columns">
                   <TrackedDiv formulas={[topBottom]}>
@@ -34,7 +34,7 @@ const Ramen = (props) => {
                         {(posTopBottom) =>
                           <div className={cx("ramen-content-box scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+200})}>
                             <div className="ramen-title">
-                              <TextContentBox text='ramen.title' css="run-font-large text-center full-width"/>
+                              <TextContentBox text={`${props.language}.ramen.title`} css="run-font-large text-center full-width"/>
                             </div>
                           </div>
                         }
@@ -46,7 +46,7 @@ const Ramen = (props) => {
                       <TrackedDiv formulas={[topBottom]}>
                         {(posTopBottom) =>
                           <div className={cx("ramen-content-box scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+250})}>
-                            <TextContentBox text='ramen.subtitle' css="ramen-subtitle text-uppercase run-font-medium full-width"/>
+                            <TextContentBox text={`${props.language}.ramen.subtitle`} css="ramen-subtitle text-uppercase run-font-medium full-width"/>
                           </div>
                         }
                       </TrackedDiv>
@@ -57,9 +57,8 @@ const Ramen = (props) => {
                       <TrackedDiv formulas={[topBottom]}>
                         {(posTopBottom) =>
                           <div className={cx("ramen-content-box scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+300})}>
-                            <TextContentBox text='ramen.descriptions.what' css="run-font full-width"/>
-                          </div>
-                        }
+                            <TextContentBox text={`${props.language}.ramen.descriptions.what`} css="run-font full-width"/>
+                          </div>}
                       </TrackedDiv>
                     </div>
                   </div>
@@ -70,7 +69,7 @@ const Ramen = (props) => {
                   <TrackedDiv formulas={[topBottom]}>
                     {(posTopBottom) =>
                       <div className={cx("ramen-content-box scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+320})}>
-                        <TextContentBox text='ramen.descriptions.where' css="run-font full-width"/>
+                        <TextContentBox text={`${props.language}.ramen.descriptions.where`} css="run-font full-width"/>
                       </div>}
                   </TrackedDiv>
                 </div>
@@ -78,7 +77,7 @@ const Ramen = (props) => {
                   <TrackedDiv formulas={[topBottom]}>
                     {(posTopBottom) =>
                       <div className={cx("ramen-content-box scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+320})}>
-                        <TextContentBox text='ramen.descriptions.toMe' css="run-font full-width"/>
+                        <TextContentBox text={`${props.language}.ramen.descriptions.toMe`} css="run-font full-width"/>
                       </div>}
                   </TrackedDiv>
                 </div>
@@ -88,7 +87,7 @@ const Ramen = (props) => {
                   <TrackedDiv formulas={[topBottom]}>
                     {(posTopBottom) =>
                       <div className={cx("ramen-content-box scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+350})}>
-                        <TextContentBox text='ramen.descriptions.begin' css="run-font full-width"/>
+                        <TextContentBox text={`${props.language}.ramen.descriptions.begin`} css="run-font full-width"/>
                       </div>}
                   </TrackedDiv>
                 </div>
@@ -98,7 +97,7 @@ const Ramen = (props) => {
                   <TrackedDiv formulas={[topBottom]}>
                     {(posTopBottom) =>
                       <div className={cx("ramen-content-box scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+370})}>
-                        <TextContentBox text='ramen.descriptions.texture' css="run-font full-width"/>
+                        <TextContentBox text={`${props.language}.ramen.descriptions.texture`} css="run-font full-width"/>
                       </div>}
                   </TrackedDiv>
                 </div>
@@ -108,7 +107,7 @@ const Ramen = (props) => {
                   <TrackedDiv formulas={[topBottom]}>
                     {(posTopBottom) =>
                       <div className={cx("ramen-content-box scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+400})}>
-                        <TextContentBox text='ramen.descriptions.oneBowl' css="run-font full-width"/>
+                        <TextContentBox text={`${props.language}.ramen.descriptions.oneBowl`} css="run-font full-width"/>
                       </div>}
                   </TrackedDiv>
                 </div>
@@ -116,8 +115,8 @@ const Ramen = (props) => {
                   <TrackedDiv formulas={[topBottom]}>
                     {(posTopBottom) =>
                       <div className={cx("ramen-content-box scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+400})}>
-                        <TextContentBox text='ramen.descriptions.versions' css="run-font full-width no-bottom-padding"/>
-                        <TextContentBox text='ramen.descriptions.idea' css="run-font full-width no-top-padding"/>
+                        <TextContentBox text={`${props.language}.ramen.descriptions.versions`} css="run-font full-width no-bottom-padding"/>
+                        <TextContentBox text={`${props.language}.ramen.descriptions.idea`} css="run-font full-width no-top-padding"/>
                       </div>}
                   </TrackedDiv>
                 </div>
@@ -127,7 +126,7 @@ const Ramen = (props) => {
                   <TrackedDiv formulas={[topBottom]}>
                     {(posTopBottom) =>
                       <div className={cx("ramen-content-box scroll-anim-item nothing-like",{'animate-out-bottom':scrollY < posTopBottom+420})}>
-                        <TextContentBox text='ramen.descriptions.nothingLike' css="run-font content-box-black text-uppercase"/>
+                        <TextContentBox text={`${props.language}.ramen.descriptions.nothingLike`} css="run-font content-box-black text-uppercase"/>
                       </div>}
                   </TrackedDiv>
                 </div>

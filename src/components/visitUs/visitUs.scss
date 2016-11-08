@@ -13,7 +13,9 @@
     @include breakpoint(medium down) {
       width: 100% !important;
     }
-
+  }
+  .white {
+    color: #fff !important;
   }
 }
 .visitus-wrap {
@@ -54,7 +56,7 @@
   }
 
   .visitus-comingsoon-right-pane {
-    padding-top: 65px;
+    padding-top: 73px;
   }
 }
 .hiro-map-marker {
