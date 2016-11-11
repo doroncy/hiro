@@ -19,16 +19,26 @@
   }
   .content-box-black {
     background-color: #000;
-    color: #fff;
+    color: #fff !important;
   }
   .ramen-content-box-margin {
     margin: 0 10px 10px 0;
   }
+  .ramen-title-heb {
+    font-size:34px !important;
+  }
+  .ramen-subtitle-heb {
+    font-size:24px !important;
+  }
   .ramen-subtitle {
     @include breakpoint(medium down) {
       word-spacing: 2px;
-      line-height: 1.8;
+      line-height: 1.2;
     }
+  }
+
+  .ramen-what-padding {
+    padding-left: 24px;
   }
 
   @include breakpoint(xxlarge up) {

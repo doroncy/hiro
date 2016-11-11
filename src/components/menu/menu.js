@@ -48,12 +48,15 @@ const menuItemsBuilder = (items, language) => {
   return items.map((item, index) => {
       return (
         <li key={index} className="menu-item">
-          <MenuContentBox title={`${language}.${item.title}`} description={`${language}.${item.description}`} />
+          <MenuContentBox language={`${language}`}
+            title={`${language}.${item.title}`}
+            description={`${language}.${item.description}`} />
         </li>
       );
     });
 }
 const Menu = (props) => {
+  let sectionTitleClassName = props.language === 'heb' ? 'assistant-extra-bold' : 'run-font-large';
   let menuRamenItems = menuItemsBuilder(ramenItems, props.language);
   let menuBunItems = menuItemsBuilder(bunItems, props.language);
   let menuStarterItems = menuItemsBuilder(starterItems, props.language);
@@ -62,13 +65,13 @@ const Menu = (props) => {
     <TrackDocument formulas={[getDocumentElement, getDocumentRect, calculateScrollY, topBottom]}>
       {(documentElement, documentRect, scrollY, topBottom) =>
       <Element name="menu">
-        <div className="row">
+        <div className={`row ${props.language}`}>
           <div className="small-10 small-centered columns">
             <div className="menu-wrap">
               <TrackedDiv formulas={[topBottom]}>
                 {(posTopBottom) =>
                   <div className={cx("menu-title scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+150})}>
-                    <TextContentBox text={`${props.language}.menu.title`} css="run-font-large text-center full-width"/>
+                    <TextContentBox text={`${props.language}.menu.title`} css={`${sectionTitleClassName} text-center full-width`}/>
                   </div>
                 }
               </TrackedDiv>
