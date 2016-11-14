@@ -12,7 +12,7 @@ import TakeAwayTitleSvg from '../../assets/h_w_ta_coming_soon.svg';
 const Welcome = (props) => {
   let welcomeLogosClass = getWelcomeLogosClassName(props.scrollPosition);
   return (
-      <div className='welcome-wrap'>
+      <div className={`welcome-wrap ${props.language}`}>
         <div className={`hide-for-small-only takeaway-gif animated-fast ${welcomeLogosClass}`}>
           <div className="take-away-title">
             <img src={TakeAwayTitleSvg} />
@@ -24,14 +24,14 @@ const Welcome = (props) => {
           <div className="small-10 small-centered columns">
             <div className={`welcome-logos-wrap`}>
               <div className="row">
-                <div className="small-8 small-centered medium-uncentered medium-5 columns">
+                <div className="small-10 small-centered medium-uncentered medium-5 columns">
                   <div className="aharoni-head-image">
                     <img src={aharoniHeadSvg} />
                   </div>
                 </div>
                 <div className="small-12 small-centered medium-uncentered medium-7 columns">
                   <div className="row">
-                    <div className="small-10 small-centered medium-uncentered columns">
+                    <div className="small-12 small-centered medium-uncentered columns">
                       <div className="welcome-text-wrap run-font-xlarge">
                         <TextContentBox text={`${props.language}.welcome.title`}/>
                       </div>

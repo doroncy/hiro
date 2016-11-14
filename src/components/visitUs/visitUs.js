@@ -40,7 +40,7 @@ const VisitUs = (props) => {
                 </div>
                 <div className="small-12 small-centered medium-uncentered large-8 columns">
                   <div className="row">
-                    <div className="small-12 medium-11 columns">
+                    <div className="medium-12 large-11 columns">
                       <TrackedDiv formulas={[topBottom]}>
                         {(posTopBottom) =>
                           <div className={cx("visitus-right-pane scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+350})}>
@@ -79,7 +79,7 @@ const VisitUs = (props) => {
                 </div>
                 <div className="small-12 small-centered medium-uncentered large-9 columns">
                   <div className="row">
-                    <div className="small-12 medium-11 columns">
+                    <div className="medium-12 large-11 columns">
                       <TrackedDiv formulas={[topBottom]}>
                         {(posTopBottom) =>
                           <div className={cx("visitus-comingsoon-right-pane scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+200})}>

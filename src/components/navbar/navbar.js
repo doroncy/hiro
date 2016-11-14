@@ -12,6 +12,29 @@ import headerLogoMobileSvg from '../../assets/icons/h_w_m_logo.svg';
 import instagramMobileSvg from '../../assets/icons/h_w_m_instagram.svg';
 import facebookMobileSvg from '../../assets/icons/h_w_m_facebook.svg';
 
+function preventDefault(e) {
+  e = e || window.event;
+  if (e.preventDefault)
+      e.preventDefault();
+  e.returnValue = false;
+}
+
+function disableScroll() {
+  if (window.addEventListener) // older FF
+      window.addEventListener('DOMMouseScroll', preventDefault, false);
+  window.onwheel = preventDefault; // modern standard
+  window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
+  window.ontouchmove  = preventDefault; // mobile
+}
+
+function enableScroll() {
+    if (window.removeEventListener)
+        window.removeEventListener('DOMMouseScroll', preventDefault, false);
+    window.onmousewheel = document.onmousewheel = null;
+    window.onwheel = null;
+    window.ontouchmove = null;
+}
+
 class NavBar extends React.Component {
   constructor(props){
     super();
@@ -37,6 +60,14 @@ class NavBar extends React.Component {
     this.setInstagramIconHover = this.setInstagramIconHover.bind(this);
     this.setInstagramIconNotHover = this.setInstagramIconNotHover.bind(this);
     this.setLanguage = this.setLanguage.bind(this);
+  }
+
+  componentDidUpdate() {    
+    if (this.state.mobileNavVisible) {
+      disableScroll();
+    } else {
+      enableScroll();
+    }
   }
 
   setInstagramIconHover() {
@@ -68,7 +99,6 @@ class NavBar extends React.Component {
       facebookIcon: facebookSvgPink
     });
   }
-
 
   scrollToTop() {
     animateScroll.scrollToTop();
@@ -113,11 +143,13 @@ class NavBar extends React.Component {
     let mobileNav = this.state.mobileNavVisible
       ? (
         <div className="mobile-nav-wrap">
-          <div>
-            <img src={headerLogoMobileSvg} className="header-logo-img"/>
-          </div>
           <ul className="menu mobile-menu run-font animated-fast fade">
             {this.getMenuNav(true)}
+            <li className="menu-link lang-selection">
+              <div className={`lang-selection-item ${this.props.language === 'en' ? 'active': ''}`} onClick={() => this.setLanguage('en')}><Translate text="languages.english" /></div>
+              <div className="vertical-seperator"></div>
+              <div className={`lang-selection-item assistant-bold ${this.props.language === 'heb' ? 'active': ''}`} onClick={() => this.setLanguage('heb')}><Translate text="languages.hebrew" /></div>
+            </li>
           </ul>
           <div className="mobile-nav-social">
             <div className="mobile-nav-social-inner">
@@ -134,13 +166,13 @@ class NavBar extends React.Component {
       : '';
 
     return (
-      <div className={`top-bar navbar animated-fast ${fadeClassName}`}>
+      <div className={`top-bar navbar animated-fast ${fadeClassName} ${this.props.language}`}>
         <div className="top-bar-left">
           <ul className="menu run-font show-for-large">
             <li className="menu-link lang-selection">
-              <div className="lang-selection-item" onClick={() => this.setLanguage('en')}><Translate text="languages.english" /></div>
+              <div className={`lang-selection-item ${this.props.language === 'en' ? 'active': ''}`} onClick={() => this.setLanguage('en')}><Translate text="languages.english" /></div>
               <div className="vertical-seperator"></div>
-              <div className="lang-selection-item assistant-bold" onClick={() => this.setLanguage('heb')}><Translate text="languages.hebrew" /></div>
+              <div className={`lang-selection-item assistant-bold ${this.props.language === 'heb' ? 'active': ''}`} onClick={() => this.setLanguage('heb')}><Translate text="languages.hebrew" /></div>
             </li>
             <li className="menu-link header-logo" onClick={this.scrollToTop}>
               <img src={headerLogoSvg} className="header-logo-img"/>

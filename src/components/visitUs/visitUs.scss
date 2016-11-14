@@ -32,18 +32,21 @@
     max-width: 900px !important;
   }
 
-  // tablet
   @include breakpoint(medium down) {
     width: 60%;
-  }
-
-  // Mobile
-  @include breakpoint(small down) {
-    width: 90%;
     padding-top: 40px;
     .text-contentbox-wrap {
       padding: 8px 10px;
     }
+    .visitus-right-pane {
+      padding-top: 0 !important;
+    }
+    .visitus-comingsoon-right-pane {
+      padding-top: 0 !important;
+    }
+  }
+  @include breakpoint(small down) {
+    width: 100%;
   }
 }
 .coming-soon-wrap {
@@ -64,5 +67,5 @@
 }
 .site-footer {
   color: #fff;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }

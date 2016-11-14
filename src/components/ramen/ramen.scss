@@ -3,7 +3,10 @@
 .ramen-wrap {
   max-width: 900px;
   margin: 0 auto;
-  padding-top: 150px;
+
+  @include breakpoint(medium up) {
+      padding-top: 150px;
+  }
   .noodles-image {
     margin: 0 auto;
     background-color: $blackOpacity;
@@ -37,19 +40,25 @@
     }
   }
 
-  .ramen-what-padding {
-    padding-left: 24px;
-  }
-
   @include breakpoint(xxlarge up) {
     max-width: 900px !important;
   }
 
+  @include breakpoint(medium up) {
+    .ramen-what-padding {
+      padding-left: 24px;
+    }
+  }
+
+  @include breakpoint(medium down) {
+    width: 80%;
+  }
+
   // Mobile
   @include breakpoint(small down) {
-    width: 90%;
+    width: 100%;
     .noodles-image {
-      padding: 50px 100px;
+      padding: 20px 80px;
       margin-bottom: 10px;
     }
     .text-contentbox-wrap {

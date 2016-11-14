@@ -35,14 +35,9 @@
     max-width: 900px !important;
   }
 
-  // tablet
-  // @include breakpoint(medium down) {
-  //   width: 60%;
-  // }
-
   // Mobile
   @include breakpoint(small down) {
-    width: 90%;
+    width: 100%;
     padding-top: 40px;
     .text-contentbox-wrap {
       padding: 8px 10px;

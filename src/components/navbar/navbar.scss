@@ -24,9 +24,10 @@
         top: 10px;
       }
       @include breakpoint(medium down) {
-        width: 80px;
+        width: 60px;
         .header-logo-img {
-          left: 20px;
+          top: 0;
+          left: 0;
         }
       }
   }
@@ -34,7 +35,7 @@
     font-size: 18px !important;
   }
   .menu > li {
-    padding: 10px 10px;
+    padding: 20px 10px;
     &.menu-link {
       cursor: pointer;
       color: $black;
@@ -57,6 +58,9 @@
       padding-left:4px;
       &:hover a{
         color: $pink !important;
+      }
+      &:last-child {
+        font-size: 24px !important;
       }
     }
     .vertical-seperator {
@@ -106,15 +110,19 @@
   .mobile-nav-wrap {
     height: 100vh;
     background: rgba(0,0,0,0.9);
-    margin-top: 40px;
-    position: relative;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
     .header-logo-img {
       height: 170px;
       padding-top:30px;
     }
     .mobile-nav-social {
       position: absolute;
-      bottom: 70px;
+      bottom: 80px;
       left: 50%;
       margin-left: -50px;
       .mobile-nav-social-inner {
@@ -130,6 +138,18 @@
     .mobile-menu {
       margin-top: 40px;
       background: transparent !important;
+      .lang-selection {
+        width: 90px;
+        margin: 0 auto;
+        .lang-selection-item  {
+          color: #fff;
+          font-weight: 700;
+          font-size: 1.4em !important;
+        }
+        .vertical-seperator {
+          color: #fff;
+        }
+      }
       .menu-link {
         display: block !important;
         text-align: center;
@@ -137,7 +157,6 @@
           color: #fff !important;
           font-weight: bold;
           font-size: 1.4em;
-          //padding-bottom: 1em;
           padding: 5px;
         }
         &:hover a{

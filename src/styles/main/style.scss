@@ -26,7 +26,7 @@ body {
 }
 .heb {
   .assistant-bold, .assistant-bold.text-contentbox-wrap {
-    font-family: 'AssistantBold', sans-serif;
+    font-family: 'AssistantBold', sans-serif !important;
     font-weight: normal;
     font-size:20px;
     color: $black;
@@ -103,7 +103,7 @@ body {
   font-size: 2.3em;
   -webkit-font-smoothing: antialiased;
   @include breakpoint(small down) {
-    font-size: 2em;
+    font-size: 1.8em;
   }
 }
 .img-svg {
@@ -177,8 +177,8 @@ img {
   position: relative;
 }
 .section-margin {
-  margin-top: 100px;
   min-height: 100vh;
+  margin-top: 100px;  
 }
 #nav-spacer {
     height: 100vh;
@@ -213,7 +213,7 @@ img {
   float: right !important;
 }
 .text-center {
-  text-align: center !important; 
+  text-align: center !important;
 }
 .takeaway-gif {
   position: fixed !important;
