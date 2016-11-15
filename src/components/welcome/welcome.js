@@ -3,7 +3,6 @@ import Translate from 'i18n-react';
 import Style from './welcome.scss';
 import consts from '../../consts';
 import TextContentBox from '../textContentBox/textContentBox';
-import curtainImgLarge from '../../assets/h_w_curtain_large.png';
 import aharoniHeadSvg from '../../assets/icons/h_w_aharoni_head.svg';
 import fullLogSvg from '../../assets/icons/h_w_full_logo.svg';
 import TakeAwayGif from '../../assets/hiro_takeaway.gif';

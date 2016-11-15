@@ -18,6 +18,7 @@ const saronaMapOptions = {
 }
 
 const VisitUs = (props) => {
+  let titleFontClass = props.language === 'en' ? 'run-font-large' : 'assistant-extra-bold';
   return (
     <TrackDocument formulas={[getDocumentElement, getDocumentRect, calculateScrollY, topBottom]}>
       {(documentElement, documentRect, scrollY, topBottom) =>
@@ -30,7 +31,7 @@ const VisitUs = (props) => {
                   <TrackedDiv formulas={[topBottom]}>
                     {(posTopBottom) =>
                       <div className={cx("scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+150})}>
-                        <TextContentBox text={`${props.language}.visitUs.title`} css="run-font-large text-center full-width space-bottom"/>
+                        <TextContentBox text={`${props.language}.visitUs.title`} css={`${titleFontClass} text-center full-width space-bottom`}/>
                         <img src={headerLogoSvg} className="header-logo-img space-bottom"/>
                         <TextContentBox text={`${props.language}.visitUs.sarona.name`} css="run-font-medium text-center full-width space-bottom"/>
                         <TextContentBox text={`${props.language}.visitUs.sarona.phone`} css="run-font-medium text-center full-width space-bottom"/>

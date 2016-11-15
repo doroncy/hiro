@@ -32,10 +32,10 @@
       }
   }
   .menu {
-    font-size: 18px !important;
+    font-size: 16px !important;
   }
   .menu > li {
-    padding: 20px 10px;
+    padding: 10px 10px;
     &.menu-link {
       cursor: pointer;
       color: $black;
@@ -60,7 +60,7 @@
         color: $pink !important;
       }
       &:last-child {
-        font-size: 24px !important;
+        font-size: 18px !important;
       }
     }
     .vertical-seperator {
@@ -157,7 +157,7 @@
           color: #fff !important;
           font-weight: bold;
           font-size: 1.4em;
-          padding: 5px;
+          padding: 15px 5px;
         }
         &:hover a{
           color: $pink !important;

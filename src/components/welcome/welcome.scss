@@ -15,9 +15,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url('../../assets/h_w_curtain_large.png');
+    background-image: url('../../assets/h_w_curtain_large.svg');
     @include breakpoint(medium down) {
-      background-image: url('../../assets/h_w_curtain_small.png');
+      background-image: url('../../assets/h_w_curtain_small.svg');
     }
   }
   .take-away-title {
