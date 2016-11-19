@@ -34,9 +34,11 @@
     font-size:24px !important;
   }
   .ramen-subtitle {
+    font-size:22px;
     @include breakpoint(medium down) {
       word-spacing: 2px;
       line-height: 1.2;
+      font-size: 1.2em;
     }
   }
 

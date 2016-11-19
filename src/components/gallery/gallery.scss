@@ -11,9 +11,11 @@
     padding-top: 40px;
   }
 
-  .slider-wrap img{
-    user-select:none;
-    -webkit-user-select: none;
+  .slider-wrap {
+    img{
+      user-select:none;
+      -webkit-user-select: none;
+    }
   }
 
   .gallery-nav-button {
@@ -53,7 +55,6 @@
     display: block;
     margin: 0;
     padding: 0;
-    height: 80vh;
     &:focus {
         outline: none;
     }
@@ -77,7 +78,6 @@
     left: 0;
     top: 0;
     display: block;
-    border-bottom: 33px solid rgba(255, 255, 255, 0.9);
 
     &:before,
     &:after {
@@ -97,6 +97,7 @@
     float: left;
     height: 100%;
     min-height: 1px;
+    border-bottom: 33px solid rgba(255, 255, 255, 0.9);  
     [dir="rtl"] & {
         float: right;
     }

@@ -13,7 +13,7 @@ body {
   font-size: 12px;
   overflow-x: hidden;
   &:after {
-    content:  url('../../assets/h_w_curtain_large.png') url('../../assets/background/h_t_gallery_01.jpg') url('../../assets/background/h_t_gallery_02.jpg')
+    content:  url('../../assets/h_w_curtain_large.svg') url('../../assets/background/h_t_gallery_01.jpg') url('../../assets/background/h_t_gallery_02.jpg')
     url('../../assets/background/h_t_gallery_03.jpg') url('../../assets/background/h_t_gallery_04.jpg') url('../../assets/background/h_t_gallery_05.jpg')
     url('../../assets/icons/h_w_facebook_b_p.svg') url('../../assets/icons/h_w_instagram_b_p.svg');
     position: absolute;
@@ -71,6 +71,16 @@ body {
   font-weight: normal;
   color: $black;
   font-size: 1.4em;
+  -webkit-font-smoothing: antialiased;
+  @include breakpoint(small down) {
+    font-size: 1.3em;
+  }
+}
+.run-font-semi-bold {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  color: $black;
+  font-size: 1.5em;
   -webkit-font-smoothing: antialiased;
   @include breakpoint(small down) {
     font-size: 1.3em;

@@ -42,7 +42,7 @@ class Gallery extends React.Component {
     $(sliderElem).slick({
       dots: false,
       arrows: false,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 4000,
       initialSlide:0,
       infinite: true,

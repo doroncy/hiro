@@ -75,7 +75,7 @@ const RamenHeb = (props) => {
                 </div>
               </div>
               <div className="row small-half-padding-columns">
-                <div className="small-12 medium-3 medium-offset-1 columns">
+                <div className="show-for-medium medium-3 medium-offset-1 columns">
                   <TrackedDiv formulas={[topBottom]}>
                     {(posTopBottom) =>
                       <div className={cx("ramen-content-box scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+320})}>
@@ -88,6 +88,14 @@ const RamenHeb = (props) => {
                     {(posTopBottom) =>
                       <div className={cx("ramen-content-box scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+320})}>
                         <TextContentBox text={`${props.language}.ramen.descriptions.where`} css="assistant-semi-bold full-width"/>
+                      </div>}
+                  </TrackedDiv>
+                </div>
+                <div className="hide-for-medium small-12 columns">
+                  <TrackedDiv formulas={[topBottom]}>
+                    {(posTopBottom) =>
+                      <div className={cx("ramen-content-box scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+320})}>
+                        <TextContentBox text={`${props.language}.ramen.descriptions.toMe`} css="assistant-bold full-width"/>
                       </div>}
                   </TrackedDiv>
                 </div>
@@ -113,6 +121,14 @@ const RamenHeb = (props) => {
                 </div>
               </div>
               <div className="row small-half-padding-columns">
+              <div className="small-12 hide-for-medium end columns">
+                <TrackedDiv formulas={[topBottom]}>
+                  {(posTopBottom) =>
+                    <div className={cx("ramen-content-box scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+400})}>
+                      <TextContentBox text={`${props.language}.ramen.descriptions.oneBowl`} css="assistant-bold full-width"/>
+                    </div>}
+                </TrackedDiv>
+              </div>
                 <div className="small-12 medium-offset-1 medium-7 columns">
                   <TrackedDiv formulas={[topBottom]}>
                     {(posTopBottom) =>
@@ -122,7 +138,7 @@ const RamenHeb = (props) => {
                       </div>}
                   </TrackedDiv>
                 </div>
-                <div className="small-12 medium-3 end columns">
+                <div className="show-for-medium medium-3 end columns">
                   <TrackedDiv formulas={[topBottom]}>
                     {(posTopBottom) =>
                       <div className={cx("ramen-content-box scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+400})}>

@@ -62,7 +62,7 @@ class NavBar extends React.Component {
     this.setLanguage = this.setLanguage.bind(this);
   }
 
-  componentDidUpdate() {    
+  componentDidUpdate() {
     if (this.state.mobileNavVisible) {
       disableScroll();
     } else {
@@ -133,6 +133,7 @@ class NavBar extends React.Component {
 
   setLanguage(language) {
     this.props.onChangeLanguage(language);
+    this.closeMobileNav();
   }
 
   render() {

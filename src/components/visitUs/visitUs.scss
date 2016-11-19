@@ -49,6 +49,17 @@
     width: 100%;
   }
 }
+.visitus-heb {
+  @include breakpoint(large up) {
+    .google-map-wrap {
+      margin-left: -54px;
+    }
+    .visitus-wrap {
+      width: 90%;
+      max-width: 900px;
+    }
+  }
+}
 .coming-soon-wrap {
   margin-top: 150px;
   margin-bottom: 200px;
