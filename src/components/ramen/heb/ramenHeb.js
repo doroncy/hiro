@@ -33,8 +33,8 @@ const RamenHeb = (props) => {
                     <div className="small-12 medium-6 large-4 columns right">
                       <TrackedDiv formulas={[topBottom]}>
                         {(posTopBottom) =>
-                          <div className={cx("ramen-content-box scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+200})}>
-                            <div className="ramen-title">
+                          <div className={cx("ramen-content-box scroll-anim-item right",{'animate-out-bottom':scrollY < posTopBottom+200})}>
+                            <div className="ramen-title right">
                               <TextContentBox text={`${props.language}.ramen.title`} css="ramen-title-heb assistant-extra-bold text-center full-width"/>
                             </div>
                           </div>

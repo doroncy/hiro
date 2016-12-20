@@ -8,7 +8,7 @@ const texts = {
       "title": "HELLO AND WELCOME TO HIRO"
     },
     "ramen": {
-      "title": "THE RAMEN SOUP",
+      "title": "THE RAMEN BAR",
       "subtitle": "The Ramen Soup is the Japanese version of numerous Asian noodle soup dishes.",
       "descriptions": {
         "what": "It is difficult to estimate the number of noodle soup dishes in diverse Asian cuisines. Noodle Soup is an umbrella name for a large, central and highly popular group of dishes in the Chinese, Vietnamese, Korean and Thai cuisines, as well as other East Asian cuisines, each of whom has abundant versions of this dish.",
@@ -22,10 +22,27 @@ const texts = {
         "nothingLike": "There is nothing like Ramen."
       }
     },
+    "bunBar": {
+      "title": "THE BUN BAR",
+      "subtitle": "Bahn is a steamed bun, served warm, usually straight from the traditional bamboo steamers used for its baking.",
+      "descriptions": {
+        "para1": "The bun dough recipe was created back in the beginning of the first millennium. Buns were first steamed in China and later introduced to the local cuisines of the silk road civilizations: Mongolia, the Central Asian cities of Samarkand and Bukhara, Persia and Turkey.",
+        "para2": `In each kitchen flavors and charms were added to the buns: some cached spicy, seasoned fillings in its center, discovered and exposed only at first bite. Others, especially the Mongols of North China, preferred to serve plain buns, accompanied with dips, sesame oil and aromatics sauces.`,
+        "para3": `Bahn sandwiches were first created in China, spreading quickly throughout the 20th century to the neighboring kitchens of the pacific.`,
+        "para4": `Asian filled buns are among the most celebrated dishes in contemporary culinary scene. Throughout the world, Innovative chefs serve buns in their special interpretation, from New York to Hong Kong.`,
+        "para5": `My buns, prepared by me and the Hiro team, are based on recipes I created especially for the restaurant. The buns' fillings – vegetarian, chicken and beef based - are inspired from my travels and buns I've ate throughout the world. Here in Hiro, they are served with fresh mini salad, to which one can add pickles and fresh green tea, all made in-house by me and my team.`,
+        "para6": `Bon Appetit! Chef Israel Aharoni`
+      }
+    },
     "aharoni": {
       "title": "ISRAEL AHARONI",
-      "subtitle": "￼RAMEN IS A JAPANESE NOODLE SOUP DISH. IT CONSISTS OF CHINESE-STYLE WHEAT NOODLES SERVED IN A MEAT- OR FISH-BASED BROTH, OFTEN FLAVORED WITH SOY SAUCE OR MISO, AND USES TOPPINGS SUCH AS SLICED PORK",
-      "description": "￼￼Ramen soup is generally made from stock based on chicken or pork, combined with a variety of ingredients such as kombu (kelp), katsuobushi (skipjack tuna flak."
+      "subtitle": "Chef Israel Aharoni is one of Israel's most celebrated and loved culinary authorities.",
+      "descriptions": {
+        "para1": "Chef Aharoni was the first to cook Far East cuisine-inspired dishes in Tel Aviv high-end restaurants and to bring the gospel and flavors of the Asian Cuisine of Taiwan and China to households in Israel.",
+        "para2": "Throughout the 4 decades of his thriving career, Chef Aharoni wrote numerous columns, shot TV shows focusing on Asian food and published dozens of best-selling cookbooks. \"Food is an interest I take very seriously - it's much more than just cooking to me\", He says. \"I look at food nowadays as a magnificent mosaic of cultures and flavors, where each piece connects to another, creating one big fascinating picture\".",
+        "para3": "2015, chef Aharoni opened Hiro ramen bar. Here, he and his team are serving generous soup bowls, full of noodles and various ingredients, all made in-house and inspired by the methods and recipes of Japan and Pacific Asia.",
+        "para4": "Along the gigantic three ramen stock pots - one based on chicken, the second is vegan and another contains minced meat – Hiro's menu contains chicken wings in miso-ginger-soya glaze, steamed buns with different fillings and gyoza dumplings. All dishes are made on-spot and based on recipes created especially for Hiro by chef Aharoni, served along sake and sake cocktails."
+      }
     },
     "menu": {
       "title": "MENU",
@@ -123,7 +140,7 @@ const texts = {
       "title": "שלום וברוכים הבאים להירו"
     },
     "ramen": {
-      "title": "מרק ראמן",
+      "title": "ראמן בר",
       "subtitle": "מרק ראמן הוא הגרסה היפנית למרקי האטריות האסייתיים לסוגיהם השונים והרבים.",
       "descriptions": {
         "what": "קשה לאמוד את מספרם של מרקי האטריות במטבחים האסייתיים השונים. מרק אטריות הוא שם משפחה של קבוצה גדולה, מרכזית ופופולארית במטבחים הסיניים, הווייטנאמיים, הקוריאניים, והתאילנדיים וכן בשאר המטבחים של המזרח הרחוק – שלכל אחד מהם גרסאות רבות לנושא.",
@@ -137,10 +154,27 @@ const texts = {
         "nothingLike": "אין כמו ראמן."
       }
     },
+    "bunBar": {
+      "title": "THE BUN BAR",
+      "subtitle": "באן היא לחמניה מאודה ואוורירית מבצק חיטה, שמוגשת חמה, הישר מכלי הבמבוק המסורתי המשמש לאידוייה.",
+      "descriptions": {
+        "para1": "את בצק הבאן מכינים כבר מתחילת הספירה בסין הקיסרית. משם הגיעה אל מטבחי העמים היושבים לאורך דרך המשי: מונגוליה, בוכרה וסמרקנד, פרס וגם גאורגיה וטורקיה.",
+        "para2": `בכל מטבח הוענקה לה גרסה קצת ייחודית ואחרת שבאה לידי ביטוי על פי רוב במילויים השונים שמתגלים רק כשנוגסים בלחמניה. המפורסמת מבין הלחמניות הממולאות היא מנת הבאו שמוצאים עד היום בדוכני הרחוב של הונג קונג ודרום סין. בצפון סין לעומת זאת, אוכלים את הלחמניה ללא מילוי ועם מטבלים לצדה.`,
+        "para3": `גרסת הבאן הווייטנאמי (Bahn) המפורסמת - לחמניית כריך מאודה הממולאת בכל מיני דברים טובים - חדשה יחסית ומקורה בסין, משם התפשטה לשאר מטבחי האיזור.`,
+        "para4": `בשנים האחרונות, לחמניות באן ממולאות הפכו לאחד המאכלים המדוברים בעולם הקולינריה. ניתן למצוא ברחבי העולם אינספור גרסאות מיוחדות של באנס: במילוי המבורגר הפופולריות ביפן, במילויים טבעוניים (שכן גם הלחמניה עצמה טבעית לחלוטין וללא מרכיבים מהחי) וכמובן בשלל מילוי פיוז'ן שמככבות, למשל, במסעדת ניו יורקיות מדוברות כמומופוקו.`,
+        "para5": `לחמניות הבאן שאני מכין בהירו מתבססות על מתכונים שיצרתי במיוחד עבור הרשת ומגלמים פרשנות אישית שלי לכריכי באנס שנתקלתי בהם (וכמובן אכלתי!) במסעותיי השונים ברחבי העולם. הבאנס שלי בהירו כוללים מספר סוגי מילוי והם מתבססים בראש ובראשונה על בשר, עוף ומילויים צמחוניים. הבאנס מוגשים לצד סלט קטן ולפי מיטב המסורת ניתן יהיה להזמין לצידם גם תה ירוק וחמוצים. כל תהליך ייצור הבאנס שלנו בהירו נעשה באופן עצמאי ועל ידי הצוות שלי – מבצק הלחמניות ואפייתן ועד המילוי והחמוצים לצדם.`,
+        "para6": `בתיאבון שף ישראל אהרוני`
+      }
+    },
     "aharoni": {
-      "title": "ISRAEL AHARONI",
-      "subtitle": "￼RAMEN IS A JAPANESE NOODLE SOUP DISH. IT CONSISTS OF CHINESE-STYLE WHEAT NOODLES SERVED IN A MEAT- OR FISH-BASED BROTH, OFTEN FLAVORED WITH SOY SAUCE OR MISO, AND USES TOPPINGS SUCH AS SLICED PORK",
-      "description": "￼￼Ramen soup is generally made from stock based on chicken or pork, combined with a variety of ingredients such as kombu (kelp), katsuobushi (skipjack tuna flak."
+      "title": "ישראל אהרוני",
+      "subtitle": "כבר מעל ל-4 עשורים שישראל אהרוני - האיש, הצמה והאגדה – הוא מהשפים ואושיות הקולינריה הבולטות והאהובות בישראל.",
+      "descriptions": {
+        "para1": "השף אהרוני היה הראשון לבשל מנות מהמזרח הרחוק במסעדות השף שפתח בארץ ולהביא לכל בית בישראל את מטעמי המטבח האסיאתי של סין וטאיוון, בו הוא מתמחה מאז שנות השמונים.",
+        "para2": `במרוצת השנים כתב עשרות ספרי בישול ואלפי טורי מתכונים וצילם תכניות טלוויזיה העוסקות באוכל של המזרח הרחוק. "העיסוק שלי באוכל הוא מעבר לבישול", הוא מספר. "בשנים האחרונות אני מתבונן באוכל בהקשרים תרבותיים רחבים יותר ומתייחס אליו כחלק מפסיפס תרבותי מורכב ומעניין. כך זה היה בתוכנית 'דרך האוכל' שהגשתי יחד עם גברי בנאי, סדרה שעסקה במטבחים האתניים השונים בארץ, וככה אני עושה גם עם גידי גוב ב'מסע המופלא'`,
+        "para3": `אחרי כל אלה, פתח השף אהרוני ב-2015 סניף ראשון בתל אביב של הראמן בר הירו. כאן הוא מגיש בראש ובראשונה ראמן - מרקים גדולים ועשירים, עתירי אטריות ושלל תוספות מושקעות ומיוחדות. "עבורי, זו עוד חוליה בשרשרת העשייה הקולינרית שלי. לקחת נושא אחד ספציפי - מרקי ראמן יפניים - להעמיק בו לקהל רחב ולהציג בפניו את חינו המיוחד של הראמן"`,
+        "para4": `לצד שלישית סירי הראמן הגדולים והמפנקים – אחד מתבסס על ציר עוף, שני על ציר טבעוני והשלישי, דן-דן, כולל בשר טחון ושלל תוספות – נמצאים בתפריט של הירו גם מנות כנפיים צלויות בזיגוג ג'ינג'ר מיסו וסויה, לחמניות באן מאודות במילויים שונים וכיסוני גיוזה מאודים במילויי פרגית ופטריות שיטאקה טבעוני. כל המנות מתבססות על המתכונים הייחודיים שיצר אהרוני במיוחד עבור הירו ומוגשות בכלים יחודיים לצד 3 סוגי סאקה ותפריט קוקטייל בלעדי של משקאות שמתבססים על סאקה.`
+      }
     },
     "menu": {
       "title": "תפריט",

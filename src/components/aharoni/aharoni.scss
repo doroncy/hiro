@@ -1,8 +1,7 @@
 @import '../../styles/foundation/foundation.scss';
 
 .aharoni-wrap {
-  width: 70%;
-  max-width: 700px;
+  max-width: 900px;
   margin: 0 auto;
   padding-top: 150px;
 
@@ -11,7 +10,6 @@
     padding: 30px 50px;
     max-width: 300px;
     max-height: 380px;
-    //float: right;
     margin: 0 auto;
     @include breakpoint(small down) {
       margin-bottom: 10px;
@@ -20,6 +18,7 @@
 
   .aharoni-content-box {
     width:100%;
+    margin-bottom: 10px;
   }
   .aharoni-content-box-margin {
     margin: 0 10px 10px 0;
@@ -31,12 +30,29 @@
     }
   }
 
+  .aharoni-subtitle-heb {
+    font-size:24px !important;
+  }
+  .aharoni-subtitle {
+    font-size:22px;
+    @include breakpoint(medium down) {
+      word-spacing: 2px;
+      line-height: 1.2;
+      font-size: 1.2em;
+    }
+  }
+
   @include breakpoint(xxlarge up) {
     max-width: 900px !important;
   }
 
+  // @include breakpoint(medium down) {
+  //   width: 78%;
+  // }
+
+
   // Mobile
-  @include breakpoint(small down) {
+  @include breakpoint(medium down) {
     width: 100%;
     padding-top: 40px;
     .text-contentbox-wrap {

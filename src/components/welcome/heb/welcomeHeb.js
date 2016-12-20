@@ -22,6 +22,11 @@ const WelcomeHeb = (props) => {
           <div className="small-10 small-centered columns">
             <div className={`welcome-logos-wrap`}>
               <div className="row">
+                <div className="small-10 small-centered medium-uncentered medium-5 hide-for-medium columns">
+                  <div className="aharoni-head-image">
+                    <img src={aharoniHeadSvg} />
+                  </div>
+                </div>
                 <div className="small-12 small-centered medium-uncentered medium-7 columns">
                   <div className="row">
                     <div className="small-12 small-centered medium-uncentered columns">
@@ -34,7 +39,7 @@ const WelcomeHeb = (props) => {
                     <img src={fullLogSvg} />
                   </div>
                 </div>
-                <div className="small-10 small-centered medium-uncentered medium-5 columns">
+                <div className="small-10 small-centered medium-uncentered medium-5 show-for-medium columns">
                   <div className="aharoni-head-image">
                     <img src={aharoniHeadSvg} />
                   </div>
