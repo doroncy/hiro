@@ -1,0 +1,83 @@
+@import '../../styles/foundation/foundation.scss';
+
+.bunbar-wrap {
+  max-width: 900px;
+  margin: 0 auto;
+
+  @include breakpoint(medium up) {
+      padding-top: 150px;
+  }
+  .bunbar-image {
+    margin: 0 auto;
+    background-color: $blackOpacity;
+    padding: 15px;
+  }
+  .bon-appetit{
+    float: right;
+    width: initial !important;
+    text-align: center;
+    padding: 10px 30px;
+  }
+  .bon-appetit-heb{
+    float: left !important;
+  }
+  .bunbar-content-box {
+    width:100%;
+    margin-bottom: 10px;
+  }
+  .content-box-black {
+    background-color: #000;
+    color: #fff !important;
+  }
+  .bunbar-content-box-margin {
+    margin: 0 10px 10px 0;
+  }
+  .section-title-heb {
+    font-size:34px !important;
+  }
+  .bunbar-subtitle-heb {
+    font-size:24px !important;
+  }
+  .bunbar-subtitle {
+    font-size:22px;
+    @include breakpoint(medium down) {
+      word-spacing: 2px;
+      line-height: 1.2;
+      font-size: 1.2em;
+    }
+  }
+
+  @include breakpoint(xxlarge up) {
+    max-width: 900px !important;
+  }
+
+  // Mobile
+  @include breakpoint(medium down) {
+    width: 80%;
+    .bunbar-image {
+      padding: 20px 80px;
+      margin-bottom: 10px;
+      max-width: 300px;
+    }
+    .text-contentbox-wrap {
+      padding: 8px 10px;
+    }
+    .bunbar-title .text-contentbox-wrap.full-width{
+      width: initial !important;
+      font-size: 1.7em;
+      padding: 4px 10px;
+    }
+    .bunbar-content-box {
+      .space-bottom {
+        margin-bottom: 5px;
+      }
+    }
+    .bunbar-content-box-description {
+      margin: 5px 2px;
+    }
+  }
+
+  @include breakpoint(small down) {
+    width: 100%;
+  }
+}
