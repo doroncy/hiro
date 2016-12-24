@@ -41,6 +41,7 @@ class NavBar extends React.Component {
 
     this.menuItems = [
       {path: 'ramen', title: 'en.ramen.title'},
+      {path: 'bunbar', title: 'en.bunbar.title'},
       {path: 'aharoni', title: 'en.aharoni.title'},
       {path: 'menu', title: 'en.menu.title'},
       {path: 'gallery', title: 'en.gallery.title'},

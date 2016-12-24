@@ -52,16 +52,13 @@
     }
   }
 
+  // Mobile
   @include breakpoint(medium down) {
     width: 80%;
-  }
-
-  // Mobile
-  @include breakpoint(small down) {
-    width: 100%;
     .noodles-image {
       padding: 20px 80px;
       margin-bottom: 10px;
+      max-width: 300px;
     }
     .text-contentbox-wrap {
       padding: 8px 10px;
@@ -79,5 +76,9 @@
     .ramen-content-box-description {
       margin: 5px 2px;
     }
+  }
+
+  @include breakpoint(small down) {
+    width: 100%;
   }
 }

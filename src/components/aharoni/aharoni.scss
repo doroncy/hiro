@@ -46,15 +46,13 @@
     max-width: 900px !important;
   }
 
-  // @include breakpoint(medium down) {
-  //   width: 78%;
-  // }
-
-
   // Mobile
   @include breakpoint(medium down) {
     width: 100%;
     padding-top: 40px;
+    .aharoni-head-image {
+      margin-bottom: 10px;
+    }
     .text-contentbox-wrap {
       padding: 8px 10px;
     }

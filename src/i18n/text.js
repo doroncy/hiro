@@ -22,7 +22,7 @@ const texts = {
         "nothingLike": "There is nothing like Ramen."
       }
     },
-    "bunBar": {
+    "bunbar": {
       "title": "THE BUN BAR",
       "subtitle": "Bahn is a steamed bun, served warm, usually straight from the traditional bamboo steamers used for its baking.",
       "descriptions": {
@@ -30,8 +30,7 @@ const texts = {
         "para2": `In each kitchen flavors and charms were added to the buns: some cached spicy, seasoned fillings in its center, discovered and exposed only at first bite. Others, especially the Mongols of North China, preferred to serve plain buns, accompanied with dips, sesame oil and aromatics sauces.`,
         "para3": `Bahn sandwiches were first created in China, spreading quickly throughout the 20th century to the neighboring kitchens of the pacific.`,
         "para4": `Asian filled buns are among the most celebrated dishes in contemporary culinary scene. Throughout the world, Innovative chefs serve buns in their special interpretation, from New York to Hong Kong.`,
-        "para5": `My buns, prepared by me and the Hiro team, are based on recipes I created especially for the restaurant. The buns' fillings – vegetarian, chicken and beef based - are inspired from my travels and buns I've ate throughout the world. Here in Hiro, they are served with fresh mini salad, to which one can add pickles and fresh green tea, all made in-house by me and my team.`,
-        "para6": `Bon Appetit! Chef Israel Aharoni`
+        "para5": `My buns, prepared by me and the Hiro team, are based on recipes I created especially for the restaurant. The buns' fillings – vegetarian, chicken and beef based - are inspired from my travels and buns I've ate throughout the world. Here in Hiro, they are served with fresh mini salad, to which one can add pickles and fresh green tea, all made in-house by me and my team.`
       }
     },
     "aharoni": {
@@ -154,7 +153,7 @@ const texts = {
         "nothingLike": "אין כמו ראמן."
       }
     },
-    "bunBar": {
+    "bunbar": {
       "title": "THE BUN BAR",
       "subtitle": "באן היא לחמניה מאודה ואוורירית מבצק חיטה, שמוגשת חמה, הישר מכלי הבמבוק המסורתי המשמש לאידוייה.",
       "descriptions": {
@@ -162,8 +161,7 @@ const texts = {
         "para2": `בכל מטבח הוענקה לה גרסה קצת ייחודית ואחרת שבאה לידי ביטוי על פי רוב במילויים השונים שמתגלים רק כשנוגסים בלחמניה. המפורסמת מבין הלחמניות הממולאות היא מנת הבאו שמוצאים עד היום בדוכני הרחוב של הונג קונג ודרום סין. בצפון סין לעומת זאת, אוכלים את הלחמניה ללא מילוי ועם מטבלים לצדה.`,
         "para3": `גרסת הבאן הווייטנאמי (Bahn) המפורסמת - לחמניית כריך מאודה הממולאת בכל מיני דברים טובים - חדשה יחסית ומקורה בסין, משם התפשטה לשאר מטבחי האיזור.`,
         "para4": `בשנים האחרונות, לחמניות באן ממולאות הפכו לאחד המאכלים המדוברים בעולם הקולינריה. ניתן למצוא ברחבי העולם אינספור גרסאות מיוחדות של באנס: במילוי המבורגר הפופולריות ביפן, במילויים טבעוניים (שכן גם הלחמניה עצמה טבעית לחלוטין וללא מרכיבים מהחי) וכמובן בשלל מילוי פיוז'ן שמככבות, למשל, במסעדת ניו יורקיות מדוברות כמומופוקו.`,
-        "para5": `לחמניות הבאן שאני מכין בהירו מתבססות על מתכונים שיצרתי במיוחד עבור הרשת ומגלמים פרשנות אישית שלי לכריכי באנס שנתקלתי בהם (וכמובן אכלתי!) במסעותיי השונים ברחבי העולם. הבאנס שלי בהירו כוללים מספר סוגי מילוי והם מתבססים בראש ובראשונה על בשר, עוף ומילויים צמחוניים. הבאנס מוגשים לצד סלט קטן ולפי מיטב המסורת ניתן יהיה להזמין לצידם גם תה ירוק וחמוצים. כל תהליך ייצור הבאנס שלנו בהירו נעשה באופן עצמאי ועל ידי הצוות שלי – מבצק הלחמניות ואפייתן ועד המילוי והחמוצים לצדם.`,
-        "para6": `בתיאבון שף ישראל אהרוני`
+        "para5": `לחמניות הבאן שאני מכין בהירו מתבססות על מתכונים שיצרתי במיוחד עבור הרשת ומגלמים פרשנות אישית שלי לכריכי באנס שנתקלתי בהם (וכמובן אכלתי!) במסעותיי השונים ברחבי העולם. הבאנס שלי בהירו כוללים מספר סוגי מילוי והם מתבססים בראש ובראשונה על בשר, עוף ומילויים צמחוניים. הבאנס מוגשים לצד סלט קטן ולפי מיטב המסורת ניתן יהיה להזמין לצידם גם תה ירוק וחמוצים. כל תהליך ייצור הבאנס שלנו בהירו נעשה באופן עצמאי ועל ידי הצוות שלי – מבצק הלחמניות ואפייתן ועד המילוי והחמוצים לצדם.`
       }
     },
     "aharoni": {

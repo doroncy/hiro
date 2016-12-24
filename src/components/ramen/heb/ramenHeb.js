@@ -17,7 +17,7 @@ const RamenHeb = (props) => {
           <div className="small-10 small-centered columns">
             <div className={`${props.language} ramen-wrap`}>
               <div className="row small-half-padding-columns">
-                <div className="small-12 columns hide-for-medium">
+                <div className="small-12 columns hide-for-large">
                   <TrackedDiv formulas={[topBottom]}>
                     {(posTopBottom) =>
                       <div className={cx("noodles-image scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+150})}>
@@ -28,7 +28,7 @@ const RamenHeb = (props) => {
                 </div>
               </div>
               <div className="row small-half-padding-columns space-bottom">
-                <div className="small-12 medium-9 columns">
+                <div className="small-12 large-9 columns">
                   <div className="row small-half-padding-columns">
                     <div className="small-12 medium-6 large-4 columns right">
                       <TrackedDiv formulas={[topBottom]}>
@@ -43,7 +43,7 @@ const RamenHeb = (props) => {
                     </div>
                   </div>
                   <div className="row">
-                    <div className="small-12 medium-8 columns right">
+                    <div className="small-12 large-8 columns right">
                       <TrackedDiv formulas={[topBottom]}>
                         {(posTopBottom) =>
                           <div className={cx("ramen-content-box scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+250})}>
@@ -54,7 +54,7 @@ const RamenHeb = (props) => {
                     </div>
                   </div>
                   <div className="row">
-                    <div className="small-12 medium-offset-1 medium-10 columns end ramen-what-padding">
+                    <div className="small-12 large-offset-1 large-10 columns end ramen-what-padding">
                       <TrackedDiv formulas={[topBottom]}>
                         {(posTopBottom) =>
                           <div className={cx("ramen-content-box scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+300})}>
@@ -64,7 +64,7 @@ const RamenHeb = (props) => {
                     </div>
                   </div>
                 </div>
-                <div className="medium-3 columns show-for-medium">
+                <div className="large-3 columns show-for-large">
                   <TrackedDiv formulas={[topBottom]}>
                     {(posTopBottom) =>
                       <div className={cx("noodles-image scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+150})}>
@@ -75,7 +75,7 @@ const RamenHeb = (props) => {
                 </div>
               </div>
               <div className="row small-half-padding-columns">
-                <div className="show-for-medium medium-3 medium-offset-1 columns">
+                <div className="show-for-large large-3 large-offset-1 columns">
                   <TrackedDiv formulas={[topBottom]}>
                     {(posTopBottom) =>
                       <div className={cx("ramen-content-box scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+320})}>
@@ -83,7 +83,7 @@ const RamenHeb = (props) => {
                       </div>}
                   </TrackedDiv>
                 </div>
-                <div className="small-12 medium-7 columns end">
+                <div className="small-12 large-7 columns end">
                   <TrackedDiv formulas={[topBottom]}>
                     {(posTopBottom) =>
                       <div className={cx("ramen-content-box scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+320})}>
@@ -91,7 +91,7 @@ const RamenHeb = (props) => {
                       </div>}
                   </TrackedDiv>
                 </div>
-                <div className="hide-for-medium small-12 columns">
+                <div className="hide-for-large small-12 columns">
                   <TrackedDiv formulas={[topBottom]}>
                     {(posTopBottom) =>
                       <div className={cx("ramen-content-box scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+320})}>
@@ -101,7 +101,7 @@ const RamenHeb = (props) => {
                 </div>
               </div>
               <div className="row small-half-padding-columns">
-                <div className="small-12 medium-7 medium-offset-1 end columns">
+                <div className="small-12 large-7 large-offset-1 end columns">
                   <TrackedDiv formulas={[topBottom]}>
                     {(posTopBottom) =>
                       <div className={cx("ramen-content-box scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+350})}>
@@ -111,7 +111,7 @@ const RamenHeb = (props) => {
                 </div>
               </div>
               <div className="row small-half-padding-columns">
-                <div className="small-12 medium-offset-4 medium-7 columns ">
+                <div className="small-12 large-offset-4 large-7 columns ">
                   <TrackedDiv formulas={[topBottom]}>
                     {(posTopBottom) =>
                       <div className={cx("ramen-content-box scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+370})}>
@@ -121,7 +121,7 @@ const RamenHeb = (props) => {
                 </div>
               </div>
               <div className="row small-half-padding-columns">
-              <div className="small-12 hide-for-medium end columns">
+              <div className="small-12 hide-for-large end columns">
                 <TrackedDiv formulas={[topBottom]}>
                   {(posTopBottom) =>
                     <div className={cx("ramen-content-box scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+400})}>
@@ -129,7 +129,7 @@ const RamenHeb = (props) => {
                     </div>}
                 </TrackedDiv>
               </div>
-                <div className="small-12 medium-offset-1 medium-7 columns">
+                <div className="small-12 large-offset-1 large-7 columns">
                   <TrackedDiv formulas={[topBottom]}>
                     {(posTopBottom) =>
                       <div className={cx("ramen-content-box scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+400})}>
@@ -138,7 +138,7 @@ const RamenHeb = (props) => {
                       </div>}
                   </TrackedDiv>
                 </div>
-                <div className="show-for-medium medium-3 end columns">
+                <div className="show-for-large large-3 end columns">
                   <TrackedDiv formulas={[topBottom]}>
                     {(posTopBottom) =>
                       <div className={cx("ramen-content-box scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+400})}>
@@ -148,7 +148,7 @@ const RamenHeb = (props) => {
                 </div>
               </div>
               <div className="row small-half-padding-columns">
-                <div className="small-12 medium-4 end columns left">
+                <div className="small-12 large-4 end columns left">
                   <TrackedDiv formulas={[topBottom]}>
                     {(posTopBottom) =>
                       <div className={cx("ramen-content-box scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+420})}>
