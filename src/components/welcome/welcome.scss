@@ -23,6 +23,11 @@
   .take-away-title {
     padding-bottom: 5px;
   }
+  &.en {
+    .aharoni-head-image {
+      float: right;
+    }
+  }
 }
 .welcome-container {
   position: fixed;
@@ -41,7 +46,6 @@
     padding: 30px 50px;
     max-width: 300px;
     max-height: 380px;
-    float: right;
     width: 100%;
   }
 
