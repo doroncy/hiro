@@ -37,8 +37,7 @@
     font-size:22px;
     @include breakpoint(medium down) {
       word-spacing: 2px;
-      line-height: 1.2;
-      font-size: 1.2em;
+      line-height: 1.2;      
     }
   }
 
@@ -58,7 +57,6 @@
     }
     .aharoni-title .text-contentbox-wrap.full-width{
       width: initial !important;
-      font-size: 1.7em;
       padding: 4px 10px;
     }
     .aharoni-content-box {
