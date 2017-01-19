@@ -15,6 +15,7 @@ const saronaMapOptions = {
   cord: {lat: 32.071401, lng: 34.786942},
   zoom: 17
 }
+const GOOGLE_API_KEY = 'AIzaSyAav2Y2lJuocF-18tLqtBovuFO6RBcuRY0';
 
 const VisitUsEn = (props) => {
   let titleFontClass = props.language === 'en' ? 'run-font-large' : 'assistant-extra-bold';
@@ -47,6 +48,10 @@ const VisitUsEn = (props) => {
                             <TextContentBox text={`${props.language}.visitUs.sarona.address`} css="run-font-medium text-center full-width space-bottom"/>
                             <div className="google-map-wrap">
                               <GoogleMap
+                                bootstrapURLKeys={{
+                                  key: GOOGLE_API_KEY,
+                                  language: 'heb'
+                                }}
                                 center={saronaMapOptions.cord}
                                 zoom={saronaMapOptions.zoom}
                                 minZoom={saronaMapOptions.zoom}
