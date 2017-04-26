@@ -15,6 +15,10 @@ const saronaMapOptions = {
   cord: {lat: 32.071401, lng: 34.786942},
   zoom: 17
 }
+const hashmalMapOptions = {
+  cord: {lat: 32.0625914, lng: 34.7763019},
+  zoom: 17
+}
 const GOOGLE_API_KEY = 'AIzaSyAav2Y2lJuocF-18tLqtBovuFO6RBcuRY0';
 
 const VisitUsEn = (props) => {
@@ -34,7 +38,6 @@ const VisitUsEn = (props) => {
                         <TextContentBox text={`${props.language}.visitUs.title`} css={`${titleFontClass} text-center full-width space-bottom`}/>
                         <img src={headerLogoSvg} className="header-logo-img space-bottom"/>
                         <TextContentBox text={`${props.language}.visitUs.sarona.name`} css="run-font-medium text-center full-width space-bottom"/>
-                        <TextContentBox text={`${props.language}.visitUs.sarona.phone`} css="run-font-medium text-center full-width space-bottom"/>
                       </div>
                     }
                   </TrackedDiv>
@@ -58,7 +61,7 @@ const VisitUsEn = (props) => {
                                 maxZoom={saronaMapOptions.zoom}
                                 scrollWheel={false}
                                 draggable={false}>
-                                <img src={markerSvg} className="hiro-map-marker" lat={32.071401} lng={34.786942}/>
+                                <img src={markerSvg} className="hiro-map-marker" lat={saronaMapOptions.cord.lat} lng={saronaMapOptions.cord.lng}/>
                               </GoogleMap>
                             </div>
                             <div className="visit-us-open-hours">
@@ -71,25 +74,42 @@ const VisitUsEn = (props) => {
                   </div>
                 </div>
               </div>
-              <div className="row small-half-padding-columns coming-soon-wrap">
-                <div className="small-12 small-centered medium-uncentered large-3 columns">
+              <div className="visitus-hashmal row small-half-padding-columns">
+                <div className="small-12 small-centered medium-uncentered large-4 columns">
                   <TrackedDiv formulas={[topBottom]}>
                     {(posTopBottom) =>
                       <div className={cx("scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+150})}>
+                        <TextContentBox text={`${props.language}.visitUs.title`} css={`${titleFontClass} text-center full-width space-bottom`}/>
                         <img src={headerLogoSvg} className="header-logo-img space-bottom"/>
                         <TextContentBox text={`${props.language}.visitUs.hashmal.name`} css="run-font-medium text-center full-width space-bottom"/>
                       </div>
                     }
                   </TrackedDiv>
                 </div>
-                <div className="small-12 small-centered medium-uncentered large-9 columns">
+                <div className="small-12 small-centered medium-uncentered large-8 columns">
                   <div className="row">
                     <div className="medium-12 large-11 columns">
                       <TrackedDiv formulas={[topBottom]}>
                         {(posTopBottom) =>
-                          <div className={cx("visitus-comingsoon-right-pane scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+200})}>
-                            <div className="coming-soon-img">
-                              <img src={comingSoonSvg} className="space-bottom"/>
+                          <div className={cx("visitus-right-pane scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+150})}>
+                            <TextContentBox text={`${props.language}.visitUs.hashmal.address`} css="run-font-medium text-center full-width space-bottom"/>
+                            <div className="google-map-wrap">
+                              <GoogleMap
+                                bootstrapURLKeys={{
+                                  key: GOOGLE_API_KEY,
+                                  language: 'heb'
+                                }}
+                                center={hashmalMapOptions.cord}
+                                zoom={hashmalMapOptions.zoom}
+                                minZoom={hashmalMapOptions.zoom}
+                                maxZoom={hashmalMapOptions.zoom}
+                                scrollWheel={false}
+                                draggable={false}>
+                                <img src={markerSvg} className="hiro-map-marker" lat={hashmalMapOptions.cord.lat} lng={hashmalMapOptions.cord.lng}/>
+                              </GoogleMap>
+                            </div>
+                            <div className="visit-us-open-hours">
+                              <TextContentBox text={`${props.language}.visitUs.hashmal.openHours`} css="run-font-medium text-center full-width space-bottom"/>
                             </div>
                           </div>
                         }

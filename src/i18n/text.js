@@ -130,7 +130,10 @@ const texts = {
         "openHours": "EVERY DAY 11:00 - 22:00 FRIDAY TILL 15:00"
       },
       "hashmal": {
-        "name": "GAN HASHMAL"
+        "name": "LEVONTIN",
+        "address": "LEVONTIN ST. 19, TEL AVIV",
+        "phone": "03-5583505",
+        "openHours": "EVERY DAY 18:00 - 23:30"
       }
     }
   },
@@ -261,7 +264,10 @@ const texts = {
         "openHours": "פתוחים כל יום בין השעות 11:00-22:00 , שישי עד 15:00"
       },
       "hashmal": {
-        "name": "גן החשמל"
+        "name": "לבונטין",
+        "address": "לבונטין 19, תל אביב",
+        "phone": "03-5583505",
+        "openHours": "פתוחים כל יום בין השעות 18:00-23:30"
       }
     }
   }
