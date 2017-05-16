@@ -1,6 +1,6 @@
 {
   "name": "Hiro",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Hiro Website",
   "main": "index.js",
   "dependencies": {

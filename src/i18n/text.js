@@ -133,7 +133,7 @@ const texts = {
         "name": "LEVONTIN",
         "address": "LEVONTIN ST. 19, TEL AVIV",
         "phone": "03-5583505",
-        "openHours": "EVERY DAY 18:00 - 23:30"
+        "openHours": "EVERY DAY 12:00 - 23:30"
       }
     }
   },
@@ -267,7 +267,7 @@ const texts = {
         "name": "לבונטין",
         "address": "לבונטין 19, תל אביב",
         "phone": "03-5583505",
-        "openHours": "פתוחים כל יום בין השעות 18:00-23:30"
+        "openHours": "פתוחים כל יום בין השעות 12:00-23:30"
       }
     }
   }
