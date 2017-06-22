@@ -119,6 +119,9 @@ const VisitUsHeb = (props) => {
                             <div className="visit-us-open-hours">
                               <TextContentBox text={`${props.language}.visitUs.hashmal.openHours`} css="assistant-bold text-center full-width space-bottom"/>
                             </div>
+                            <div className="visit-us-open-hours">
+                              <TextContentBox text={`${props.language}.visitUs.hashmal.phone`} css="assistant-bold text-center full-width space-bottom"/>
+                            </div>
                           </div>
                         }
                       </TrackedDiv>
@@ -156,6 +159,9 @@ const VisitUsHeb = (props) => {
                             </div>
                             <div className="visit-us-open-hours">
                               <TextContentBox text={`${props.language}.visitUs.hashmal.openHours`} css="assistant-bold text-center full-width space-bottom"/>
+                            </div>
+                            <div className="visit-us-open-hours">
+                              <TextContentBox text={`${props.language}.visitUs.hashmal.phone`} css="assistant-bold text-center full-width space-bottom"/>
                             </div>
                           </div>
                         }
