@@ -133,7 +133,7 @@ const texts = {
         "name": "LEVONTIN",
         "address": "LEVONTIN ST. 19, TEL AVIV",
         "phone": "Tel. 03-5583505 (Reservations on friday-saturday only)",
-        "openHours": "EVERY DAY 12:00 - 16:30 AND 18:00 - 23:30"
+        "openHours": "EVERY DAY 12:00 - 17:00 AND 18:00 - 00:00"
       }
     }
   },
@@ -267,7 +267,7 @@ const texts = {
         "name": "לבונטין",
         "address": "לבונטין 19, תל אביב",
         "phone": "טל' 03-6550447 - הזמנת מקומות לשישי-שבת בלבד. \n (מומלץ להתקשר בין 17:00-11:00)",
-        "openHours": "פתוחים כל יום בין השעות 12:00-16:30 ו-18:00-23:30"
+        "openHours": "פתוחים כל יום בין השעות 12:00-17:00 ו-18:00-00:00"
       }
     }
   }
