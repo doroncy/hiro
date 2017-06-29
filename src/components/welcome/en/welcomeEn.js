@@ -11,12 +11,11 @@ const WelcomeEN = (props) => {
   let welcomeLogosClass = getWelcomeLogosClassName(props.scrollPosition);
   return (
       <div className={`welcome-wrap ${props.language}`}>
-        <div className={`hide-for-small-only takeaway-gif animated-fast ${welcomeLogosClass}`}>
-          <div className="take-away-title">
-            <img src={TakeAwayTitleSvg} />
-          </div>
-          <img src={TakeAwayGif} />
-        </div>
+        <a href="https://hiroramenbar.m-secured.co.il/he_IL/branches/600396/order-online" target="_blank" title="delivery"
+          className={`hide-for-small-only takeaway-gif animated-fast ${welcomeLogosClass}`}>
+          <TextContentBox text={`${props.language}.welcome.takeAway`} css="text-center full-width space-bottom take-away-title"/>
+          <img src={TakeAwayGif} className="take-away-image"/>
+        </a>
         <div className="curtain"></div>
         <div className={`row welcome-container animated-fast ${welcomeLogosClass}`}>
           <div className="small-10 small-centered columns">
@@ -37,6 +36,15 @@ const WelcomeEN = (props) => {
                   </div>
                   <div className="welcome-full-logo-wrap">
                     <img src={fullLogSvg} />
+                  </div>
+                  <div className="row">
+                    <div className="small-12 small-centered hide-for-medium columns">
+                      <a href="https://hiroramenbar.m-secured.co.il/he_IL/branches/600396/order-online" target="_blank" title="delivery">
+                        <div className="welcome-text-wrap run-font-xlarge take-away-lg-btn">
+                          <TextContentBox text={`${props.language}.welcome.takeAway`}/>
+                        </div>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>

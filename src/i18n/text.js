@@ -5,7 +5,8 @@ const texts = {
   },
   "en": {
     "welcome": {
-      "title": "HELLO AND WELCOME TO HIRO"
+      "title": "HELLO AND WELCOME TO HIRO",
+      "takeAway": "Delivery"
     },
     "ramen": {
       "title": "THE RAMEN BAR",
@@ -139,7 +140,8 @@ const texts = {
   },
   "heb": {
     "welcome": {
-      "title": "שלום וברוכים הבאים להירו"
+      "title": "שלום וברוכים הבאים להירו",
+      "takeAway": "להזמנת משלוח"
     },
     "ramen": {
       "title": "ראמן בר",

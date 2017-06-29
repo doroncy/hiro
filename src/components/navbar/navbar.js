@@ -147,6 +147,11 @@ class NavBar extends React.Component {
         <div className="mobile-nav-wrap">
           <ul className="menu mobile-menu run-font animated-fast fade">
             {this.getMenuNav(true)}
+            <li className="menu-link">
+              <a href="https://hiroramenbar.m-secured.co.il/he_IL/branches/600396/order-online" target="_blank" title="delivery">
+                <Translate text={`${this.props.language}.welcome.takeAway`} />
+              </a>
+            </li>
             <li className="menu-link lang-selection">
               <div className={`lang-selection-item ${this.props.language === 'en' ? 'active': ''}`} onClick={() => this.setLanguage('en')}><Translate text="languages.english" /></div>
               <div className="vertical-seperator"></div>

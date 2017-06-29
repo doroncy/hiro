@@ -20,8 +20,30 @@
       background-image: url('../../assets/h_w_curtain_small.svg');
     }
   }
+  .takeaway-gif {
+    cursor: pointer;
+
+    &:hover {
+      .take-away-image, .take-away-title {
+        opacity: .9;
+      }
+    }
+  }
   .take-away-title {
-    padding-bottom: 5px;
+    color: $pink;
+    font-size: 18px !important;
+    padding: 4px;
+    line-height: 21px;
+  }
+  .take-away-lg-btn {
+    cursor: pointer;
+    .text-contentbox-wrap {
+      background-color: $pink;
+      color: #fff;
+    }
+    &:hover {
+      opacity: .8;
+    }
   }
   &.en {
     .aharoni-head-image {
