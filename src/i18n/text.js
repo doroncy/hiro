@@ -128,7 +128,7 @@ const texts = {
         "name": "SARONA MARKET",
         "address": "KALMAN MAGEN 3, SARONA MARKET, TEL AVIV",
         "phone": "03-5583505",
-        "openHours": "EVERY DAY 11:00 - 22:00 FRIDAY TILL 15:00"
+        "openHours": "EVERY DAY 11:00 - 22:30 FRIDAY TILL 16:30"
       },
       "hashmal": {
         "name": "LEVONTIN",
@@ -263,7 +263,7 @@ const texts = {
         "name": "שרונה מרקט",
         "address": "קלמן מגן 3, שרונה מרקט, תל אביב",
         "phone": "03-5583505",
-        "openHours": "פתוחים כל יום בין השעות 11:00-22:00 , שישי עד 15:00"
+        "openHours": "פתוחים כל יום בין השעות 11:00-22:30 , שישי עד 16:30"
       },
       "hashmal": {
         "name": "לבונטין",
