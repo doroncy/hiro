@@ -5,7 +5,7 @@ module.exports = {
   entry: './main.js',
   output: {
     path: './dist',
-    filename: 'index.js'
+    filename: 'bundle-[hash:6].js'  
   },
   devServer: {
     inline: true,
