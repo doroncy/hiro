@@ -1,4 +1,5 @@
 import React from 'react';
+import _ from 'lodash';
 import Translate from 'i18n-react';
 import TranslatedText from './i18n/text';
 import style from './styles/main/style.scss';
@@ -53,8 +54,11 @@ class App extends React.Component {
     clearInterval(bgCarouselInterval);
   }
 
-  handleScroll(event) {
-    let scrollTop = event.srcElement.body.scrollTop;
+  handleScroll(event) {  
+    let scrollTop = _.get(event, 'srcElement')
+      ? _.get(event, 'srcElement.body.scrollTop')
+      : _.get(event, 'pageY');
+
     this.setScrollPositionState(this.getScrollPosition(scrollTop));
   }
 
