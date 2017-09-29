@@ -22,6 +22,10 @@ class App extends React.Component {
     super();
 
     Translate.setTexts(TranslatedText);
+
+    this.supportPageOffset = window.pageXOffset !== undefined;
+    this.isCSS1Compat = ((document.compatMode || "") === "CSS1Compat");
+
     this.state = {
       scrollPosition: consts.scrollPositions.CURTAIN,
       currentBgImgIndex: 1,
@@ -54,10 +58,10 @@ class App extends React.Component {
     clearInterval(bgCarouselInterval);
   }
 
-  handleScroll(event) {  
-    let scrollTop = _.get(event, 'srcElement')
-      ? _.get(event, 'srcElement.body.scrollTop')
-      : _.get(event, 'pageY');
+  handleScroll() {
+    var scrollTop = this.supportPageOffset
+      ? window.pageYOffset
+      : this.isCSS1Compat ? _.get(document, 'documentElement.scrollTop') : _.get(document, 'body.scrollTop');
 
     this.setScrollPositionState(this.getScrollPosition(scrollTop));
   }
