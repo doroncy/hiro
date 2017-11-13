@@ -46,6 +46,23 @@
       opacity: .8;
     }
   }
+  .telephone {
+    position: fixed!important;
+    top: 560px;
+    left: 66px;
+    width: 100px;
+
+    .telephone-image {
+      background-image: url('../../assets/icons/h_telephone_b.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 50px;
+      z-index: 99;
+      &:hover {
+        background-image: url('../../assets/icons/h_telephone_b_w.svg');
+      }
+    }
+  }
   &.en {
     .aharoni-head-image {
       float: right;

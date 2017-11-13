@@ -16,6 +16,9 @@ const WelcomeEN = (props) => {
           <TextContentBox text={`${props.language}.welcome.takeAway`} css="text-center full-width space-bottom take-away-title"/>
           <img src={TakeAwayGif} className="take-away-image"/>
         </a>
+        <a href="tel:*3721" className="telephone hide-for-small-only">
+          <div className="telephone-image"></div>
+        </a>
         <div className="curtain"></div>
         <div className={`row welcome-container animated-fast ${welcomeLogosClass}`}>
           <div className="small-10 small-centered columns">

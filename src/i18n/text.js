@@ -133,7 +133,7 @@ const texts = {
       "hashmal": {
         "name": "LEVONTIN",
         "address": "LEVONTIN ST. 19, TEL AVIV",
-        "phone": "Tel. 03-5583505 (Reservations on friday-saturday only)",
+        "phone": "Tel. *3721 (Reservations on friday-saturday only)",
         "openHours": "EVERY DAY 12:00 - 17:00 AND 18:00 - 00:00"
       }
     }
@@ -268,7 +268,7 @@ const texts = {
       "hashmal": {
         "name": "לבונטין",
         "address": "לבונטין 19, תל אביב",
-        "phone": `טל' להזמנת מקומות 03-6814080`,
+        "phone": `טל' להזמנת מקומות 3721*`,
         "openHours": "פתוחים כל יום בין השעות 12:00-17:00 ו-18:00-00:00"
       }
     }
