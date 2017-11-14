@@ -1,6 +1,6 @@
 {
   "name": "Hiro",
-  "version": "3.0.2",
+  "version": "3.1.0",
   "description": "Hiro ramen and asian kitchen Website",
   "main": "index.js",
   "dependencies": {

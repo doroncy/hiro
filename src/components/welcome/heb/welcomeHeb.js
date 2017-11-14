@@ -16,7 +16,7 @@ const WelcomeHeb = (props) => {
           <TextContentBox text={`${props.language}.welcome.takeAway`} css="text-center full-width space-bottom take-away-title"/>
           <img src={TakeAwayGif} className="take-away-image"/>
         </a>
-        <a href="tel:*3721" className="telephone hide-for-small-only">
+        <a href="tel:*3721" className={`telephone hide-for-small-only animated-fast ${welcomeLogosClass}`}>
           <div className="telephone-image"></div>
         </a>
         <div className="curtain"></div>
@@ -53,6 +53,9 @@ const WelcomeHeb = (props) => {
                     <div className="welcome-text-wrap run-font-xlarge take-away-lg-btn">
                       <TextContentBox text={`${props.language}.welcome.takeAway`}/>
                     </div>
+                  </a>
+                  <a href="tel:*3721" className="telephone-mobile">
+                    <div className="telephone-image"></div>
                   </a>
                 </div>
               </div>
