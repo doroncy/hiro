@@ -43,7 +43,7 @@ class App extends React.Component {
     this.handleResize();
 
     bgCarouselInterval = setInterval(()=> {
-      let newBgImgIndex = this.state.currentBgImgIndex === 5
+      let newBgImgIndex = this.state.currentBgImgIndex === 7
         ? 1
         : this.state.currentBgImgIndex + 1;
 

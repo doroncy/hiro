@@ -14,8 +14,10 @@ body {
   overflow-x: hidden;
   &:after {
     content:  url('../../assets/h_w_curtain_large.svg') url('../../assets/background/h_t_gallery_01.jpg') url('../../assets/background/h_t_gallery_02.jpg')
-    url('../../assets/background/h_t_gallery_03.jpg') url('../../assets/background/h_t_gallery_04.jpg') url('../../assets/background/h_t_gallery_05.jpg')
-    url('../../assets/icons/h_w_facebook_b_p.svg') url('../../assets/icons/h_w_instagram_b_p.svg');
+    url('../../assets/background/h_t_gallery_03.jpg') url('../../assets/background/h_t_gallery_04.jpg') url('../../assets/background/h_t_gallery_06.jpg')
+    url('../../assets/background/h_t_gallery_07.jpg') url('../../assets/background/h_t_gallery_08.jpg')
+    url('../../assets/icons/h_w_facebook_b_p.svg') url('../../assets/icons/h_w_instagram_b_p.svg')
+    url('../../assets/icons/h_ta_b_02.svg') url('../../assets/icons/h_ta_b_01.svg');  
     position: absolute;
     right: 1000000px;
     display: none;
@@ -270,17 +272,23 @@ img {
  }
 
  .bg_1 {
-   background-image: url('../../assets/background/h_t_gallery_01.jpg');
+   background-image: url('../../assets/background/h_t_gallery_08.jpg');
  }
  .bg_2 {
    background-image: url('../../assets/background/h_t_gallery_02.jpg');
  }
  .bg_3 {
-   background-image: url('../../assets/background/h_t_gallery_03.jpg');
+   background-image: url('../../assets/background/h_t_gallery_06.jpg');
  }
  .bg_4 {
    background-image: url('../../assets/background/h_t_gallery_04.jpg');
  }
  .bg_5 {
-   background-image: url('../../assets/background/h_t_gallery_05.jpg');
+   background-image: url('../../assets/background/h_t_gallery_01.jpg');
+ }
+ .bg_6 {
+   background-image: url('../../assets/background/h_t_gallery_03.jpg');
+ }
+ .bg_7 {
+   background-image: url('../../assets/background/h_t_gallery_07.jpg');
  }

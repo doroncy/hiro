@@ -1,4 +1,7 @@
 @import '../../styles/foundation/foundation.scss';
+$size: 20px;
+$speed: 3s;
+$peakopacity:0.7;
 
 .welcome-wrap {
   &.heb {
@@ -58,7 +61,7 @@
       width: 190px;
       margin: 0 auto;
       margin-top: 20px;
-    }    
+    }
   }
   .telephone-image {
     background-image: url('../../assets/icons/h_telephone_b.svg');
@@ -69,6 +72,76 @@
       background-image: url('../../assets/icons/h_telephone_b_w.svg');
     }
   }
+  .take-away-curtain-image-wrap {
+    position: absolute;
+    bottom: 60px;
+    z-index: 9999;
+    width: 100%;
+    .take-away-curtain-image {
+      background-image: url('../../assets/icons/h_ta_b_02.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 80px;
+      width: 240px;
+      margin: 0 auto;
+      cursor: pointer;
+      &:hover {
+        background-image: url('../../assets/icons/h_ta_b_01.svg');
+      }
+    }
+  }
+  .anim-arrows {
+    position: relative;
+    /**/
+    position: absolute;
+    top: 100px;
+    left:50%;
+    /**/
+    width:$size;
+    height:$size;
+    transform:translate(-50%,-50%);
+    &:before {
+      content: '';
+      position: absolute;
+      width:100%;
+      height:100%;
+      border-left:$size/3 solid rgba(255, 255, 255,$peakopacity);
+      border-bottom:$size/3 solid rgba(255, 255, 255,$peakopacity);
+      transform:translate($size/3,$size*4/3)rotate(-45deg);
+      animation: arrows $speed linear infinite;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      width:100%;
+      height:100%;
+      border-left:$size/3 solid rgba(255, 255, 255,$peakopacity);
+      border-bottom:$size/3 solid rgba(255, 255, 255,$peakopacity);
+      transform:translate($size*2/3,0px)rotate(-45deg) ;
+      animation: arrows $speed linear infinite $speed/-2;
+    }
+  }
+  @keyframes arrows {
+  0% {
+      border-left:$size/3 solid rgba(255, 255, 255,0);
+      border-bottom:$size/3 solid rgba(255, 255, 255,0);
+      transform:translate($size/-6,$size*4/-6)rotate(-45deg) ;
+  }
+  10%, 90% {
+      border-left:$size/3 solid rgba(255, 255, 255,0);
+      border-bottom:$size/3 solid rgba(255, 255, 255,0);
+  }
+  50% {
+      border-left:$size/3 solid rgba(255, 255, 255,$peakopacity);
+      border-bottom:$size/3 solid rgba(255, 255, 255,$peakopacity);
+      transform:translate($size/-6,0px)rotate(-45deg) ;
+  }
+  100% {
+      border-left:$size/3 solid rgba(255, 255, 255,0);
+      border-bottom:$size/3 solid rgba(255, 255, 255,0);
+      transform:translate($size/-6,$size*4/6)rotate(-45deg) ;
+  }
+}
   &.en {
     .aharoni-head-image {
       float: right;

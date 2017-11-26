@@ -17,10 +17,16 @@ import gallery9 from '../../assets/gallery/h_w_gallery_9.jpg';
 import gallery10 from '../../assets/gallery/h_w_gallery_10.jpg';
 import gallery11 from '../../assets/gallery/h_w_gallery_11.jpg';
 import gallery12 from '../../assets/gallery/h_w_gallery_12.jpg';
+import gallery14 from '../../assets/gallery/h_w_gallery_14.jpg';
+import gallery16 from '../../assets/gallery/h_w_gallery_16.jpg';
+import gallery17 from '../../assets/gallery/h_w_gallery_17.jpg';
+import gallery18 from '../../assets/gallery/h_w_gallery_18.jpg';
+import gallery19 from '../../assets/gallery/h_w_gallery_19.jpg';
 import galleryBtnSvg from '../../assets/icons/h_w_arrow_b.svg';
 
-const galleryImages = [gallery7, gallery2, gallery3, gallery4, gallery5,
-gallery6, gallery1, gallery8, gallery9, gallery10, gallery11, gallery12];
+const galleryImages = [gallery17, gallery7, gallery2, gallery12, gallery3, gallery4, gallery5,
+gallery6, gallery19, gallery1, gallery8, gallery14, gallery9, gallery10, gallery11, gallery16,
+gallery18];
 
 const galleryImagesHtml = galleryImages.map((image, index)=> {
     return (

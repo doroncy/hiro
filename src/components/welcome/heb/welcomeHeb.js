@@ -20,6 +20,12 @@ const WelcomeHeb = (props) => {
           <div className="telephone-image"></div>
         </a>
         <div className="curtain"></div>
+        <div className="take-away-curtain-image-wrap">
+          <a href="tel:*3721">
+            <div className="take-away-curtain-image"></div>
+          </a>
+          <div className="anim-arrows"></div>
+        </div>
         <div className={`row welcome-container animated-fast ${welcomeLogosClass}`}>
           <div className="small-10 small-centered columns">
             <div className={`welcome-logos-wrap`}>
