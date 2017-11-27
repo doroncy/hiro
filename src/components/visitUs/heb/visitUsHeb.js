@@ -29,7 +29,7 @@ const VisitUsHeb = (props) => {
       <div className="small-10 small-centered columns">
         <div className="visitus-wrap">
           <div className="row">
-            <div className="small-12 small-centered medium-uncentered medium-3 columns">
+            <div className="small-12 small-centered medium-3 medium-offset-9 end columns">
               <TrackedDiv formulas={[topBottom]}>
                 {(posTopBottom) =>
                   <div className={cx("scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+150})}>
@@ -47,7 +47,6 @@ const VisitUsHeb = (props) => {
                   <div className={cx("scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+150})}>
                     <div className="run-font-medium full-width clearfix visitus-title">
                       <div className="float-right visitus-title-text assistant-bold">
-                        <Translate text={`${props.language}.visitUs.sarona.name`}/>,
                         <Translate text={`${props.language}.visitUs.sarona.address`}/>
                       </div>
                       <div className="float-left visitus-title-text assistant-bold">
@@ -88,8 +87,7 @@ const VisitUsHeb = (props) => {
                 {(posTopBottom) =>
                   <div className={cx("scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+150})}>
                     <div className="run-font-medium full-width clearfix visitus-title">
-                      <div className="float-right visitus-title-text assistant-bold">
-                        <Translate text={`${props.language}.visitUs.hashmal.name`}/>,
+                      <div className="float-right visitus-title-text assistant-bold">                      
                         <Translate text={`${props.language}.visitUs.hashmal.address`}/>
                       </div>
                       <div className="float-left visitus-title-text assistant-bold">

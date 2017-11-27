@@ -18,9 +18,9 @@ $peakopacity:0.7;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url('../../assets/h_w_curtain_large.svg');
+    background-image: url('../../assets/h_w_curtain_large.png');
     @include breakpoint(medium down) {
-      background-image: url('../../assets/h_w_curtain_small.svg');
+      background-image: url('../../assets/h_w_curtain_small.png');
     }
   }
   .takeaway-gif {
@@ -81,8 +81,8 @@ $peakopacity:0.7;
       background-image: url('../../assets/icons/h_ta_b_02.svg');
       background-size: contain;
       background-repeat: no-repeat;
-      height: 80px;
-      width: 240px;
+      height: 70px;
+      width: 200px;
       margin: 0 auto;
       cursor: pointer;
       &:hover {
@@ -94,7 +94,7 @@ $peakopacity:0.7;
     position: relative;
     /**/
     position: absolute;
-    top: 100px;
+    top: 90px;
     left:50%;
     /**/
     width:$size;

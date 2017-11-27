@@ -21,7 +21,7 @@ const WelcomeEN = (props) => {
         </a>
         <div className="curtain"></div>
         <div className="take-away-curtain-image-wrap">
-          <a href="tel:*3721">
+          <a href="https://hiroramenbar.m-secured.co.il/he_IL/branches" target="_blank" title="delivery">
             <div className="take-away-curtain-image"></div>
           </a>
           <div className="anim-arrows"></div>

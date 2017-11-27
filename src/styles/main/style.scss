@@ -17,7 +17,7 @@ body {
     url('../../assets/background/h_t_gallery_03.jpg') url('../../assets/background/h_t_gallery_04.jpg') url('../../assets/background/h_t_gallery_06.jpg')
     url('../../assets/background/h_t_gallery_07.jpg') url('../../assets/background/h_t_gallery_08.jpg')
     url('../../assets/icons/h_w_facebook_b_p.svg') url('../../assets/icons/h_w_instagram_b_p.svg')
-    url('../../assets/icons/h_ta_b_02.svg') url('../../assets/icons/h_ta_b_01.svg');  
+    url('../../assets/icons/h_ta_b_02.svg') url('../../assets/icons/h_ta_b_01.svg');
     position: absolute;
     right: 1000000px;
     display: none;
@@ -270,7 +270,13 @@ img {
      transition: all 1s ease;
    }
  }
-
+ .curtain {
+   .background-wrap {
+     left: 0 !important;
+     right: 0 !important;
+   }
+ }
+ 
  .bg_1 {
    background-image: url('../../assets/background/h_t_gallery_08.jpg');
  }

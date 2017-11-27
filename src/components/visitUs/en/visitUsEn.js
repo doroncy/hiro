@@ -48,7 +48,6 @@ const VisitUsEn = (props) => {
                   <div className={cx("scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+150})}>
                     <div className="run-font-medium full-width clearfix visitus-title">
                       <div className="float-left visitus-title-text">
-                        <Translate text={`${props.language}.visitUs.sarona.name`}/>,
                         <Translate text={`${props.language}.visitUs.sarona.address`}/>
                       </div>
                       <div className="float-right visitus-title-text">
@@ -93,8 +92,7 @@ const VisitUsEn = (props) => {
                 {(posTopBottom) =>
                   <div className={cx("scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+150})}>
                     <div className="run-font-medium full-width clearfix visitus-title">
-                      <div className="float-left visitus-title-text">
-                        <Translate text={`${props.language}.visitUs.hashmal.name`}/>,
+                      <div className="float-left visitus-title-text">                      
                         <Translate text={`${props.language}.visitUs.hashmal.address`}/>
                       </div>
                       <div className="float-right visitus-title-text">
