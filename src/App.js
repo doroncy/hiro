@@ -89,8 +89,7 @@ class App extends React.Component {
     return scrollPosition;
   }
 
-  changeLanguage(newLanguage) {
-    console.log('changeLanguage', newLanguage);
+  changeLanguage(newLanguage) {    
     this.setState({
       language: newLanguage
     });

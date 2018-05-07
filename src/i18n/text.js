@@ -46,77 +46,307 @@ const texts = {
     },
     "menu": {
       "title": "MENU",
-      "ramen": {
-        "gochu": {
-          "title": "GOCHU RAMEN (BRAISED BRISKET / STEAMED CHICKEN BREAST)",
-          "description": "Korean fermented chili paste (Spicy), pak choi, shitake mushroom, takuan, daikon radish, spring onion, nori seaweed, soy marinated egg."
-        },
-        "dandan": {
-          "title": "DAN DAN RAMEN",
-          "description": "Ground beef, pak choi, shitake mushrooms, pickled daikon, sprauts, spring onion and soy egg"
-        },
-        "chicken": {
-          "title": "CHICKEN RAMEN",
-          "description": "Marinated steamed chicken breast, pak choi, shitake mushrooms, pickled daikon, sprauts, spring onion and soy egg"
-        },
-        "tofu": {
-          "title": "SILKEN TOFU RAMEN",
-          "description": "Marinated tofu cubes, pak choi, shitake mushrooms, pickled daikon, sprauts, spring onion, wakame seaweed and soy egg"
-        }
-      },
-      "bun": {
-        "beef": {
-          "title": "BEEF BUN",
-          "description": "Steamed bun with long cooked beef breast, kimchi mayonnaise, crispy lettuce, cucumbers marinated easy, pickled radishes, green onions."
-        },
-        "chicken": {
-          "title": "CHICKEN BUN",
-          "description": "Steamed bun with chicken breast marinated chili honey mayonnaise, crispy lettuce, pickled daikon, green onions and crispy shallots."
-        },
-        "vegan": {
-          "title": "VEGAN BUN",
-          "description": "Steamed bun with roasted eggplant, sake and mirin, sweet miso, lemon confit garlic, toasted sesame seeds, green onions and shiso leaf."
-        }
-      },
-      "starter": {
-        "wings": {
-          "title": "GLAZED CHICKEN WINGS",
-          "description": "Soy cinnamon and star anise"
-        },
-        "chickenGyoza": {
-          "title": "CHICKEN GYOZA",
-          "description": "Spring onion and shitake mushrooms"
-        },
-        "veganGyoza": {
-          "title": "VEGAN GYOZA",
-          "description": "Spinach, shitake mushrooms and napa cabbage"
-        }
-      },
+      "vegan": "Vegan / Vegetarian",
+      "foodMenu": "Food Menu",
+      "drinksMenu": "Drinks Menu",
+      "dinnerMenu": "Dinner Menu",
+      "businessMenu": "Business Menu",
+      "appetizer": "Appetizer ",
+      "main": "Main Course ", 
+      "inBetween": "In-Between",     
+      "choose": "(Choose from selection)",
+      "extra": "Extras",
+      "bun2pcs": " (2 pcs)",
+      "teaTitle": "Iced Tea",
       "salad": {
-        "daikon": {
-          "title": "￼CARROT AND DAIKON SALAD",
-          "description": "Slightly pickled"
+        "title": "Salad",
+        "green": {
+          "title": "Green Vegetable Salad",
+          "subTitle": "In miso, lemon and sugar coated cashews"              
+        },
+        "carrots": {
+          "title": "Pickled Carrots and Daikon",
+          "subTitle": "In fine marinade"              
         },
         "eggplant": {
-          "title": "￼EGGPLANT SALAD",
-          "description": "Steamed eggplant, soy, mirin, garlic and yuzu"
+          "title": "Steamed Eggplant Salad",
+          "subTitle": "Soy, mirin, garlic, ginger and chili"              
         },
-        "cucumber": {
-          "title": "￼CUCUMBER AND CHICKEN SALAD",
-          "description": "Wakame seaweed and orange ponzu sauce"
+        "chicken": {
+          "title": "Chicken and Cucumbers Salad",
+          "subTitle": "Wakame seaweed, orange ponzu, wasabi beans"              
         },
-        "beans": {
-          "title": "￼GREEN BEANS SALAD",
-          "description": "Miso and sesame paste dressing"
+        "seaweed": {
+          "title": "Seaweed and Noodles Salad",
+          "subTitle": "Glass noodles with marinated kombu seaweed, pickled garlic and chili"              
         },
-        "vegetables": {
-          "title": "￼￼GREEN VEGETABLES SALAD",
-          "description": "Snow peas, broccoli, peas and spring onion with a lemon and miso dressing"
-        },
-        "kombu": {
-          "title": "￼￼KOMBU SALAD",
-          "description": "Marinated kombu seaweed, bean noodles, spring onion, pickled garlic, chili and sesame."
+        "liver": {
+          "title": "Chicken Liver Salad",
+          "subTitle": "Crispy kohlrabi and anise fragrance"              
         }
+      },
+      "gyoza": {
+        "title": "Gyoza",
+        "chicken": {
+          "title": "Chicken Gyoza",
+          "subTitle": "4 pcs, green onions and shitake"              
+        },
+        "pork": {
+          "title": "Pork Gyoza",
+          "subTitle": "4 pcs, ginger, garlic, shallots and shitake"              
+        },    
+        "vegan": {
+          "title": "Vegan Gyoza",
+          "subTitle": "4 pcs, pak choi, spinach and shitake"              
+        },
+        "mix": {
+          "title": "Half & Half Gyoza",
+          "subTitle": "2 pcs of chicken & 2 pcs of vegan"              
+        },
+        "gyozaSixPack": "* 6 pcs gyoza meal available for an extra 15 nis"
+      },
+      "bun": {
+        "title": "Bun",
+        "chicken": {
+          "title": "Chicken Bun",
+          "subTitle": "Mayo-racha, takuan and pickled onion"              
+        },
+        "beef": {
+          "title": "Separated Beef Bun",
+          "subTitle": "Mayo-kimchi, pickled cucumber and radish slushie"              
+        },
+        "eggplant": {
+          "title": "Eggplant Bun",
+          "subTitle": "Garlic aioli, miso, gochujang, shiso and roasted eggplant"              
+        },
+        "squash": {
+          "title": "Butternut Squash Bun",
+          "subTitle": "Peppers aioli, miso and crispy shallot"              
+        },
+        "steamed": {
+          "title": "Steamed Buns Meal",
+          "subTitle": "Choice of two buns and a salad",              
+        },
+        "duck": {
+          "title": "Duck Bun",
+          "subTitle": "Mayo-Hoisin, coleslaw and takuan"              
+        },
+        "pork": {
+          "title": "Pork Bun",
+          "subTitle": "Mayo-Yuzu, cucumber in miso and pickled onion"              
+        },
+        "vegan": {
+          "title": "Vegan Bun",
+          "subTitle": "Garlic aioli, miso, gochujang, shiso and roasted eggplant",              
+        },
+        "chutney": {
+          "title": "Chicken and Chutney Bun",
+          "subTitle": "mayo-yuzu, togarashi, scorched leek and pea sprouts"              
+        }
+      },
+      "between": {
+        "title": "In-Between",
+        "wings": {
+          "title": "Roasted Wings",
+          "subTitle": "8 pcs in Miso glaze, soy, ginger, chili and star anise"              
+        },
+        "pork": {
+          "title": "Pork Slices",
+          "subTitle": "Spicy marinade and chopped cashew nuts"              
+        },
+        "tofu": {
+          "title": "Silken Tofu",
+          "subTitle": "Red miso and crispy nori"              
+        },
+        "chickenGyoza": {
+          "title": "Chicken Gyoza",
+          "subTitle": "4 pcs, green onions and shitake"              
+        },  
+        "veganGyoza": {
+          "title": "Vegan Gyoza",
+          "subTitle": "4 pcs, pak choi, spinach and shitake"              
+        },
+        "mixGyoza": {
+          "title": "Half & Half Gyoza",
+          "subTitle": "2 pcs of chicken & 2 pcs of vegan"              
+        },
+        "gyozaSixPack": "* 6 pcs gyoza meal available for an extra 15 nis"
+      },
+      "ramen": {
+        "title": "Ramen",
+        "gochu": {
+          "title": "Ramen Gochu Chicken / Beef",
+          "subTitle": "Gochujang, nori seaweed, pak choi and egg"              
+        },
+        "gochuBeef": {
+          "title": "Gochu Beef",
+          "subTitle": "Gochujang, nori seaweed, pak choi and egg"              
+        },
+        "gochuChicken": {
+          "title": "Gochu Chicken",
+          "subTitle": "Gochujang, nori seaweed, pak choi and egg"              
+        },
+        "dandan": {
+          "title": "Dan Dan Ramen",
+          "subTitle": "Minced meat, pak choi, daikon and egg"              
+        },
+        "chicken": {
+          "title": "Chicken Ramen",
+          "subTitle": "Marinated steamed chicken breast, pak choi, shitake mushrooms, pickled daikon, sprauts, spring onion and egg"              
+        },
+        "tofu": {
+          "title": "Silken Tofu Ramen",
+          "subTitle": "Silken tofu, wakame seaweed, pak choi / egg"              
+        },
+        "duck": {
+          "title": "Duck Ramen",
+          "subTitle": "Chestnuts, kanpyo, tamago and apricot chutney"              
+        },
+        "pork": {
+          "title": "Pork Ramen",
+          "subTitle": "Arisa, bamboo shoots, roasted corn and egg"              
+        },
+        "vegetarian": {
+          "title": "Vegetarian / Vegan Ramen",
+          "subTitle": "Silken tofu, wakame seaweed, pak choi and egg"              
+        },
+        "addGyuza": "* 2 pcs of steamed gyoza in the ramen available for an extra 15 nis"
+      },
+      "soft": {
+        "title": "Soft Drinks",
+        "cola": {
+          "title": "Coca Cola"
+        },
+        "colaZero": {
+          "title": "Coca Cola Zero"
+        },
+        "water": {
+          "title": "Mineral Water",               
+        },
+        "sparkling": {
+          "title": "Singha Sparkling Water",               
+        }
+      },
+      "beer": {
+        "title": "beer",
+        "titlePlus": "beer & Sake",
+        "leo": {
+          "title": "Leo Beer (Bottle)"          
+        },
+        "stella": {
+          "title": "Stella Artois (Draft)"          
+        }            
+      },
+      "sake": {
+        "title": "Sake",                
+        "karakuchi": {
+          "title": "Nihonsakari-Karakuchi",
+          "subTitle": "Carafe 240 ml"
+        },
+        "nigiwai": {
+          "title": "Nihonsakari-Nigiwai",
+          "subTitle": "Carafe 240 ml"
+        },
+        "unfiltered": {
+          "title": "Nigori (Unfiltered)",
+          "subTitle": "Carafe 240 ml"
+        }    
+      },
+      "beerAndSake": {
+        "title": "beer & Sake",        
+        "leo": {
+          "title": "Leo Beer",
+          "subTitle": "Bottle"
+        },
+        "sakeGlass": {
+          "title": "Glass of Sake Hakutsuru"
+        },
+        "sakeDraft": {
+          "title": "Draft Sake Hakutsuru"
+        },
+        "sakeOzeki": {
+          "title": "Sake Ozeki Dry"
+        },
+      },
+      "cocktails": {
+        "title": "Cocktails",
+        "doozo": {
+          "title": "O–Saki Ni Doozo",
+          "subTitle": "Rum, sake, apple, rosted sesame, lemon and yuzo"      
+        },
+        "samasu": {
+          "title": "Me Wo Samasu",
+          "subTitle": "Gin, sake, mirin, wassabi, lemon juice and fresh pineapple juice"      
+        },
+        "spritz": {
+          "title": "Ninja Spritz",
+          "subTitle": "Aperol, geranium, sake with lavender and sparkling white wine"
+        },
+        "sour": {
+          "title": "Sakura Sour",
+          "subTitle": "Gin, lychee, rosemary, pomegranate and lemon"
+        },
+        "smoky": {
+          "title": "Old Smoky Bastard",
+          "subTitle": "Mezcal, kaffir lime, ginger syrup, lemon and ginger beer"
+        }
+      },
+      "wine": {
+        "title": "Wine",
+        "priceTitle": "Bottle | Carafe | Glass",        
+        "white": {
+          "title": "Rioja Lopez De Haro",
+          "subTitle": "White wine"
+        },
+        "red": {
+          "title": "Montepulciano D'abruzzo",
+          "subTitle": "Red wine"
+        }
+      },
+      "hot": {
+        "title": "Hot Drinks",
+        "green": {
+          "title": "Green Herbs Tea"              
+        }
+      },
+      "noodles": {
+        "title": "Noodles",
+        "dandan": {
+          "title": "Dan Dan Noodles",
+          "subTitle": "Minced meat, takuan, pak choi and egg"              
+        },
+        "chicken": {
+          "title": "Chicken Noodles",
+          "subTitle": "Portobello mushrooms, shimeji mushrooms and edamame"              
+        },
+        "vegetarian": {
+          "title": "Vegetarien Noodles",
+          "subTitle": "2 types of mushrooms and lots of green"              
+        }
+      },
+      "dessert": {
+        "title": "Dessert",
+        "yuzu": {
+          "title": "Apricot & Yuzu Ice Cream",
+          "subTitle": "Ginger marmalade"              
+        }
+      },
+      "kids": {
+        "title": "Kids meal",
+        "various": {
+          "title": "Various Meals",
+          "subTitle": "Ask the waiter"              
+        }
+      },
+      "business": {
+        "tabName": "Business Lunch"        
+      },
+      "tea": {
+        "yuzu": "Apples Mint and Yuzu"
+      },
+      "businessIncludes": {
+        "title": "Business lunch includes",
+        "price": "Business lunch priced according to the price of the main course"
       }
     },
     "gallery": {
@@ -181,79 +411,309 @@ const texts = {
     },
     "menu": {
       "title": "תפריט",
-      "ramen": {
-        "gochu": {
-          "title": `גוצ'ו ראמן (ברוסט בקר צלוי / חזה עוף מאודה)`,
-          "description": "מחית פלפל צ'ילי קוריאנית (מעט חריף), פאק צוי, פטריות שיטאקה, טקואן, בצל ירוק, אצת נורי וביצה במשרת סויה."
+      "vegan": "טבעוני / צמחוני",
+      "foodMenu": "תפריט אוכל",
+      "drinksMenu": "תפריט שתיה",
+      "dinnerMenu": "תפריט ערב",
+      "businessMenu": "תפריט עסקיות",
+      "appetizer": "מנה ראשונה ",
+      "main": "מנה עיקרית ", 
+      "inBetween": "בין לבין",     
+      "choose": "(לבחירה)",
+      "extra": "תוספות לעסקית",
+      "bun2pcs": " (2 יח‘)",
+      "teaTitle": "תה קר",
+      "salad": {
+        "title": "סלט",
+        "green": {
+          "title": "סלט ירקות ירוקים",
+          "subTitle": "חלוטים קלות במיסו - לימון וקשיו מסוכר"              
         },
-        "dandan": {
-          "title": "דן דן ראמן",
-          "description": "בשר טחון, פאק צ'וי, פטרית שיטאקה, טקואן, נבטים, בצל ירוק וביצת סויה."
+        "carrots": {
+          "title": "גזר ודייקון כבושים",
+          "subTitle": "בתחמיץ עדין"              
+        },
+        "eggplant": {
+          "title": "סלט חציל מאודה",
+          "subTitle": "סויה, מירין, שום, ג'ינג'ר וצ'ילי"              
         },
         "chicken": {
-          "title": "ראמן עוף",
-          "description": "פאק צ'וי, פטרית שיטאקה, טקואן, נבטים בצל ירוק וביצת סויה."
+          "title": "סלט עוף ומלפפונים",
+          "subTitle": "אצות וואקמה, פונזו תפוז, אפונת ווסאבי"              
         },
-        "tofu": {
-          "title": "ראמן טופו משי",
-          "description": "פאק צ'וי, פטרית שיטאקה, טקואן, נבטים, בצל ירוק אצות וואקמה וביצת סויה."
+        "seaweed": {
+          "title": "סלט אצות ואטריות",
+          "subTitle": "גלאס נודלס, אצות קומבו במרינדה, שום כבוש וצ'ילי"              
+        },
+        "liver": {
+          "title": "סלט כבדי עוף",
+          "subTitle": "בניחוח אניס קל וקולורבי פריך"              
         }
       },
-      "bun": {
-        "beef": {
-          "title": "באן בקר",
-          "description": "לחמניית באן מאודה חזה בקר בבישול ארוך, מיונז קימצ'י, חסה פריכה, מלפפונים בתחמיץ קל, בצל ירוק וצנוניות כבושות."
+      "gyoza": {
+        "title": "גיוזה",
+        "chicken": {
+          "title": "גיוזה פרגית",
+          "subTitle": "4 יח', בצל ירוק ושיטאקה"              
         },
+        "pork": {
+          "title": "גיוזה חזיר",
+          "subTitle": "4 יח', ג'ינג'ר, שום, שאלוט ושיטאקה"              
+        },    
+        "vegan": {
+          "title": "גיוזה טבעונית",
+          "subTitle": "4 יח', פאק צ'וי, תרד ושיטאקה"              
+        },
+        "mix": {
+          "title": "גיוזה חצי חצי",
+          "subTitle": "2 יח' פרגית ו -2 יח' טבעונית"              
+        },
+        "gyozaSixPack": "￼￼* את כל מנות הגיוזה ניתן להזמין בשש יח' בתוספת 16 ₪"        
+      },
+      "bun": {
+        "title": "באן",
         "chicken": {
           "title": "באן עוף",
-          "description": "לחמניית באן מאודה עם חזה עוף מאודה במרינדה מיונז צ'ילי–דבש, חסה פריכה, טקואן, בצל ירוק ובצלי שאלוט פריכים."
+          "subTitle": "מיו-ראצ'ה, טקואן ובצל כבוש"              
+        },
+        "beef": {
+          "title": "באן בקר מפורק",
+          "subTitle": "מיו-קימצ'י, מלפפון כבוש וברד צנונית"   
+        },
+        "eggplant": {
+          "title": "באן חציל",
+          "subTitle": "חציל צלוי, איולי שום, מיסו, גוצ'וצ'אנג ושיסו"    
+        },
+        "squash": {
+          "title": "באן דלורית",
+          "subTitle": "סטייק דלורית, איולי פלפלים, מיסו אדום וקריספי שאלוט"    
+        },
+        "steamed": {
+          "title": "ארוחת באן",
+          "subTitle": "זוג באנס וסלט לבחירה"
+        },
+        "duck": {
+          "title": "באן ברווז",
+          "subTitle": "מיו-הוייסין, קולסלאו וטקואן"              
+        },
+        "pork": {
+          "title": "באן חזיר",
+          "subTitle": "מיו-יוזו, מלפפון במיסו ובצל כבוש"              
         },
         "vegan": {
           "title": "באן טבעוני",
-          "description": "לחמניית באן מאודה עם חציל קלוי, סאקה ומירין, מיסו מתקתק, מיונז קונפי שום לימוני, שומשום קלוי, בצל ירוק ועלה שיסו."
+          "subTitle": "חציל צלוי, איולי שום, מיסו, גוצ'וצ'אנג ושיסו",              
+        },
+        "chutney": {
+          "title": "באן עוף וצ'אטני",
+          "subTitle": "מיו-יוזו, טוגראשי, כרישה חרוכה ונבטי אפונה"              
         }
       },
-      "starter": {
+      "between": {
+        "title": "בין לבין",
         "wings": {
-          "title": "כנפיים",
-          "description": "צלויות בזיגוג אסיאתי, ג'ינג'ר, מיסו וסויה."
+          "title": "כנפיים צלויות",
+          "subTitle": "8 יח' בזיגוג מיסו, סויה, ג'ינג'ר, כוכב אניס וצ'ילי"              
+        },
+        "pork": {
+          "title": "פרוסות חזיר",
+          "subTitle": "מרינדה פיקנטית ואגוזי קשיו מרוסקים"              
+        },
+        "tofu": {
+          "title": "טופו משי",
+          "subTitle": "במיסו אדום ואצות נורי פריכות"              
         },
         "chickenGyoza": {
           "title": "גיוזה פרגית",
-          "description": `בצל ירוק, ופטריות שיטאקה (4 יח׳).`
-        },
+          "subTitle": "4 יח', בצל ירוק ושיטאקה"              
+        },  
         "veganGyoza": {
           "title": "גיוזה טבעונית",
-          "description": `פאק צ'וי, תרד ופטריות שיטאקה (4 יח׳).`
+          "subTitle": "4 יח', פאק צ'וי, תרד ושיטאקה"              
+        },
+        "mixGyoza": {
+          "title": "גיוזה חצי חצי",
+          "subTitle": "2 יח' פרגית ו -2 יח' טבעונית"              
+        },
+        "gyozaSixPack": "￼￼* את כל מנות הגיוזה ניתן להזמין בשש יח' בתוספת 16 ₪"        
+      },
+      "ramen": {
+        "title": "ראמן",
+        "gochu": {
+          "title": "ראמן גוצ'ו עוף / בקר",
+          "subTitle": "גוצ'וצ'אנג, אצת נורי, פאק צ'וי וביצה"                
+        },
+        "gochuBeef": {
+          "title": "ראמן גו‘צו בקר",
+          "subTitle": "גוצ'וצ'אנג, אצת נורי, פאק צ'וי וביצה"              
+        },
+        "gochuChicken": {
+          "title": "ראמן גוצ'ו עוף",
+          "subTitle": "גוצ'וצ'אנג, אצת נורי, פאק צ'וי וביצה"              
+        },
+        "dandan": {
+          "title": "ראמן דן דן",
+          "subTitle": "בשר טחון, פאק צ'וי, דייקון וביצה"
+        },
+        "chicken": {
+          "title": "ראמן עוף",
+          "subTitle": "פאק צ'וי, פטרית שיטאקה, טקואן, נבטים, בצל ירוק וביצ" 
+        },
+        "tofu": {
+          "title": "ראמן טופו משי",
+          "subTitle": "טופו משי, אצות וואקמה, פאק צ'וי / ביצה"  
+        },
+        "duck": {
+          "title": "ראמן ברווז",
+          "subTitle": "צ'אטני משמשים , ערמונים, קנפיו וטמאגו"              
+        },
+        "pork": {
+          "title": "ראמן חזיר",
+          "subTitle": `"אריסה", במבוק שוט, תירס צלוי וביצה`
+        },
+        "vegetarian": {
+          "title": "ראמן טופו משי (טבעוני / צמחוני)",
+          "subTitle": "טופו משי, אצות וואקמה, פאק צ'וי / ביצה"              
+        },
+        "addGyuza": "* ניתן להוסיף 2 יח׳ גיוזה מאודה למנות הראמן בתוספת 14 ₪",        
+      },
+      "soft": {
+        "title": "שתיה קלה",
+        "cola": {
+          "title": "קוקה קולה"
+        },
+        "colaZero": {
+          "title": "קולה זירו"
+        },
+        "water": {
+          "title": "מינרלים",               
+        },
+        "sparkling": {
+          "title": "סודה סינגה"
         }
       },
-      "salad": {
-        "daikon": {
-          "title": "￼סלט דייקון וגזר",
-          "description": "כבושים קלות."
+      "beer": {
+        "title": "בירה",        
+        "titlePlus": "בירה וסאקה",
+        "leo": {
+          "title": "לאו (בקבוק)"          
         },
-        "eggplant": {
-          "title": "￼סלט חציל",
-          "description": "חציל מאודה עם סויה, מירין, שום ויוזו."
+        "stella": {
+          "title": "סטלה ארטואה (חבית)"          
+        }            
+      },
+      "sake": {
+        "title": "Sake",                
+        "karakuchi": {
+          "title": "ניהון סאקארי- קאראקוצ׳י",
+          "subTitle": "קראף 240 מ“ל"
         },
-        "cucumber": {
-          "title": "￼סלט עוף ומלפפונים",
-          "description": "אצות וואקמה בויניגרט פונזו."
+        "nigiwai": {
+          "title": "ניהון סאקארי",
+          "subTitle": "קראף 240 מ“ל"
         },
-        "beans": {
-          "title": "￼סלט שעועית ירוקה",
-          "description": "מיסו ושומשום."
+        "unfiltered": {
+          "title": "ניגורי (לא מסונן)",
+          "subTitle": "קראף 240 מ“ל"
+        }    
+      },
+      "beerAndSake": {
+        "title": "בירה וסאקה",        
+        "leo": {
+          "title": "בירה לאו",
+          "subTitle": "בקבוק"
         },
-        "vegetables": {
-          "title": "סלט ירוקים",
-          "description": "עם שעועית, אפונה סינית, ברוקולי ואפונה במיסו-לימון."
+        "sakeGlass": {
+          "title": "סאקה כוס הקצורו ג'ונמאי"
         },
-        "kombu": {
-          "title": "￼￼סלט אצות קומבו",
-          "description": "אצות קומבו במרינדה, אטריות שעועית, בצל ירוק, שום כבוש, צ'ילי ושמן שומשום."
+        "sakeDraft": {
+          "title": "סאקה דראפט הקצורו ג'ונמאי"
+        },
+        "sakeOzeki": {
+          "title": "סאקה אוזקי דריי"
+        },
+      },
+      "cocktails": {
+        "title": "Cocktails",
+        "doozo": {
+          "title": "O–Saki Ni Doozo",
+          "subTitle": "רום, סאקה, שומשום קלוי, תפוחים, לימון ויוזו"      
+        },
+        "samasu": {
+          "title": "Me Wo Samasu",
+          "subTitle": "ג'ין, סאקה, מירין, וואסבי, לימון ואננס"      
+        },
+        "spritz": {
+          "title": "Ninja Spritz",
+          "subTitle": "אפרול עם גרניום, סאקה עם לוונדר ויין לבן מבעבע"
+        },
+        "sour": {
+          "title": "Sakura Sour",
+          "subTitle": "ג׳ין, ליצ׳י, רוזמרין, רימון ולימון"
+        },
+        "smoky": {
+          "title": "Old Smoky Bastard",
+          "subTitle": "מזקל, כפיר ליים, סירופ ג׳ינג׳ר, לימון וג׳ינג׳ר ביר ￼￼￼￼￼￼￼￼￼￼￼￼￼￼"
         }
+      },
+      "wine": {
+        "title": "ייו",
+        "priceTitle": "כוס | קראף | בקבוק",        
+        "white": {
+          "title": "ריוחה לופז דה הארו",
+          "subTitle": "יין לבן"
+        },
+        "red": {
+          "title": "מונטפולציאנו ד'אברוצו ",
+          "subTitle": "יין אדום"
+        }
+      },
+      "hot": {
+        "title": "שתיה חמה",
+        "green": {
+          "title": "תה תבלינים ירוק"  
+        }
+      },
+      "noodles": {
+        "title": "אטריות",
+        "dandan": {
+          "title": "דן דן אודון נודלס",
+          "subTitle": "בשר טחון, טקואן, פאק צ'וי וביצה"              
+        },
+        "chicken": {
+          "title": "צ'יקן אודון נודלס",
+          "subTitle": "פטריות פורטובלו, פטריות שימאג'י ואדממה"              
+        },
+        "vegetarian": {
+          "title": "וג'י אודון נודלס",
+          "subTitle": "2 סוגי פטריות והמון ירוק"              
+        }
+      },
+      "dessert": {
+        "title": "קינוח",
+        "yuzu": {
+          "title": "גלידת משמש ויוזו",
+          "subTitle": "עם מרמלדת ג'ינג'ר"              
+        }
+      },
+      "kids": {
+        "title": "ארוחת ילדים",
+        "various": {
+          "title": "מנות ילדים",
+          "subTitle": "מנה משתנה"              
+        }
+      },
+      "business": {
+        "tabName": "תפריט עסקיות"        
+      },
+      "tea": {
+        "yuzu": "תפוחים נענע ויוזו"
+      },
+      "businessIncludes": {
+        "title": "העסקית כוללת￼",
+        "price": "מחיר העסקית נקבע לפי המנה העיקרית"
       }
-    },
+    },    
     "gallery": {
       "title": "גלריה"
     },

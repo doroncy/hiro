@@ -1,5 +1,18 @@
 @import '../../styles/foundation/foundation.scss';
 
+.heb {
+  .menu-wrap {
+    direction: rtl;
+  }
+  .menu-item-title-wrap {
+    padding-right:0 !important;
+    padding-left: 15px;
+  }
+  .group-icon {        
+    padding-right: 0 !important;
+    padding-left: 8px !important;    
+  }
+}
 .menu-wrap {
   width: 90%;
   max-width: 700px;
@@ -7,7 +20,7 @@
   padding: 150px 0 50px;
   width: 100%;
   position: relative;
-
+  
   .menu-icon-wrap {
     position: absolute;
     top: 0;
@@ -33,9 +46,146 @@
     }
   }
 
+  .loc-btn.active {
+    .text-contentbox-wrap {
+      background-color: $pink;
+      color: #fff;    
+    }
+  }
+
+  .menu-sections-wrapper {
+    .menu-header {
+      display: grid;
+      grid-auto-flow: column;
+      align-items: center;
+      grid-gap: 10px 30px;
+      margin-bottom: 30px;
+      .menu-button {
+        border: 1px solid #000;
+        padding: 4px 8px;
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;
+        &:hover {
+          border-color: $pink;
+          background-color: $pink;
+          color: #fff;      
+        }
+        &.active {
+          border-color: $pink;
+          background-color: $pink;
+          color: #fff;                
+        }
+      }
+    }
+    .menu-body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px 30px;
+    }
+    padding: 30px;
+    box-sizing: border-box;
+    .menu-section-wrapper {
+      margin-bottom: 20px;
+    }
+  }
+  .group-title {
+    color: $pink;    
+    border-bottom: 1px solid $pink;
+    font-size: 20px !important;
+    padding-bottom: 4px;
+  }
+  .group-extra-title {
+    font-size: 14px !important;    
+  }
+  .group-icon {    
+    padding-right: 8px;
+    padding-left: 0;    
+    height: 28px;
+    width: 24px;    
+    padding-bottom: 6px;
+    box-sizing: border-box;
+  }
+  .business-header {
+    display: grid;
+    grid-template-columns: 1fr  1fr  1fr;
+    grid-row-gap: 10px;
+    color: $pink;
+    border: 1px solid $pink;
+    padding: 10px;
+    margin: 10px 0;
+    justify-items : center;    
+    img {
+      width: 20px;
+      height: 24px;
+      vertical-align: text-bottom;
+      margin: 0 6px;
+    }
+    .business-header-title, .business-header-footer {
+      grid-column: span 3;    
+      color: $pink;
+      text-align: center !important;
+    }
+    .business-header-body {
+      color: $pink;
+      font-size: 18px !important;
+    }
+  }
+  .menu-section-title {
+    display: grid;
+    grid-template-columns: 1fr 120px;
+    color: $pink;
+    font-size: 16px !important;
+  }
+  .menu-section-price-title {
+    font-size: 12px !important;
+    justify-self: end;
+  }
+  .menu-item-wrapper {
+    margin-bottom: 10px;    
+  }
+  .menu-item-inner {
+    display: grid;
+    grid-template-columns: 1fr 40px;    
+    &.long-price {
+      grid-template-columns: 1fr 80px;
+    }
+    .menu-item-title-wrap {
+      padding-right: 15px;
+    }
+    .menu-item-title {
+      font-size: 16px !important;
+      line-height: 1.4 !important;
+    }
+    .menu-item-subtitle {
+      font-size: 16px !important;
+      line-height: 1.2!important;
+    }
+    .menu-item-price {
+      justify-self: end;
+      font-size: 14px !important;
+      font-weight: bold;
+      line-height: 22px !important
+    }
+  }  
+  .menu-item-extra {    
+    padding-top: 4px;
+    font-size: 16px!important;
+    line-height: 1.2!important;
+  }
   // Mobile
   @include breakpoint(small down) {
     padding-top: 40px;    
+    .menu-body {
+      grid-template-columns: 1fr !important;
+    }
+    .menu-header {
+      grid-auto-flow: initial !important;
+      grid-template-columns: 1fr;
+    }
+    .business-header-body { 
+      grid-column: span 3;
+    }
   }
 
   @include breakpoint(xxlarge up) {
