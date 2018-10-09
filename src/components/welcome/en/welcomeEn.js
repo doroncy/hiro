@@ -11,7 +11,7 @@ const WelcomeEN = (props) => {
   let welcomeLogosClass = getWelcomeLogosClassName(props.scrollPosition);
   return (
       <div className={`welcome-wrap ${props.language}`}>
-        <a href="https://hiroramenbar.m-secured.co.il/he_IL/branches" target="_blank" title="delivery"
+        <a href="https://order.plweb.online/branchesPage/hiroramenbar#!/branchesPage/hiroramenbar" target="_blank" title="delivery"
           className={`hide-for-small-only takeaway-gif animated-fast ${welcomeLogosClass}`}>
           <TextContentBox text={`${props.language}.welcome.takeAway`} css="text-center full-width space-bottom take-away-title"/>
           <img src={TakeAwayGif} className="take-away-image"/>
@@ -21,7 +21,7 @@ const WelcomeEN = (props) => {
         </a>
         <div className="curtain"></div>
         <div className="take-away-curtain-image-wrap">
-          <a href="https://hiroramenbar.m-secured.co.il/he_IL/branches" target="_blank" title="delivery">
+          <a href="https://order.plweb.online/branchesPage/hiroramenbar#!/branchesPage/hiroramenbar" target="_blank" title="delivery">
             <div className="take-away-curtain-image"></div>
           </a>
           <div className="anim-arrows"></div>
@@ -48,7 +48,7 @@ const WelcomeEN = (props) => {
                   </div>
                   <div className="row">
                     <div className="small-12 small-centered hide-for-medium columns">
-                      <a href="https://hiroramenbar.m-secured.co.il/he_IL/branches" target="_blank" title="delivery">
+                      <a href="https://order.plweb.online/branchesPage/hiroramenbar#!/branchesPage/hiroramenbar" target="_blank" title="delivery">
                         <div className="welcome-text-wrap run-font-xlarge take-away-lg-btn">
                           <TextContentBox text={`${props.language}.welcome.takeAway`}/>
                         </div>

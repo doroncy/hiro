@@ -135,7 +135,7 @@ const VisitUsEn = (props) => {
 
       <div className="row site-footer">
         <div className="small-12 medium-6 small-centered medium-uncentered columns">
-          <div className="text-center">COPYRIGHT 2017 HIRO. ALL RIGHTS RESERVED</div>
+          <div className="text-center">COPYRIGHT 2018 HIRO. ALL RIGHTS RESERVED</div>
         </div>
         <div className="small-12 medium-6 small-centered medium-uncentered columns">
           <div className="text-center">

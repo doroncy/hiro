@@ -12,11 +12,11 @@ const HASHMAL_MENU = {
                 {
                     title: 'salad',
                     items: [
-                        {title: 'green.title', subTitle: 'green.subTitle', price: ''},
-                        {title: 'carrots.title', subTitle: 'carrots.subTitle', price: ''},
-                        {title: 'eggplant.title', subTitle: 'eggplant.subTitle', price: ''},
-                        {title: 'chicken.title', subTitle: 'chicken.subTitle', price: ''},
-                        {title: 'seaweed.title', subTitle: 'seaweed.subTitle', price: ''}
+                        {title: 'carrots_s.title', subTitle: 'carrots_s.subTitle', price: ''},
+                        {title: 'chicken_s.title', subTitle: 'chicken_s.subTitle', price: ''},
+                        {title: 'eggplant_s.title', subTitle: 'eggplant_s.subTitle', price: ''},
+                        {title: 'seaweed_s.title', subTitle: 'seaweed_s.subTitle', price: ''},
+                        {title: 'beet_s.title', subTitle: 'beet_s.subTitle', price: ''},                 
                     ]
                 }
             ]            
@@ -30,30 +30,31 @@ const HASHMAL_MENU = {
                     title: 'bun',
                     extraTitle: 'bun2pcs',
                     items: [                        
-                        {title: 'chicken.title', subTitle: 'chicken.subTitle', price: '54'},
-                        {title: 'beef.title', subTitle: 'beef.subTitle', price: '58'},           
-                        {title: 'vegan.title', subTitle: 'vegan.subTitle', price: '54'},
-                        {title: 'squash.title', subTitle: 'squash.subTitle', price: '52'},
-                        {title: 'chutney.title', subTitle: 'chutney.subTitle', price: '56'},
-                        {title: 'duck.title', subTitle: 'duck.subTitle', price: '58'}                
+                        {title: 'chicken_s.title', subTitle: 'chicken_s.subTitle', price: '64'},
+                        {title: 'chutney_s.title', subTitle: 'chutney_s.subTitle', price: '66'},           
+                        {title: 'beef_s.title', subTitle: 'beef_s.subTitle', price: '68'},
+                        {title: 'duck_s.title', subTitle: 'duck_s.subTitle', price: '68'},                
+                        {title: 'belly_s.title', subTitle: 'belly_s.subTitle', price: '68'},                
+                        {title: 'eggplant_s.title', subTitle: 'eggplant_s.subTitle', price: '59'},
+                        {title: 'squash_s.title', subTitle: 'squash_s.subTitle', price: '59'},                        
                     ]
                 },
                 {
-                    title: "noodles",
+                    title: "wok",
                     items: [
-                        {title: 'dandan.title', subTitle: 'dandan.subTitle', price: '64'},
-                        {title: 'chicken.title', subTitle: 'chicken.subTitle', price: '64'},                
-                        {title: 'vegetarian.title', subTitle: 'vegetarian.subTitle', price: '64'}                
+                        {title: 'dandan.title', subTitle: 'dandan.subTitle', price: '76'},
+                        {title: 'tofu.title', subTitle: 'tofu.subTitle', price: '72'},
+                        {title: 'chicken.title', subTitle: 'chicken.subTitle', price: '74'},                                        
                     ]
                 },
                 {
                     title: "ramen",
                     items: [
-                        {title: 'gochuBeef.title', subTitle: 'gochuBeef.subTitle', price: '68'},
-                        {title: 'dandan.title', subTitle: 'dandan.subTitle', price: '68'},
-                        {title: 'duck.title', subTitle: 'duck.subTitle', price: '68'},
-                        {title: 'vegetarian.title', subTitle: 'vegetarian.subTitle', price: '60'},                        
-                        {title: 'gochuChicken.title', subTitle: 'gochuChicken.subTitle', price: '62', extra: 'addGyuza'}                        
+                        {title: 'duck_s.title', subTitle: 'duck_s.subTitle', price: '79'},
+                        {title: 'gochu_s.title', subTitle: 'gochu_s.subTitle', price: '72/78'},
+                        {title: 'pork_s.title', subTitle: 'pork_s.subTitle', price: '78'},                        
+                        {title: 'tofu_s.title', subTitle: 'tofu_s.subTitle', price: '69'},
+                        {title: 'dandan_s.title', subTitle: 'dandan_s.subTitle', price: '78'},                        
                     ]
                 }
             ]            
@@ -73,15 +74,13 @@ const HASHMAL_MENU = {
             title: "extra",            
             groups: [
                 {
-                    title: 'between',
+                    title: 'gyoza',
                     items: [
-                        {title: 'chickenGyoza.title', subTitle: 'chickenGyoza.subTitle', price: '35'},
-                        {title: 'veganGyoza.title', subTitle: 'veganGyoza.subTitle', price: '30'},
-                        {title: 'mixGyoza.title', subTitle: 'mixGyoza.subTitle', price: '33', extra: 'gyozaSixPack'},
-                        {title: 'wings.title', subTitle: 'wings.subTitle', price: '38'},                
-                        {title: 'tofu.title', subTitle: 'tofu.subTitle', price: '24'}
+                        {title: 'chicken_s.title', subTitle: 'chicken_s.subTitle', price: '58/42'},
+                        {title: 'pork_s.title', subTitle: 'pork_s.subTitle', price: '59/44'},
+                        {title: 'vegan_s.title', subTitle: 'vegan_s.subTitle', price: '55/39', extra: 'gyozaSixPack_s'},                        
                     ]
-                },
+                },  
                 {
                     title: 'dessert',
                     items: [
@@ -93,7 +92,7 @@ const HASHMAL_MENU = {
                     items: [
                         {title: 'various.title', subTitle: 'various.subTitle', price: '28-34'}                        
                     ]
-                }
+                }              
             ]            
         },
     ],
@@ -101,71 +100,62 @@ const HASHMAL_MENU = {
         {
             title: "salad",
             items: [
-                {title: 'green.title', subTitle: 'green.subTitle', price: '21'},
-                {title: 'carrots.title', subTitle: 'carrots.subTitle', price: '19'},
-                {title: 'eggplant.title', subTitle: 'eggplant.subTitle', price: '19'},
-                {title: 'chicken.title', subTitle: 'chicken.subTitle', price: '21'},
-                {title: 'seaweed.title', subTitle: 'seaweed.subTitle', price: '21'},
-                {title: 'liver.title', subTitle: 'liver.subTitle', price: '28'}
+                {title: 'green_s.title', subTitle: 'green_s.subTitle', price: '28'},
+                {title: 'carrots_s.title', subTitle: 'carrots_s.subTitle', price: '19'},
+                {title: 'chicken_s.title', subTitle: 'chicken_s.subTitle', price: '28'},
+                {title: 'beet_s.title', subTitle: 'beet_s.subTitle', price: '26'},
+                {title: 'eggplant_s.title', subTitle: 'eggplant_s.subTitle', price: '23'},                
+                {title: 'seaweed_s.title', subTitle: 'seaweed_s.subTitle', price: '26'},
+                {title: 'hiro_s.title', subTitle: 'hiro_s.subTitle', price: '69/66'}
             ]
         },
         {
             title: "gyoza",
             items: [
-                {title: 'chicken.title', subTitle: 'chicken.subTitle', price: '35'},
-                {title: 'pork.title', subTitle: 'pork.subTitle', price: '35'},
-                {title: 'vegan.title', subTitle: 'vegan.subTitle', price: '30'},                
-                {title: 'mix.title', subTitle: 'mix.subTitle', price: '33', extra: 'gyozaSixPack'}
+                {title: 'chicken_s.title', subTitle: 'chicken_s.subTitle', price: '58/42'},
+                {title: 'pork_s.title', subTitle: 'pork_s.subTitle', price: '59/44'},
+                {title: 'vegan_s.title', subTitle: 'vegan_s.subTitle', price: '55/39', extra: 'gyozaSixPack_s'}                
             ]
         },
         {
             title: "bun",
             items: [
-                {title: 'duck.title', subTitle: 'duck.subTitle', price: '26'},
-                {title: 'chicken.title', subTitle: 'chicken.subTitle', price: '24'},
-                {title: 'pork.title', subTitle: 'pork.subTitle', price: '26'},
-                {title: 'beef.title', subTitle: 'beef.subTitle', price: '26'},                
-                {title: 'vegan.title', subTitle: 'vegan.subTitle', price: '23'},
-                {title: 'squash.title', subTitle: 'squash.subTitle', price: '23'},
-                {title: 'chutney.title', subTitle: 'chutney.subTitle', price: '26'}
+                {title: 'chicken_s.title', subTitle: 'chicken_s.subTitle', price: '27'},
+                {title: 'chutney_s.title', subTitle: 'chutney_s.subTitle', price: '28'},
+                {title: 'beef_s.title', subTitle: 'beef_s.subTitle', price: '29'},                
+                {title: 'duck_s.title', subTitle: 'duck_s.subTitle', price: '29'},                
+                {title: 'belly_s.title', subTitle: 'belly_s.subTitle', price: '29'},
+                {title: 'eggplant_s.title', subTitle: 'eggplant_s.subTitle', price: '25'},
+                {title: 'squash.title', subTitle: 'squash.subTitle', price: '25'}                                                
             ]
         },
         {
-            title: "between",
+            title: "grill",
             items: [
-                {title: 'pork.title', subTitle: 'pork.subTitle', price: '36'},
-                {title: 'wings.title', subTitle: 'wings.subTitle', price: '38'},                
-                {title: 'tofu.title', subTitle: 'tofu.subTitle', price: '27'}
+                {title: 'corn.title', subTitle: 'corn.subTitle', price: '36'},
+                {title: 'chicken.title', subTitle: 'chicken.subTitle', price: '79'},                
+                {title: 'butcher.title', subTitle: 'butcher.subTitle', price: '89'},
+                {title: 'takutzna.title', subTitle: 'takutzna.subTitle', price: '76'},
+                {title: 'vegetarian.title', subTitle: 'vegetarian.subTitle', price: '69'}                
+            ]
+        },
+        {
+            title: "wok",
+            items: [
+                {title: 'dandan.title', subTitle: 'dandan.subTitle', price: '66'},
+                {title: 'tofu.title', subTitle: 'tofu.subTitle', price: '62'},
+                {title: 'chicken.title', subTitle: 'chicken.subTitle', price: '64'},
+                {title: 'pork.title', subTitle: 'pork.subTitle', price: '79'},
             ]
         },
         {
             title: "ramen",
             items: [
-                {title: 'duck.title', subTitle: 'duck.subTitle', price: '66'},
-                {title: 'dandan.title', subTitle: 'dandan.subTitle', price: '62'},
-                {title: 'pork.title', subTitle: 'pork.subTitle', price: '62'},
-                {title: 'vegetarian.title', subTitle: 'vegetarian.subTitle', price: '52'},
-                {title: 'gochu.title', subTitle: 'gochu.subTitle', price: '58/64', extra:'addGyuza'}
-            ]
-        },
-        {
-            title: "noodles",
-            items: [
-                {title: 'dandan.title', subTitle: 'dandan.subTitle', price: '62'},
-                {title: 'chicken.title', subTitle: 'chicken.subTitle', price: '62'},                
-                {title: 'vegetarian.title', subTitle: 'vegetarian.subTitle', price: '58'}                
-            ]
-        },
-        {
-            title: "kids",
-            items: [
-                {title: 'various.title', subTitle: 'various.subTitle', price: '28-34'}                
-            ]
-        },
-        {
-            title: "dessert",
-            items: [
-                {title: 'yuzu.title', subTitle: 'yuzu.subTitle', price: '21'}                
+                {title: 'duck_s.title', subTitle: 'duck_s.subTitle', price: '69'},
+                {title: 'gochu_s.title', subTitle: 'gochu_s.subTitle', price: '68/60'},
+                {title: 'pork_s.title', subTitle: 'pork_s.subTitle', price: '66'},                                
+                {title: 'tofu_s.title', subTitle: 'tofu_s.subTitle', price: '54'},
+                {title: 'dandan_s.title', subTitle: 'dandan_s.subTitle', price: '64', extra:'addGyuza'},
             ]
         }
     ],    
@@ -173,9 +163,9 @@ const HASHMAL_MENU = {
         {
             title: "cocktails",
             items: [
-                {title: 'spritz.title', subTitle: 'spritz.subTitle', price: '34'},
-                {title: 'sour.title', subTitle: 'sour.subTitle', price: '34'},
-                {title: 'smoky.title', subTitle: 'smoky.subTitle', price: '34'}
+                {title: 'spritz.title', subTitle: 'spritz.subTitle', price: '39'},
+                {title: 'sour.title', subTitle: 'sour.subTitle', price: '39'},
+                {title: 'smoky.title', subTitle: 'smoky.subTitle', price: '39'}
             ]
         },
         {
@@ -183,22 +173,23 @@ const HASHMAL_MENU = {
             items: [                
                 {title: 'karakuchi.title', price: '42'},
                 {title: 'nigiwai.title', price: '42'},
-                {title: 'unfiltered.title', price: '42'}
+                {title: 'snow.title', price: '39'}
             ]
         },
         {
             title: "beer",
             items: [                
-                {title: 'leo.title', price: '24'},
-                {title: 'stella.title', price: '26'}                
+                {title: 'leo.title', price: '26'},
+                {title: 'stella.title', price: '28'}                
             ]            
         },
         {
             title: "wine",
             priceTitle: 'priceTitle',
             items: [                
-                {title: 'white.title', subTitle: 'white.subTitle', price: '34 | 64 | 115'},
-                {title: 'red.title', subTitle: 'red.subTitle', price: '34 | 64 | 115'}
+                {title: 'white.title', subTitle: 'white.subTitle', price: '32 | 122'},
+                {title: 'red.title', subTitle: 'red.subTitle', price: '34 | 115'},
+                {title: 'rose.title', subTitle: 'rose.subTitle', price: '34 | 115'}
             ]
         },
         {
