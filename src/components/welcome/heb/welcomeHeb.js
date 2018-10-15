@@ -5,7 +5,6 @@ import TextContentBox from '../../textContentBox/textContentBox';
 import aharoniHeadSvg from '../../../assets/icons/h_w_aharoni_head.svg';
 import fullLogSvg from '../../../assets/icons/h_w_full_logo1.svg';
 import TakeAwayGif from '../../../assets/hiro_takeaway.gif';
-import TakeAwayTitleSvg from '../../../assets/h_w_ta_coming_soon.svg';
 
 const WelcomeHeb = (props) => {
   let welcomeLogosClass = getWelcomeLogosClassName(props.scrollPosition);
@@ -13,7 +12,6 @@ const WelcomeHeb = (props) => {
       <div className={`welcome-wrap ${props.language}`}>
         <a href="https://order.plweb.online/branchesPage/hiroramenbar#!/branchesPage/hiroramenbar" target="_blank" title="delivery"
           className={`hide-for-small-only takeaway-gif animated-fast ${welcomeLogosClass}`}>
-          <TextContentBox text={`${props.language}.welcome.takeAway`} css="text-center full-width space-bottom take-away-title"/>
           <img src={TakeAwayGif} className="take-away-image"/>
         </a>
         <a href="tel:*3721" className={`telephone hide-for-small-only animated-fast ${welcomeLogosClass}`}>
@@ -59,9 +57,6 @@ const WelcomeHeb = (props) => {
                     <div className="welcome-text-wrap run-font-xlarge take-away-lg-btn">
                       <TextContentBox text={`${props.language}.welcome.takeAway`}/>
                     </div>
-                  </a>
-                  <a href="tel:*3721" className="telephone-mobile">
-                    <div className="telephone-image"></div>
                   </a>
                 </div>
               </div>

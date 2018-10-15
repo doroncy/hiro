@@ -165,5 +165,19 @@
       }
     }
   }
+}
+.telephone-mobile {
+  .telephone-image {
+    background-image: url('../../assets/Hiro_Tel_Mobile.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 6px;
+    &:hover {
+      opacity: .8;
+    }
+  }
 
 }

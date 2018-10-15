@@ -190,6 +190,11 @@ class NavBar extends React.Component {
             <img src={headerLogoSvg} className="header-logo-img"/>
           </div>
         </div>
+        <div className="show-for-small-only telephone-mobile">
+          <a href="tel:*3721">
+            <div className="telephone-image"></div>
+          </a>
+        </div>
         <div className="top-bar-right">
           <ul className="menu social-btns show-for-large">
             <li className="instagram-btn" onMouseOver={() => this.setInstagramIconHover()} onMouseOut={() => this.setInstagramIconNotHover()}>
