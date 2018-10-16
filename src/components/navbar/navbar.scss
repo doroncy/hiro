@@ -167,6 +167,8 @@
   }
 }
 .telephone-mobile {
+  position: absolute;
+  width: 100%;
   .telephone-image {
     background-image: url('../../assets/Hiro_Tel_Mobile.svg');
     background-size: contain;
