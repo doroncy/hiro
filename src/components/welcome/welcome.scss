@@ -111,29 +111,24 @@ $peakopacity:0.7;
     }
   }
   @keyframes arrows {
-  0% {
-      border-left:$size/3 solid rgba(255, 255, 255,0);
-      border-bottom:$size/3 solid rgba(255, 255, 255,0);
-      transform:translate($size/-6,$size*4/-6)rotate(-45deg) ;
-  }
-  10%, 90% {
-      border-left:$size/3 solid rgba(255, 255, 255,0);
-      border-bottom:$size/3 solid rgba(255, 255, 255,0);
-  }
-  50% {
-      border-left:$size/3 solid rgba(255, 255, 255,$peakopacity);
-      border-bottom:$size/3 solid rgba(255, 255, 255,$peakopacity);
-      transform:translate($size/-6,0px)rotate(-45deg) ;
-  }
-  100% {
-      border-left:$size/3 solid rgba(255, 255, 255,0);
-      border-bottom:$size/3 solid rgba(255, 255, 255,0);
-      transform:translate($size/-6,$size*4/6)rotate(-45deg) ;
-  }
-}
-  &.en {
-    .aharoni-head-image {
-      float: right;
+    0% {
+        border-left:$size/3 solid rgba(255, 255, 255,0);
+        border-bottom:$size/3 solid rgba(255, 255, 255,0);
+        transform:translate($size/-6,$size*4/-6)rotate(-45deg) ;
+    }
+    10%, 90% {
+        border-left:$size/3 solid rgba(255, 255, 255,0);
+        border-bottom:$size/3 solid rgba(255, 255, 255,0);
+    }
+    50% {
+        border-left:$size/3 solid rgba(255, 255, 255,$peakopacity);
+        border-bottom:$size/3 solid rgba(255, 255, 255,$peakopacity);
+        transform:translate($size/-6,0px)rotate(-45deg) ;
+    }
+    100% {
+        border-left:$size/3 solid rgba(255, 255, 255,0);
+        border-bottom:$size/3 solid rgba(255, 255, 255,0);
+        transform:translate($size/-6,$size*4/6)rotate(-45deg) ;
     }
   }
 }
@@ -149,33 +144,13 @@ $peakopacity:0.7;
   margin: 0 auto;
   padding-top: 150px;
 
-  .aharoni-head-image {
-    background-color: $pink;
-    padding: 30px 50px;
-    max-width: 300px;
-    max-height: 380px;
-    width: 100%;
-  }
-
-  .welcome-text-wrap {
-    margin-top:88px;
-  }
-  .welcome-full-logo-wrap {
-    margin-top:10px;
-  }
-
   @include breakpoint(medium down) {
     width: 80%;
   }
   // Mobile
   @include breakpoint(small down) {
-    padding-top:60px;
     width: 100%;
-    .aharoni-head-image {
-      float: none;
-      max-width: none;
-      max-height: none;
-    }
+   
     .welcome-text-wrap {
       margin: 0 auto;
       margin-top:10px;
@@ -186,7 +161,7 @@ $peakopacity:0.7;
     }
   }
   @include breakpoint(medium up) {
-    padding-top:150px;
+    padding-top:250px;
   }
 
   @include breakpoint(xxlarge up) {

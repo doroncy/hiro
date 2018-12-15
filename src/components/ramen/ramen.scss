@@ -4,9 +4,6 @@
   max-width: 900px;
   margin: 0 auto;
 
-  @include breakpoint(medium up) {
-      padding-top: 150px;
-  }
   .noodles-image {
     margin: 0 auto;
     background-color: $blackOpacity;

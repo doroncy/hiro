@@ -100,23 +100,7 @@ const BunbarEn = (props) => {
                       </div>}
                   </TrackedDiv>
                 </div>
-              </div>
-
-              <div className="row small-half-padding-columns">
-                <div className="small-12 large-offset-8 large-3 end columns">
-                  <TrackedDiv formulas={[topBottom]}>
-                    {(posTopBottom) =>
-                      <div className={cx("bunbar-content-box content-box-black scroll-anim-item bon-appetit",{'animate-out-bottom':scrollY < posTopBottom+420})}>
-                        <div className="run-font-xlarge content-box-black text-uppercase text-center">
-                          BON APPETIT!
-                        </div>
-                        <div className="run-font content-box-black text-uppercase text-center">
-                          CHEF ISRAEL AHARONI
-                        </div>
-                      </div>}
-                  </TrackedDiv>
-                </div>
-              </div>
+              </div>              
             </div>
           </div>
         </div>

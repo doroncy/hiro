@@ -2,8 +2,7 @@ import React from 'react';
 import Translate from 'i18n-react';
 import consts from '../../../consts';
 import TextContentBox from '../../textContentBox/textContentBox';
-import aharoniHeadSvg from '../../../assets/icons/h_w_aharoni_head.svg';
-import fullLogSvg from '../../../assets/icons/h_w_full_logo1.svg';
+import mainLogoSvg from '../../../assets/icons/h_w_main.svg';
 import TakeAwayGif from '../../../assets/hiro_takeaway.gif';
 
 const WelcomeHeb = (props) => {
@@ -24,30 +23,13 @@ const WelcomeHeb = (props) => {
           </a>
           <div className="anim-arrows"></div>
         </div>
-        <div className={`row welcome-container animated-fast ${welcomeLogosClass}`}>
+        <div className={`row welcome-container animated-fast ${welcomeLogosClass}`}>          
           <div className="small-10 small-centered columns">
             <div className={`welcome-logos-wrap`}>
               <div className="row">
-                <div className="small-10 small-centered medium-uncentered medium-5 hide-for-medium columns">
-                  <div className="aharoni-head-image">
-                    <img src={aharoniHeadSvg} />
-                  </div>
-                </div>
-                <div className="small-12 small-centered medium-uncentered medium-7 columns">
-                  <div className="row">
-                    <div className="small-12 small-centered medium-uncentered columns">
-                      <div className="welcome-text-wrap assistant-extra-bold">
-                        <TextContentBox text={`${props.language}.welcome.title`}/>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="welcome-full-logo-wrap">
-                    <img src={fullLogSvg} />
-                  </div>
-                </div>
-                <div className="small-10 small-centered medium-uncentered medium-5 show-for-medium columns">
-                  <div className="aharoni-head-image">
-                    <img src={aharoniHeadSvg} />
+                <div className="small-10 small-centered columns">
+                  <div>
+                    <img src={mainLogoSvg} />
                   </div>
                 </div>
               </div>
@@ -64,7 +46,6 @@ const WelcomeHeb = (props) => {
           </div>
         </div>
       </div>
-
     );
 }
 

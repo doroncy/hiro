@@ -2,8 +2,7 @@ import React from 'react';
 import Translate from 'i18n-react';
 import consts from '../../../consts';
 import TextContentBox from '../../textContentBox/textContentBox';
-import aharoniHeadSvg from '../../../assets/icons/h_w_aharoni_head.svg';
-import fullLogSvg from '../../../assets/icons/h_w_full_logo1.svg';
+import mainLogoSvg from '../../../assets/icons/h_w_main.svg';
 import TakeAwayGif from '../../../assets/hiro_takeaway.gif';
 
 const WelcomeEN = (props) => {
@@ -28,34 +27,22 @@ const WelcomeEN = (props) => {
           <div className="small-10 small-centered columns">
             <div className={`welcome-logos-wrap`}>
               <div className="row">
-                <div className="small-10 small-centered medium-uncentered medium-5 columns">
-                  <div className="aharoni-head-image">
-                    <img src={aharoniHeadSvg} />
+                <div className="small-10 small-centered columns">
+                  <div>
+                    <img src={mainLogoSvg} />
                   </div>
                 </div>
-                <div className="small-12 small-centered medium-uncentered medium-7 columns">
-                  <div className="row">
-                    <div className="small-12 small-centered medium-uncentered columns">
-                      <div className="welcome-text-wrap run-font-xlarge">
-                        <TextContentBox text={`${props.language}.welcome.title`}/>
-                      </div>
+              </div>
+              <div className="row">
+                <div className="small-12 small-centered hide-for-medium columns">
+                  <a href="https://order.plweb.online/branchesPage/hiroramenbar#!/branchesPage/hiroramenbar" target="_blank" title="delivery">
+                    <div className="welcome-text-wrap run-font-xlarge take-away-lg-btn">
+                      <TextContentBox text={`${props.language}.welcome.takeAway`}/>
                     </div>
-                  </div>
-                  <div className="welcome-full-logo-wrap">
-                    <img src={fullLogSvg} />
-                  </div>
-                  <div className="row">
-                    <div className="small-12 small-centered hide-for-medium columns">
-                      <a href="https://order.plweb.online/branchesPage/hiroramenbar#!/branchesPage/hiroramenbar" target="_blank" title="delivery">
-                        <div className="welcome-text-wrap run-font-xlarge take-away-lg-btn">
-                          <TextContentBox text={`${props.language}.welcome.takeAway`}/>
-                        </div>
-                      </a>
-                      <a href="tel:*3721" className="telephone-mobile">
-                        <div className="telephone-image"></div>
-                      </a>
-                    </div>
-                  </div>
+                  </a>
+                  <a href="tel:*3721" className="telephone-mobile">
+                    <div className="telephone-image"></div>
+                  </a>
                 </div>
               </div>
             </div>

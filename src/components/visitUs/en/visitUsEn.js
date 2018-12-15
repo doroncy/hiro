@@ -5,7 +5,7 @@ import GoogleMap from 'google-map-react';
 import TextContentBox from '../../textContentBox/textContentBox';
 import headerLogoSvg from '../../../assets/icons/h_w_header_logo.svg';
 import comingSoonSvg from '../../../assets/icons/h_w_coming_soon.svg';
-import markerSvg from '../../../assets/icons/h_w_google_maps.svg';
+import markerSvg from '../../../assets/icons/maps_marker.svg';
 
 import cx from 'classnames';
 import {TrackedDiv, TrackDocument} from 'react-track';

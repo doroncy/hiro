@@ -110,11 +110,13 @@ const HASHMAL_MENU = {
             ]
         },
         {
-            title: "gyoza",
+            title: "ramen",
             items: [
-                {title: 'chicken_s.title', subTitle: 'chicken_s.subTitle', price: '58/42'},
-                {title: 'pork_s.title', subTitle: 'pork_s.subTitle', price: '59/44'},
-                {title: 'vegan_s.title', subTitle: 'vegan_s.subTitle', price: '55/39', extra: 'gyozaSixPack_s'}                
+                {title: 'duck_s.title', subTitle: 'duck_s.subTitle', price: '69'},
+                {title: 'gochu_s.title', subTitle: 'gochu_s.subTitle', price: '68/60'},
+                {title: 'pork_s.title', subTitle: 'pork_s.subTitle', price: '66'},                                
+                {title: 'tofu_s.title', subTitle: 'tofu_s.subTitle', price: '54'},
+                {title: 'dandan_s.title', subTitle: 'dandan_s.subTitle', price: '64', extra:'addGyuza'},
             ]
         },
         {
@@ -128,17 +130,7 @@ const HASHMAL_MENU = {
                 {title: 'eggplant_s.title', subTitle: 'eggplant_s.subTitle', price: '25'},
                 {title: 'squash.title', subTitle: 'squash.subTitle', price: '25'}                                                
             ]
-        },
-        {
-            title: "grill",
-            items: [
-                {title: 'corn.title', subTitle: 'corn.subTitle', price: '36'},
-                {title: 'chicken.title', subTitle: 'chicken.subTitle', price: '79'},                
-                {title: 'butcher.title', subTitle: 'butcher.subTitle', price: '89'},
-                {title: 'takutzna.title', subTitle: 'takutzna.subTitle', price: '76'},
-                {title: 'vegetarian.title', subTitle: 'vegetarian.subTitle', price: '69'}                
-            ]
-        },
+        },       
         {
             title: "wok",
             items: [
@@ -149,15 +141,13 @@ const HASHMAL_MENU = {
             ]
         },
         {
-            title: "ramen",
+            title: "gyoza",
             items: [
-                {title: 'duck_s.title', subTitle: 'duck_s.subTitle', price: '69'},
-                {title: 'gochu_s.title', subTitle: 'gochu_s.subTitle', price: '68/60'},
-                {title: 'pork_s.title', subTitle: 'pork_s.subTitle', price: '66'},                                
-                {title: 'tofu_s.title', subTitle: 'tofu_s.subTitle', price: '54'},
-                {title: 'dandan_s.title', subTitle: 'dandan_s.subTitle', price: '64', extra:'addGyuza'},
+                {title: 'chicken_s.title', subTitle: 'chicken_s.subTitle', price: '58/42'},
+                {title: 'pork_s.title', subTitle: 'pork_s.subTitle', price: '59/44'},
+                {title: 'vegan_s.title', subTitle: 'vegan_s.subTitle', price: '55/39', extra: 'gyozaSixPack_s'}                
             ]
-        }
+        }        
     ],    
     drinksMenu: [
         {
