@@ -27,7 +27,7 @@ const WelcomeHeb = (props) => {
           <div className="small-10 small-centered columns">
             <div className={`welcome-logos-wrap`}>
               <div className="row">
-                <div className="small-10 small-centered columns">
+                <div className="small-8 small-centered columns">
                   <div>
                     <img src={mainLogoSvg} />
                   </div>
