@@ -19,6 +19,10 @@ const hashmalMapOptions = {
   cord: {lat: 32.0625914, lng: 34.7763019},
   zoom: 16
 }
+const ramatAvivMapOptions = {
+  cord: {lat: 32.1123228, lng: 34.7939123},
+  zoom: 16
+}
 
 const VisitUsHeb = (props) => {
   return (
@@ -121,7 +125,48 @@ const VisitUsHeb = (props) => {
               </div>
             </div>
           </div>
-        </div>
+          <div className="visitus-branch">
+            <div className="row">
+              <div className="small-12 small-centered columns">
+              <TrackedDiv formulas={[topBottom]}>
+                {(posTopBottom) =>
+                  <div className={cx("scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+150})}>
+                    <div className="run-font-medium full-width clearfix visitus-title">
+                      <div className="float-right visitus-title-text assistant-bold">                      
+                        <Translate text={`${props.language}.visitUs.ramatAviv.address`}/>
+                      </div>
+                      <div className="float-left visitus-title-text assistant-bold">
+                        <Translate text={`${props.language}.visitUs.ramatAviv.openHours`}/>
+                      </div>
+                    </div>
+                  </div>
+                }
+              </TrackedDiv>
+              </div>
+            </div>
+            <div className="row">
+              <div className="small-12 small-centered columns">
+              <TrackedDiv formulas={[topBottom]}>
+                {(posTopBottom) =>
+                  <div className={cx("scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+150})}>
+                    <div className="google-map-wrap">
+                    <GoogleMap
+                      center={ramatAvivMapOptions.cord}
+                      zoom={ramatAvivMapOptions.zoom}
+                      minZoom={ramatAvivMapOptions.zoom}
+                      maxZoom={ramatAvivMapOptions.zoom}
+                      scrollWheel={false}
+                      draggable={false}>
+                      <img src={markerSvg} className="hiro-map-marker" lat={ramatAvivMapOptions.cord.lat} lng={ramatAvivMapOptions.cord.lng}/>
+                    </GoogleMap>
+                    </div>
+                  </div>
+                }
+              </TrackedDiv>
+              </div>
+            </div>
+          </div>                  
+        </div>        
       </div>
         <div className="row site-footer">
           <div className="small-12 medium-6 small-centered medium-uncentered columns">

@@ -496,6 +496,12 @@ const texts = {
         "address": "LEVONTIN ST. 19, TEL AVIV",
         "phone": "Tel. *3721 (Reservations on friday-saturday only)",
         "openHours": "EVERY DAY 12:00 - 00:00"
+      },
+      "ramatAviv": {
+        "name": "RAMAT AVIV MALL",
+        "address": "EINSTEIN ST. 40, RAMAT AVIV MALL, TEL AVIV",
+        "phone": "",
+        "openHours": "EVERY DAY 12:00 - 16:00"
       }
     }
   },
@@ -992,6 +998,12 @@ const texts = {
         "address": "לבונטין 19, תל אביב",
         "phone": `טל' להזמנת מקומות 3721*`,
         "openHours": "פתוחים כל יום בין השעות 12:00-00:00"
+      },
+      "ramatAviv": {
+        "name": "קניון רמת אביב",
+        "address": `איינשטיין 40, קניון רמת אביב (כניסת המגדל), ת"א`,
+        "phone": "",
+        "openHours": "פתוחים להרצה 12:00-16:00"
       }
     }
   }
