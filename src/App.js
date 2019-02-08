@@ -29,7 +29,8 @@ class App extends React.Component {
     this.state = {
       scrollPosition: consts.scrollPositions.CURTAIN,
       currentBgImgIndex: 1,
-      language: "heb"
+      language: "heb",
+      popupVisible: false
     };
 
     this.handleScroll = this.handleScroll.bind(this);
@@ -51,6 +52,13 @@ class App extends React.Component {
         currentBgImgIndex: newBgImgIndex
       });
     }, 7000);
+
+    // MESSAGES POPUP
+    setTimeout(() => {
+      this.setState({
+        popupVisible: true
+      });
+    }, 5000)
   }
 
   componentWillUnmount() {
@@ -95,11 +103,35 @@ class App extends React.Component {
     });
   }
 
+  hidePopup() {
+    this.setState({
+      popupVisible: false
+    });
+  }
+
   render(){
     let bgClassName = `animated height100 fadeIn background background-fade bg_${this.state.currentBgImgIndex}`;
+    const messagePopup = this.state.popupVisible
+      ? <div className="msg-popup-wrapper" onClick={() => this.hidePopup()}><div className="msg-popup"></div></div>
+      : <div className="msg-popup-wrapper"></div>;
+    const welcomeStep = !this.state.popupVisible
+      ? <Welcome scrollPosition={this.state.scrollPosition} language={this.state.language}></Welcome>
+      : '';
+    const siteContent = !this.state.popupVisible
+      ?
+        <div className="parallax-wrap">
+            <Ramen language={this.state.language}></Ramen>
+            <Bunbar language={this.state.language}></Bunbar>
+            <Aharoni language={this.state.language}></Aharoni>
+            <Menu language={this.state.language}></Menu>
+            <Gallery language={this.state.language}></Gallery>
+            <VisitUs language={this.state.language}></VisitUs>
+        </div>
+      : '';
 
     return (
-      <div className={`${this.state.scrollPosition}`}>
+      <div className={`${this.state.scrollPosition} ${this.state.popupVisible ? 'popup-visible': ''}`}>
+        {messagePopup}
         <div className="background-wrap">
           <div className={bgClassName}></div>
         </div>
@@ -108,17 +140,11 @@ class App extends React.Component {
             language={this.state.language}
             onChangeLanguage={this.changeLanguage.bind(this)}>
           </NavBar>
-          <Welcome scrollPosition={this.state.scrollPosition} language={this.state.language}></Welcome>
-          <div id="nav-spacer"></div>
-          <div className="parallax-wrap">
-              <Ramen language={this.state.language}></Ramen>
-              <Bunbar language={this.state.language}></Bunbar>
-              <Aharoni language={this.state.language}></Aharoni>
-              <Menu language={this.state.language}></Menu>
-              <Gallery language={this.state.language}></Gallery>
-              <VisitUs language={this.state.language}></VisitUs>
-          </div>
+          {welcomeStep}
+          <div id="nav-spacer"></div>          
+          {siteContent}
         </div>
+        
       </div>
     )
   }
