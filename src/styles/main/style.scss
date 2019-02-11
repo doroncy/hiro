@@ -341,10 +341,10 @@ img {
 }
 .msg-popup {  
   position: fixed;
-  top: calc(50% - 315px);
-  left: calc(50% - 320px);
+  top: calc(50% - 220px);
+  left: calc(50% - 224px);
   background: url('../../assets/Desktop_Popup.svg'); 
-  background-size: 640px 630px;
+  background-size: 448px 440px;
   background-repeat: no-repeat;
   z-index: 99999;
   width: 100%;
