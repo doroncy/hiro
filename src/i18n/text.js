@@ -501,7 +501,7 @@ const texts = {
         "name": "RAMAT AVIV MALL",
         "address": "EINSTEIN ST. 40, RAMAT AVIV MALL, TEL AVIV",
         "phone": "",
-        "openHours": "EVERY DAY 12:00 - 20:00"
+        "openHours": "EVERY DAY 12:00 - 22:00"
       }
     }
   },
@@ -1003,7 +1003,7 @@ const texts = {
         "name": "קניון רמת אביב",
         "address": `איינשטיין 40, קניון רמת אביב (כניסת המגדל), ת"א`,
         "phone": "",
-        "openHours": "פתוחים להרצה 12:00-20:00"
+        "openHours": "פתוחים כל יום בין השעות 12:00-22:00"
       }
     }
   }
