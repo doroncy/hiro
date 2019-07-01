@@ -17,13 +17,15 @@ import businessTea from '../../assets/icons/tea.svg';
 
 import SARONA_MENU from './sarona';
 import HASHMAL_MENU from './hashmal';
+import RAMAT_AVIV_MENU from './ramatAviv';
 
 const menus = {
   sarona: SARONA_MENU,
-  hashmal: HASHMAL_MENU
+  hashmal: HASHMAL_MENU,
+  ramatAviv: RAMAT_AVIV_MENU
 };
 
-const locations = [ 'sarona', 'hashmal'];
+const locations = [ 'sarona', 'hashmal', 'ramatAviv'];
 
 const menuItemsBuilder = (items, language) => {
   return items.map((item, index) => {
@@ -70,7 +72,7 @@ class Menu extends React.Component {
         : '';
 
       return (        
-        <div key={index} className="medium-6 columns">
+        <div key={index} className="medium-4 columns">
           <a className={`loc-btn ${activeStyle}`} onClick={this.changeLocation.bind(this, loc)}>
             <TrackedDiv formulas={[topBottom]}>
               {(posTopBottom) =>
@@ -148,7 +150,9 @@ class Menu extends React.Component {
   }
 
   changeLocation(location) {        
-    const menu = location === 'hashmal' ? 'businessMenu' : 'foodMenu';
+    const menu = location === 'hashmal' || location === 'ramatAviv'
+      ? 'businessMenu' 
+      : 'foodMenu';
     this.setState({
       location,
       menu
@@ -163,29 +167,54 @@ class Menu extends React.Component {
     const font = this.state.language === 'en' ? 'run-font' : 'assistant-regular';
     const titleFont = this.props.language === 'en' ? 'run-font-medium' : 'assistant-bold';
     const title = `${this.props.language}.menu.businessIncludes.title`;          
-    const footer = `${this.props.language}.menu.businessIncludes.price`;          
-    return (
-      <div className="business-header">        
+    const footer = `${this.props.language}.menu.businessIncludes.price`;       
+    const ramatAvivLunchMealTitle = `${this.props.language}.menu.ramatAvivLunchMealTitle`;          
+    const ramatAvivLunchMealFooter = `${this.props.language}.menu.ramatAvivLunchMealFooter`;       
+    
+    return this.state.location === 'hashmal' 
+      ? (
+        <div className="business-header">        
         <div className={`${titleFont} business-header-title`}>
           <Translate text={title} /> 
         </div>
         <div className={`${titleFont} business-header-body`}>          
+            <img src={businessSalad} />
+            <Translate text={`${this.props.language}.menu.appetizer`} />           
+          </div>
+          <div className={`${titleFont} business-header-body`}>          
+            <img src={businessMain} />
+            <Translate text={`${this.props.language}.menu.main`} />           
+          </div>
+          <div className={`${titleFont} business-header-body`}>          
+            <img src={businessTea} />
+            <Translate text={`${this.props.language}.menu.teaTitle`} />           
+          </div>
+        <div className={`${font} business-header-footer`}>
+          <Translate text={footer} /> 
+        </div>
+      </div>        
+      )        
+    : (
+      <div className="business-header">        
+        <div className={`${titleFont} business-header-title`}>
+          <Translate text={ramatAvivLunchMealTitle} /> 
+        </div>
+        <div className={`${titleFont} business-header-body`}>          
           <img src={businessSalad} />
-          <Translate text={`${this.props.language}.menu.appetizer`} />           
+          <Translate text={`${this.props.language}.menu.saladNormal.title`} />           
+        </div>
+        <div className={`${titleFont} business-header-body`}>          
+          +
         </div>
         <div className={`${titleFont} business-header-body`}>          
           <img src={businessMain} />
           <Translate text={`${this.props.language}.menu.main`} />           
         </div>
-        <div className={`${titleFont} business-header-body`}>          
-          <img src={businessTea} />
-          <Translate text={`${this.props.language}.menu.teaTitle`} />           
-        </div>
         <div className={`${font} business-header-footer`}>
-          <Translate text={footer} /> 
+          <Translate text={ramatAvivLunchMealFooter} /> 
         </div>
-      </div>
-    );
+      </div>         
+    );      
   }
 
   render() {

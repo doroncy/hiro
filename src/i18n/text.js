@@ -58,6 +58,14 @@ const texts = {
       "extra": "Extras",
       "bun2pcs": " (2 pcs)",
       "teaTitle": "Iced Tea",
+      "businessSaladChoice": "Salads for choice",
+      "business58": " 58₪ Business Lunch",
+      "business68": " 68₪ Business Lunch",
+      "ramatAvivLunchMealTitle": "Buisness Lunch Meal",
+      "ramatAvivLunchMealFooter": "The meal includes a Salad and a main course for choice",
+      "saladNormal": {
+        "title": "Salad",
+      },
       "salad": {
         "title": "Salad",
         "green": {
@@ -339,6 +347,156 @@ const texts = {
           "subTitle": "Minced meat, pak choi, daikon and egg"
         },
       },
+      "chicken_salad_ra": {
+        "title": "Chicken and Cucumber Salad",
+        "subTitle": "Cucumber, Chicken, Wakame seaweed, orange ponzu and wasabi peas"
+      },
+      "beet_salad_ra": {
+        "title": "Beet",
+        "subTitle": "Roasted beets in pure maple paste, smoked soy, ginger and wasabi peas"
+      },
+      "eggplant_salad_ra": {
+        "title": "Steamed Eggplant",
+        "subTitle": "Steamed eggplant, Chili, crispy shallots and green onions"
+      },
+      "seaweed_salad_ra": {
+        "title": "Seaweed and Noodle",
+        "subTitle": "Glass noodles with marinated kombu seaweed, pickled garlic and chili"
+      },    
+      "vegetarian_ramen_ra": {
+        "title": "Vegetarian / Vegan Ramen",
+        "subTitle": "Silken tofu, wakame seaweed, pak choi and egg"
+      },
+      "gochu_ramen_ra": {
+        "title": "Ramen Gochu Chicken",
+        "subTitle": "Chicken stock, Gochujang, nori seaweed, pak choi and egg"
+      },   
+      "dandan_ramen_ra": {
+        "title": "Dan Dan Ramen",
+        "subTitle": "Chicken stock, Minced meat, pak choi, daikon and egg"
+      },   
+      "tofu__wok_ra": {
+        "title": "Vegetarian Noodles",
+        "subTitle": "Udon noodles, portobello mushrooms, shimeji mushrooms, broccoli, green beans, soybeans and green onion"
+      },
+      "chicken_wok_ra": {
+        "title": "Chicken Stir Fry",
+        "subTitle": "Japanese Udun noodles, chicken strips / chicken breast coated with Panko, Pak Choy, Portobello, Shimaji, broccoli, green beans, soy beans, green onions and sesame"
+      },
+      "rice_wok_ra": {
+        "title": "Rice Noodles and Chicken",
+        "subTitle": "Rice noodles, chopped chicken, broccoli, beans, pak choy, soybeans, guchuchang sauce, green onions and togarashi"
+      },      
+      "bunMeal": {
+        "title": "Dinner Bun, Two buns are served with a coleslaw salad",
+        "chicken": {
+          "title": "Chicken Bun",
+          "subTitle": "Chicken, Mayo-racha, iceberg lettuce, takuan crispy shallots, green onions and pickled onion"
+        },
+        "beef": {
+          "title": "Long Cooked Beef Bun",
+          "subTitle": "Brosst in long cooking, Mayo-kimchi, pickled cucumber and radish"
+        },
+        "dalorit": {
+          "title": "Butternut Squash Bun",
+          "subTitle": "Peppers aioli, red miso and crispy shallot"
+        },
+        "crispy": {
+          "title": "Crispy Chicken and Chutney Bun",
+          "subTitle": "Crispy Chicken, Mayo-yuzu, togarashi, scorched leek, baby gem lettuce and Peppers Chutney"
+        },
+        "burger": {
+          "title": "Bun Burger",
+          "subTitle": "Hamburger, mio-racha, arugula, and grilled onions"
+        },
+        "steak": {
+          "title": "Bun Entrecote",
+          "subTitle": "Minot steak, egg salad, mayonnaise, Japanese mustard with maple"
+        }
+      },
+      "hiroSalad": {
+        "title": "Hiro Salad",
+        "subTitle": "baby gem lettuce, red endive, white endive, mixed greens, soy beans, crispy shallots, black sesame seeds, tofu / chicken in miso yuzo and mirin sauce"
+      },
+      "gochuBeef_ramen": {
+        "title": "Ramen Gochu Beef",
+        "subTitle": "Chicken stock, Gochujang, nori seaweed, pak choi and egg"
+      },
+      "dandan_ramen": {
+        "title": "Dan Dan Ramen",
+        "subTitle": "Chicken stock, Minced meat, pak choi, daikon and egg"
+      },
+      "dandan_wok": {
+        "title": "Dan Dan Noodles",
+        "subTitle": "Udon noodles, minced meat, broccoli, green beans, green onion, takuan, bak choi, chili and egg"
+      },
+      "udon_wok": {
+        "title": "Udon Chicken / Entrecote and Roasted Butternut Squash",
+        "subTitle": "Japanese udon noodles, chicken / entrecote, roasted glazed Butternut squash, snow peas, chili, green onions, and cashews"
+      },
+      "vegi_wok": {
+        "title": "Vegetarian Noodles",
+        "subTitle": "Udon noodles, portobello mushrooms, shimeji mushrooms, broccoli, green beans, soybeans and green onion"
+      },
+      "chicken_wok": {
+        "title": "Chicken Stir Fry",
+        "subTitle": "Japanese Udun noodles, chicken strips / chicken breast coated with Panko, Pak Choy, Portobello, Shimaji, broccoli, green beans, soy beans, green onions and sesame"
+      },
+      "rice_wok": {
+        "title": "Rice Noodles and Chicken",
+        "subTitle": "Rice noodles, chopped chicken, broccoli, beans, pak choy, soybeans, guchuchang sauce, green onions and togarashi"
+      },
+      "afternoonDrink": {
+        "title": "Lunch Drink",        
+      },
+      "gyoza_ra": {
+        "chicken": {
+          "title": "Chicken Gyoza",
+          "subTitle": `4\\6 pcs, Chopped chicken, shitake mushrooms, ginger, garlic, shallots, soy, mirin and green onions`
+        },
+        "spinach": {
+          "title": "Spinach Gyoza",
+          "subTitle": `4\\6 pcs, Spinach, shiitake mushrooms, cashew nuts, ginger, shallots, soy, mirin and sesame oil`
+        }
+      },
+      "steamBun": {
+        "title": "Steamed Buns",
+        "chicken": {
+          "title": "Chicken Bun",
+          "subTitle": `Chicken, Mayo-racha, iceberg lettuce, takuan crispy shallots, green onions and pickled onion`
+        },
+        "beef": {
+          "title": "Long Cooked Beef Bun",
+          "subTitle": `Brosst in long cooking, Mayo-kimchi, pickled cucumber and radish`
+        },
+        "squash": {
+          "title": "utternut Squash Bun",
+          "subTitle": `Peppers aioli, red miso and crispy shallot`
+        },
+        "crispy": {
+          "title": "Crispy Chicken and Chutney Bun",
+          "subTitle": `Crispy Chicken, Mayo-yuzu, togarashi, scorched leek, baby gem lettuce and Peppers Chutney`
+        },
+        "burger": {
+          "title": "Bun Burger",
+          "subTitle": `Hamburger, mio-racha, arugula, and grilled onions`
+        },
+        "steak": {
+          "title": "Bun Entrecote",
+          "subTitle": `Minot steak, egg salad, mayonnaise, Japanese mustard with maple`
+        },
+      },
+      "bunCrispy": {
+        "title": "Bun Crispy Chicken",
+        "subTitle": `Steamed bun, chicken breast coated with panko, mayonnaise and lettuce`
+      },
+      "childNoodle": {
+        "title": "Children's Noodles",
+        "subTitle": `Udon noodles, chicken / chicken breast coated with panko / ground beef / tofu`
+      },
+      "beekSake": {
+        "title": "Beer / Sake",
+      },      
       "soft": {
         "title": "Soft Drinks",
         "cola": {
@@ -555,11 +713,19 @@ const texts = {
       "businessMenu": "תפריט עסקיות",
       "appetizer": "מנה ראשונה ",
       "main": "מנה עיקרית ", 
+      "businessSaladChoice": "סלטים לבחירה",
+      "business58": "עסקית 58 ש״ח",
+      "business68": "עסקית 68 ש״ח",
       "inBetween": "בין לבין",     
       "choose": "(לבחירה)",
       "extra": "בין לבין (בתוספת תשלום)",
       "bun2pcs": " (2 יח‘)",
-      "teaTitle": "תה קר",
+      "teaTitle": "תה קר",      
+      "ramatAvivLunchMealTitle": "עסקיות צהריים",
+      "ramatAvivLunchMealFooter": "העסקית כוללת סלט ומנה עיקרית לבחירה",
+      "saladNormal": {
+        "title": `סלטים`
+      },
       "salad": {
         "title": "סלטים קטנים",
         "green": {
@@ -779,7 +945,7 @@ const texts = {
         "pork": {
           "title": "קוביות בטן חזיר על אורז",
           "subTitle": "צלויות מזוגגות, אורז יפני עגול, ביצת עין, קלח תירס חרוך, אספרגוס על הגריל, בצל ירוק, צ׳ילי טרי, שומשום שחור וטוגראשי"
-        },
+        }        
       },
       "ramen": {
         "title": "ראמן",
@@ -839,7 +1005,157 @@ const texts = {
         "dandan_s": {
           "title": "דן דן",
           "subTitle": `אטריות ראמן טריות, ציר עוף וירקות שורש 12 שעות, קונפי שום, טארה דאשי, בשר בקר טחון במירין שאטה, פטריות שיטאקי, שעועית ירוקה, ברוקולי, טקואן, בצל ירוק, ביצה, שומשום קלוי ואבקת קוצ׳וקארו`
+        }       
+      },  
+      "chicken_salad_ra": {
+        "title": "עוף ומלפפונים",
+        "subTitle": `מלפפון, עוף, אצות וואקמה, רוטב פונזו תפוז ואפונת וואסבי`
+      },
+      "beet_salad_ra": {
+        "title": "סלק",
+        "subTitle": `סלק צלוי במייפל טהור, סויה קוראנית, ג׳ינגר, שאטה, בצל ירוק ואפונת וואסבי`
+      },
+      "eggplant_salad_ra": {
+        "title": "חציל מאודה",
+        "subTitle": `חציל מאודה, צ'ילי, קריספי שאלוט ובצל ירוק`
+      },
+      "seaweed_salad_ra": {
+        "title": "אצות קומבו",
+        "subTitle": `אצות קומבו, אטריות שעועית, שום כבוש, מירין, שמן צ׳ילי, שמן שומשום, בצל ירוק וקריספי שאלוט`
+      },    
+      "vegetarian_ramen_ra": {
+        "title": "ראמן טופו משי צמחוני/טבעוני",
+        "subTitle": `אטריות ראמן טריות, ציר ירקות שורש ופטריות פורצ׳יני 8 שעות, מיסו לבן, קונפי שום, טופו משי, פטריות שיטאקי, אצות וואקמה, ברוקולי, שעועית ירוקה, פאק צ׳וי, טקוואן, בצל ירוק, נבטים, ביצה ושומשום.`
+      },
+      "gochu_ramen_ra": {
+        "title": "ראמן גוצ'ו עוף",
+        "subTitle": `אטריות ראמן טריות, ציר עוף וירקות שורש 12 שעות, חזה עוף מאודה וצרוב על הפלאנצ'ה, פטריות שיטאקי, ביצה, פאק צ'וי, טקואן, בצל ירוק, שומשום ואבקת קוצ׳וקארו`
+      },        
+      "vegi_wok": {
+        "title": `ווג׳י טופו משי`,
+        "subTitle": `אטריות אודון יפניות, טופו משי, הויסין בוטנים, פאק צ׳וי, פורטבלו, שימאג׳י, ברוקולי, שעועית ירוקה, פולי סויה, בצל ירוק ושומשום`
+      },
+      "chicken_wok": {
+        "title": "צ׳יקן סטיר פרי",
+        "subTitle": `אטריות אודון יפניות, רצועות עוף/חזה עוף בציפוי פנקו, פאק צ׳וי, פורטבלו, שימאג'י, ברוקולי, שעועית ירוקה, פולי סויה, בצל ירוק ושומשום`
+      },
+      "rice_wok": {
+        "title": `אטריות אורז ופרגית`,
+        "subTitle": `אטריות אורז, פרגית קצוצה, ברוקולי, שעועית, פאק צ'וי, פולי סויה, רוטב גוצ'וצ'אנג, בצל ירוק וטוגראשי.`
+      },      
+      "bunMeal": {
+        "title": `ארוחת באן - שני באנים לבחירה מוגשים עם סלט קולסלאו`,
+        "chicken": {
+          "title": `באן עוף`,
+          "subTitle": `עוף, מיו-ראצ'ה, קריספי שאלוט, חסה אייסברג, טקואן, בצל כבוש ובצל ירוק`
         },
+        "beef": {
+          "title": `באן בקר מפורק`,
+          "subTitle": `ברוסט בבישול ארוך, מיו-קימצ'י, קריספי שאלוט, חסה אייסברג, מלפפון כבוש, בצל ירוק וברד צנונית`
+        },
+        "dalorit": {
+          "title": `באן דלורית`,
+          "subTitle": `דלורית צלויה ומזוגגת, איולי פלפלים מעושנים ביתי, קריספי שאלוט, חסה אייסברג, בצל ירוק ונבטי אפונה`
+        },
+        "crispy": {
+          "title": `באן קריספי צ'יקן צ'אטני`,
+          "subTitle": `קריספי צ'יקן, מיו-יוזו, קריספי שאלוט, חסה אייסברג, כרישה חרוכה, בצל ירוק, צ׳אטני פלפלים משמשים וטוגרשי`
+        },
+        "burger": {
+          "title": `באן בורגר`,
+          "subTitle": `המבורגר, מיו-ראצ'ה, אורוגולה, ובצל מקורמל`
+        },
+        "steak": {
+          "title": `באן אנטריקוט`,
+          "subTitle": `מינוט סטייק, סלט ביצים, מיונז חרדל יפני עם מייפל`
+        }
+      },
+      "hiroSalad": {
+        "title": `סלט HIRO`,
+        "subTitle": `חסה סלנובה, אנדיב אדום ולבן, ירוקים חלוטים, פולי סויה, קריספי נורי, קריספי שאלוט, שומשום שחור, טופו/ עוף צרוב ברוטב מיסו, יוזו ומירין`
+      },
+      "gochuBeef_ramen": {
+        "title":`ראמן גוצ'ו בקר`,
+        "subTitle": `אטריות ראמן טריות, ציר עוף וירקות שורש 12 שעות, בקר בבישול ארוך, פטריות שיטאקי, ביצה, פאק צ'וי, טקואן, בצל ירוק, שומשום ואבקת קוצ׳וקארו`
+      },
+      "dandan_ramen": {
+        "title": `ראמן דן דן`,
+        "subTitle": `אטריות ראמן טריות, ציר עוף וירקות שורש 12 שעות, קונפי שום, בשר בקר טחון במירין שאטה, פטריות שיטאקי, פאק צ'וי, טקואן, בצל ירוק, נבטים, ביצה ושומשום .`
+      },
+      "dandan_wok": {
+        "title": `דן דן נודלס`,
+        "subTitle": `אטריות אודון יפניות, בשר בקר טחון, ברוקולי, פאק צ׳וי, שעועית ירוקה, , טקואן, בצל ירוק, ביצה, צ'ילי ושומשום`
+      },
+      "udon_wok": {
+        "title": `אודון עוף / אנטריקוט ודלורית צלויה`,
+        "subTitle": `אטריות אודון יפניות, עוף/אנטריקוט, דלורית מזוגגת צלויה, אפונת שלג, צ'ילי, בצל ירוק וקשיו מסוכר`
+      },
+      "gyoza_ra": {
+        "chicken": {
+          "title": "פרגית",
+          "subTitle": `פרגית קצוצה, פטריות שיטאקה, ג׳ינג׳ר, שום, שאלוט, סויה, מירין ובצל ירוק`
+        },
+        "spinach": {
+          "title": `תרד ופטריות`,
+          "subTitle": `תרד, פטריות שיטאקה, אגוזי קשיו, ג׳ינג׳ר, שאלוט, סויה, מירין ושמן שומשום`
+        }
+      },
+      "steamBun": {
+        "title": "Steamed Buns",
+        "chicken": {
+          "title": `באן עוף`,
+          "subTitle": `עוף, מיו-ראצ'ה, קריספי שאלוט, חסה אייסברג, טקואן,￼￼￼ בצל כבוש ובצל ירוק`
+        },
+        "beef": {
+          "title": `באן בקר מפורק`,
+          "subTitle": `ברוסט בבישול ארוך, מיו-קימצ'י, קריספי שאלוט, חסה אייסברג, מלפפון כבוש, בצל ירוק וברד צנונית`
+        },
+        "squash": {
+          "title": `באן דלורית`,
+          "subTitle": `דלורית צלויה ומזוגגת, איולי פלפלים מעושנים ביתי, קריספי שאלוט, חסה אייסברג, בצל ירוק ונבטי אפונה`
+        },
+        "crispy": {
+          "title": `באן קריספי צ'יקן צ'אטני`,
+          "subTitle": `קריספי צ'יקן, מיו-יוזו, קריספי שאלוט, חסה אייסברג, כרישה חרוכה, בצל ירוק, צ׳אטני פלפלים משמשים וטוגרשי`
+        },
+        "burger": {
+          "title": `באן בורגר`,
+          "subTitle": `המבורגר, מיו-ראצ'ה, אורוגולה, ובצל מקורמל`
+        },
+        "steak": {
+          "title": `באן אנטריקוט`,
+          "subTitle": `מינוט סטייק, סלט ביצים, מיונז חרדל יפני עם מייפל`
+        },
+      },
+      "bunCrispy": {
+        "title": `באן קריספי צ'יקן`,
+        "subTitle": `לחמנית באן מאודה, חזה עוף בציפוי פנקו, מיונז וחסה`
+      },
+      "childNoodle": {
+        "title": `נודלס ילדים`,
+        "subTitle": `אטריות אודון עם עוף / חזה עוף בציפוי פנקו / בשר בקר טחון / טופו`
+      },
+      "dandan_ramen_ra": {
+        "title": `ראמן דןדן`,
+        "subTitle": `אטריות ראמן טריות, ציר עוף וירקות שורש 12 שעות, קונפי שום, בשר בקר טחון במירין שאטה, פטריות שיטאקי, פאק צ'וי, טקואן, בצל ירוק, נבטים, ביצה ושומשום`
+      },   
+      "tofu__wok_ra": {
+        "title": `ווג׳י טופו משי`,
+        "subTitle": `אטריות אודון יפניות, טופו משי, הויסין בוטנים, פאק צ׳וי, פורטבלו, שימאג׳י, ברוקולי, שעועית ירוקה, פולי סויה, בצל ירוק ושומשום`
+      },
+      "chicken_wok_ra": {
+        "title": `צ׳יקן סטיר פרי`,
+        "subTitle": `אטריות אודון יפניות, רצועות עוף / חזה עוף בציפוי פנקו, פאק צ׳וי, פורטבלו, שימאג'י, ברוקולי, שעועית ירוקה, פולי סויה, בצל ירוק ושומשום`
+      },
+      "rice_wok_ra": {
+        "title": `אטריות אורז ופרגית`,
+        "subTitle": `אטריות אורז, פרגית קצוצה, ברוקולי, שעועית, פאק צ'וי, פולי סויה, רוטב גוצ'וצ'אנג, בצל ירוק וטוגראשי`
+      }, 
+      "afternoonDrink": {
+        "title": `דרינק צהריים`,        
+      },
+      "beekSake": {
+        "title": `בירה / סאקה צהריים`,
       },
       "soft": {
         "title": "שתיה קלה",
