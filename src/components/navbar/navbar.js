@@ -147,7 +147,7 @@ class NavBar extends React.Component {
           <ul className="menu mobile-menu run-font animated-fast fade">
             {this.getMenuNav(true)}
             <li className="menu-link">
-              <a href="https://order.plweb.online/branchesPage/hiroramenbar#!/branchesPage/hiroramenbar" target="_blank" title="delivery">
+              <a href="https://www.hiroramen-ramaviv.food.co.il/" target="_blank" title="delivery">
                 <Translate text={`${this.props.language}.welcome.takeAway`} />
               </a>
             </li>
