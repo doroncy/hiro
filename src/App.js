@@ -12,6 +12,7 @@ import Aharoni from './components/aharoni/aharoni';
 import Menu from './components/menu/menu';
 import Gallery from './components/gallery/gallery';
 import VisitUs from './components/visitUs/visitUs';
+import DeliveryButtons from './components/deliveryButtons/deliveryButtons';
 
 let viewportHeight;
 let bgCarouselInterval;
@@ -29,7 +30,8 @@ class App extends React.Component {
       scrollPosition: consts.scrollPositions.CURTAIN,
       currentBgImgIndex: 1,
       language: "heb",
-      popupVisible: false
+      popupVisible: false,
+      deliveryVisible: false
     };
 
     this.handleScroll = this.handleScroll.bind(this);
@@ -104,19 +106,34 @@ class App extends React.Component {
 
   hidePopup() {
     this.setState({
-      popupVisible: false
+      popupVisible: false,
+      deliveryVisible: false
     });
   }
+
+  showDeliveryMenu() {
+    this.setState({
+      deliveryVisible: true
+    });
+  }  
 
   render(){
     let bgClassName = `animated height100 fadeIn background background-fade bg_${this.state.currentBgImgIndex}`;
     const messagePopup = this.state.popupVisible
       ? <div className="msg-popup-wrapper" onClick={() => this.hidePopup()}><div className="msg-popup"></div></div>
-      : <div className="msg-popup-wrapper"></div>;
-    const welcomeStep = !this.state.popupVisible
-      ? <Welcome scrollPosition={this.state.scrollPosition} language={this.state.language}></Welcome>
+      : this.state.deliveryVisible
+        ? <div className="msg-popup-wrapper" onClick={() => this.hidePopup()}><div className="delivery-popup">
+          <DeliveryButtons 
+            language={this.state.language}            
+          ></DeliveryButtons>
+          </div></div> 
+        : <div className="msg-popup-wrapper"></div>;
+    const welcomeStep = !this.state.popupVisible && !this.state.deliveryVisible
+      ? <Welcome scrollPosition={this.state.scrollPosition} 
+          language={this.state.language}
+          onDeliveryClick={this.showDeliveryMenu.bind(this)}></Welcome>
       : '';
-    const siteContent = !this.state.popupVisible
+    const siteContent = !this.state.popupVisible && !this.state.deliveryVisible
       ?
         <div className="parallax-wrap">
             <Ramen language={this.state.language}></Ramen>            
@@ -128,7 +145,7 @@ class App extends React.Component {
       : '';
 
     return (
-      <div className={`${this.state.scrollPosition} ${this.state.popupVisible ? 'popup-visible': ''}`}>
+      <div className={`${this.state.scrollPosition} ${(this.state.popupVisible || this.state.deliveryVisible) ? 'popup-visible': ''}`}>
         {messagePopup}
         <div className="background-wrap">
           <div className={bgClassName}></div>
@@ -136,7 +153,9 @@ class App extends React.Component {
         <div>
           <NavBar scrollPosition={this.state.scrollPosition}
             language={this.state.language}
-            onChangeLanguage={this.changeLanguage.bind(this)}>
+            onChangeLanguage={this.changeLanguage.bind(this)}
+            onDeliveryClick={this.showDeliveryMenu.bind(this)}
+            >
           </NavBar>
           {welcomeStep}
           <div id="nav-spacer"></div>          

@@ -136,6 +136,12 @@ class NavBar extends React.Component {
     this.closeMobileNav();
   }
 
+  showDelivery() {
+    console.log('showDelivery')
+    this.props.onDeliveryClick();
+    this.closeMobileNav();
+  }
+
   render() {
     let fadeClassName = this.props.scrollPosition === consts.scrollPositions.CURTAIN_REMOVED ? 'fadeIn' : 'fadeOut';
     let menuItems = this.getMenuNav();
@@ -147,7 +153,7 @@ class NavBar extends React.Component {
           <ul className="menu mobile-menu run-font animated-fast fade">
             {this.getMenuNav(true)}
             <li className="menu-link">
-              <a href="https://www.hiroramen-ramaviv.food.co.il/" target="_blank" title="delivery">
+              <a title="delivery" onClick={() => this.showDelivery()}>
                 <Translate text={`${this.props.language}.welcome.takeAway`} />
               </a>
             </li>

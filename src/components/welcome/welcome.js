@@ -6,8 +6,14 @@ import WelcomeHeb from './heb/welcomeHeb';
 const Welcome = (props) => {
   return (
     <div>{props.language === 'en'
-      ? <WelcomeEn language="en" scrollPosition={props.scrollPosition} />
-      : <WelcomeHeb language="heb" scrollPosition={props.scrollPosition} />}
+      ? <WelcomeEn language="en" 
+        scrollPosition={props.scrollPosition} 
+        showDelivery={props.onDeliveryClick} 
+        />
+      : <WelcomeHeb language="heb" 
+        scrollPosition={props.scrollPosition}
+        showDelivery={props.onDeliveryClick} 
+        />}
     </div>
   );
 }

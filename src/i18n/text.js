@@ -4,6 +4,10 @@ const texts = {
     "hebrew": "עב"
   },
   "en": {
+    "delivery": {
+      "ramatAviv": "Delivery & Take away from Ramat Aviv",
+      "levontin": "Delivery & Take away from Levontin"      
+    },
     "welcome": {
       "title": "HELLO AND WELCOME TO HIRO",
       "takeAway": "Delivery"
@@ -664,6 +668,10 @@ const texts = {
     }
   },
   "heb": {
+    "delivery": {
+      "ramatAviv": "משלוחים ואיסוף עצמי     מהירו רמת אביב",
+      "levontin": "משלוחים ואיסוף עצמי       מהירו לבונטין"      
+    },
     "welcome": {
       "title": "שלום וברוכים הבאים להירו",
       "takeAway": "להזמנת משלוח"
