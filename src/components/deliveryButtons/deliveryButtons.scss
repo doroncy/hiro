@@ -1,0 +1,29 @@
+@import '../../styles/foundation/foundation.scss';
+
+.delivery-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 42px;
+    color: white;
+    &:hover {
+        opacity: .8;
+      }
+}
+.delivery-btn-wrap {
+    margin-top: 240px
+}
+.delivery-btn {
+    max-width: 400px;
+    margin: 0 auto 20px;
+    cursor: pointer;
+    .text-contentbox-wrap {
+      background-color: $pink;
+      color: #fff;    
+      padding: 20px 40px;
+      border: 2px solid white;
+    }
+    &:hover {
+        opacity: .8;
+      }
+  }
