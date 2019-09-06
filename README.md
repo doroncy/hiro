@@ -1,9 +1,8 @@
 ## Hiro website
 
 ```bash
-npm install babel -g
 npm install
-npm start
+npm run start
 ```
 
 open browser to http://localhost:3000
