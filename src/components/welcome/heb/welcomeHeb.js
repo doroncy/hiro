@@ -9,7 +9,7 @@ const WelcomeHeb = (props) => {
   let welcomeLogosClass = getWelcomeLogosClassName(props.scrollPosition);
   return (
       <div className={`welcome-wrap ${props.language}`}>
-        <a onClick={() => props.showDelivery()} title="delivery"
+        <a href="https://www.hiroramen-ramaviv.food.co.il/" target="_blank" title="delivery"
           className={`hide-for-small-only takeaway-gif animated-fast ${welcomeLogosClass}`}>
           <img src={TakeAwayGif} className="take-away-image"/>
         </a>
@@ -18,7 +18,7 @@ const WelcomeHeb = (props) => {
         </a>
         <div className="curtain"></div>
         <div className="take-away-curtain-image-wrap">          
-          <a onClick={() => props.showDelivery()} title="delivery">
+        <a href="https://www.hiroramen-ramaviv.food.co.il/" target="_blank" title="delivery">            
             <div className="take-away-curtain-image"></div>
           </a>
           <div className="anim-arrows"></div>
@@ -35,7 +35,7 @@ const WelcomeHeb = (props) => {
               </div>
               <div className="row">
                 <div className="small-12 small-centered hide-for-medium columns">
-                <a onClick={() => props.showDelivery()} title="delivery">
+                  <a href="https://www.hiroramen-ramaviv.food.co.il/" target="_blank" title="delivery">            
                     <div className="welcome-text-wrap run-font-xlarge take-away-lg-btn">
                       <TextContentBox text={`${props.language}.welcome.takeAway`}/>
                     </div>

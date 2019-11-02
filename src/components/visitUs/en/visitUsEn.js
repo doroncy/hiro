@@ -15,10 +15,6 @@ const saronaMapOptions = {
   cord: {lat: 32.071401, lng: 34.786942},
   zoom: 16
 }
-const hashmalMapOptions = {
-  cord: {lat: 32.0625914, lng: 34.7763019},
-  zoom: 16
-}
 const ramatAvivMapOptions = {
   cord: {lat: 32.1123228, lng: 34.7939123},
   zoom: 16
@@ -88,52 +84,7 @@ const VisitUsEn = (props) => {
               </TrackedDiv>
               </div>
             </div>
-          </div>
-          <div className="visitus-branch">
-            <div className="row">
-              <div className="small-12 small-centered columns">
-              <TrackedDiv formulas={[topBottom]}>
-                {(posTopBottom) =>
-                  <div className={cx("scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+150})}>
-                    <div className="run-font-medium full-width clearfix visitus-title">
-                      <div className="float-left visitus-title-text">                      
-                        <Translate text={`${props.language}.visitUs.hashmal.address`}/>
-                      </div>
-                      <div className="float-right visitus-title-text">
-                        <Translate text={`${props.language}.visitUs.hashmal.openHours`}/>
-                      </div>
-                    </div>
-                  </div>
-                }
-              </TrackedDiv>
-              </div>
-            </div>
-            <div className="row">
-              <div className="small-12 small-centered columns">
-              <TrackedDiv formulas={[topBottom]}>
-                {(posTopBottom) =>
-                  <div className={cx("visitus-right-pane scroll-anim-item",{'animate-out-bottom':scrollY < posTopBottom+150})}>
-                    <div className="google-map-wrap">
-                      <GoogleMap
-                        bootstrapURLKeys={{
-                          key: GOOGLE_API_KEY,
-                          language: 'heb'
-                        }}
-                        center={hashmalMapOptions.cord}
-                        zoom={hashmalMapOptions.zoom}
-                        minZoom={hashmalMapOptions.zoom}
-                        maxZoom={hashmalMapOptions.zoom}
-                        scrollWheel={false}
-                        draggable={false}>
-                        <img src={markerSvg} className="hiro-map-marker" lat={hashmalMapOptions.cord.lat} lng={hashmalMapOptions.cord.lng}/>
-                      </GoogleMap>
-                    </div>
-                  </div>
-                }
-              </TrackedDiv>
-              </div>
-            </div>
-          </div>
+          </div>                    
           <div className="visitus-branch">
             <div className="row">
               <div className="small-12 small-centered columns">

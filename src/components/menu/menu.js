@@ -16,16 +16,14 @@ import businessMain from '../../assets/icons/main.svg';
 import businessTea from '../../assets/icons/tea.svg';
 
 import SARONA_MENU from './sarona';
-import HASHMAL_MENU from './hashmal';
 import RAMAT_AVIV_MENU from './ramatAviv';
 
 const menus = {
-  sarona: SARONA_MENU,
-  hashmal: HASHMAL_MENU,
+  sarona: SARONA_MENU,  
   ramatAviv: RAMAT_AVIV_MENU
 };
 
-const locations = [ 'sarona', 'hashmal', 'ramatAviv'];
+const locations = [ 'sarona', 'ramatAviv'];
 
 const menuItemsBuilder = (items, language) => {
   return items.map((item, index) => {
@@ -43,7 +41,7 @@ class Menu extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      location: 'hashmal',
+      location: 'ramatAviv',
       menu: 'dinnerMenu'
     };    
   }
@@ -72,7 +70,7 @@ class Menu extends React.Component {
         : '';
 
       return (        
-        <div key={index} className="medium-4 columns">
+        <div key={index} className="medium-6 columns">
           <a className={`loc-btn ${activeStyle}`} onClick={this.changeLocation.bind(this, loc)}>
             <TrackedDiv formulas={[topBottom]}>
               {(posTopBottom) =>
@@ -150,7 +148,7 @@ class Menu extends React.Component {
   }
 
   changeLocation(location) {        
-    const menu = location === 'hashmal' || location === 'ramatAviv'
+    const menu = location === 'ramatAviv'
       ? 'businessMenu' 
       : 'foodMenu';
     this.setState({
@@ -171,30 +169,7 @@ class Menu extends React.Component {
     const ramatAvivLunchMealTitle = `${this.props.language}.menu.ramatAvivLunchMealTitle`;          
     const ramatAvivLunchMealFooter = `${this.props.language}.menu.ramatAvivLunchMealFooter`;       
     
-    return this.state.location === 'hashmal' 
-      ? (
-        <div className="business-header">        
-        <div className={`${titleFont} business-header-title`}>
-          <Translate text={title} /> 
-        </div>
-        <div className={`${titleFont} business-header-body`}>          
-            <img src={businessSalad} />
-            <Translate text={`${this.props.language}.menu.appetizer`} />           
-          </div>
-          <div className={`${titleFont} business-header-body`}>          
-            <img src={businessMain} />
-            <Translate text={`${this.props.language}.menu.main`} />           
-          </div>
-          <div className={`${titleFont} business-header-body`}>          
-            <img src={businessTea} />
-            <Translate text={`${this.props.language}.menu.teaTitle`} />           
-          </div>
-        <div className={`${font} business-header-footer`}>
-          <Translate text={footer} /> 
-        </div>
-      </div>        
-      )        
-    : (
+    return (
       <div className="business-header">        
         <div className={`${titleFont} business-header-title`}>
           <Translate text={ramatAvivLunchMealTitle} /> 
