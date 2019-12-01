@@ -8,7 +8,6 @@ import consts from './consts';
 import NavBar from './components/navbar/navbar';
 import Welcome from './components/welcome/welcome';
 import Ramen from './components/ramen/ramen';
-import Aharoni from './components/aharoni/aharoni';
 import Menu from './components/menu/menu';
 import Gallery from './components/gallery/gallery';
 import VisitUs from './components/visitUs/visitUs';
@@ -136,8 +135,7 @@ class App extends React.Component {
     const siteContent = !this.state.popupVisible && !this.state.deliveryVisible
       ?
         <div className="parallax-wrap">
-            <Ramen language={this.state.language}></Ramen>            
-            <Aharoni language={this.state.language}></Aharoni>
+            <Ramen language={this.state.language}></Ramen>                        
             <Menu language={this.state.language}></Menu>
             <Gallery language={this.state.language}></Gallery>
             <VisitUs language={this.state.language}></VisitUs>

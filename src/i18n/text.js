@@ -37,17 +37,7 @@ const texts = {
         "para4": `Asian filled buns are among the most celebrated dishes in contemporary culinary scene. Throughout the world, Innovative chefs serve buns in their special interpretation, from New York to Hong Kong.`,
         "para5": `My buns, prepared by me and the Hiro team, are based on recipes I created especially for the restaurant. The buns' fillings – vegetarian, chicken and beef based - are inspired from my travels and buns I've ate throughout the world. Here in Hiro, they are served with fresh mini salad, to which one can add pickles and fresh green tea, all made in-house by me and my team.`
       }
-    },
-    "aharoni": {
-      "title": "ISRAEL AHARONI",
-      "subtitle": "Chef Israel Aharoni is one of Israel's most celebrated and loved culinary authorities.",
-      "descriptions": {
-        "para1": "Chef Aharoni was the first to cook Far East cuisine-inspired dishes in Tel Aviv high-end restaurants and to bring the gospel and flavors of the Asian Cuisine of Taiwan and China to households in Israel.",
-        "para2": "Throughout the 4 decades of his thriving career, Chef Aharoni wrote numerous columns, shot TV shows focusing on Asian food and published dozens of best-selling cookbooks. \"Food is an interest I take very seriously - it's much more than just cooking to me\", He says. \"I look at food nowadays as a magnificent mosaic of cultures and flavors, where each piece connects to another, creating one big fascinating picture\".",
-        "para3": "2015, chef Aharoni opened Hiro ramen bar. Here, he and his team are serving generous soup bowls, full of noodles and various ingredients, all made in-house and inspired by the methods and recipes of Japan and Pacific Asia.",
-        "para4": "Along the gigantic three ramen stock pots - one based on chicken, the second is vegan and another contains minced meat – Hiro's menu contains chicken wings in miso-ginger-soya glaze, steamed buns with different fillings and gyoza dumplings. All dishes are made on-spot and based on recipes created especially for Hiro by chef Aharoni, served along sake and sake cocktails."
-      }
-    },
+    },    
     "menu": {
       "title": "MENU",
       "vegan": "Vegan / Vegetarian",
@@ -701,17 +691,7 @@ const texts = {
         "para4": `בשנים האחרונות, לחמניות באן ממולאות הפכו לאחד המאכלים המדוברים בעולם הקולינריה. ניתן למצוא ברחבי העולם אינספור גרסאות מיוחדות של באנס: במילוי המבורגר הפופולריות ביפן, במילויים טבעוניים (שכן גם הלחמניה עצמה טבעית לחלוטין וללא מרכיבים מהחי) וכמובן בשלל מילוי פיוז'ן שמככבות, למשל, במסעדת ניו יורקיות מדוברות כמומופוקו.`,
         "para5": `לחמניות הבאן שאני מכין בהירו מתבססות על מתכונים שיצרתי במיוחד עבור הרשת ומגלמים פרשנות אישית שלי לכריכי באנס שנתקלתי בהם (וכמובן אכלתי!) במסעותיי השונים ברחבי העולם. הבאנס שלי בהירו כוללים מספר סוגי מילוי והם מתבססים בראש ובראשונה על בשר, עוף ומילויים צמחוניים. הבאנס מוגשים לצד סלט קטן ולפי מיטב המסורת ניתן יהיה להזמין לצידם גם תה ירוק וחמוצים. כל תהליך ייצור הבאנס שלנו בהירו נעשה באופן עצמאי ועל ידי הצוות שלי – מבצק הלחמניות ואפייתן ועד המילוי והחמוצים לצדם.`
       }
-    },
-    "aharoni": {
-      "title": "ישראל אהרוני",
-      "subtitle": "כבר מעל ל-4 עשורים שישראל אהרוני - האיש, הצמה והאגדה – הוא מהשפים ואושיות הקולינריה הבולטות והאהובות בישראל.",
-      "descriptions": {
-        "para1": "השף אהרוני היה הראשון לבשל מנות מהמזרח הרחוק במסעדות השף שפתח בארץ ולהביא לכל בית בישראל את מטעמי המטבח האסיאתי של סין וטאיוון, בו הוא מתמחה מאז שנות השמונים.",
-        "para2": `במרוצת השנים כתב עשרות ספרי בישול ואלפי טורי מתכונים וצילם תכניות טלוויזיה העוסקות באוכל של המזרח הרחוק. "העיסוק שלי באוכל הוא מעבר לבישול", הוא מספר. "בשנים האחרונות אני מתבונן באוכל בהקשרים תרבותיים רחבים יותר ומתייחס אליו כחלק מפסיפס תרבותי מורכב ומעניין. כך זה היה בתוכנית 'דרך האוכל' שהגשתי יחד עם גברי בנאי, סדרה שעסקה במטבחים האתניים השונים בארץ, וככה אני עושה גם עם גידי גוב ב'מסע המופלא'`,
-        "para3": `אחרי כל אלה, פתח השף אהרוני ב-2015 סניף ראשון בתל אביב של הראמן בר הירו. כאן הוא מגיש בראש ובראשונה ראמן - מרקים גדולים ועשירים, עתירי אטריות ושלל תוספות מושקעות ומיוחדות. "עבורי, זו עוד חוליה בשרשרת העשייה הקולינרית שלי. לקחת נושא אחד ספציפי - מרקי ראמן יפניים - להעמיק בו לקהל רחב ולהציג בפניו את חינו המיוחד של הראמן"`,
-        "para4": `לצד שלישית סירי הראמן הגדולים והמפנקים – אחד מתבסס על ציר עוף, שני על ציר טבעוני והשלישי, דן-דן, כולל בשר טחון ושלל תוספות – נמצאים בתפריט של הירו גם מנות כנפיים צלויות בזיגוג ג'ינג'ר מיסו וסויה, לחמניות באן מאודות במילויים שונים וכיסוני גיוזה מאודים במילויי פרגית ופטריות שיטאקה טבעוני. כל המנות מתבססות על המתכונים הייחודיים שיצר אהרוני במיוחד עבור הירו ומוגשות בכלים יחודיים לצד 3 סוגי סאקה ותפריט קוקטייל בלעדי של משקאות שמתבססים על סאקה.`
-      }
-    },
+    },    
     "menu": {
       "title": "תפריט",
       "vegan": "טבעוני / צמחוני",

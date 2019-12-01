@@ -40,8 +40,7 @@ class NavBar extends React.Component {
     super();
 
     this.menuItems = [
-      {path: 'ramen', title: 'en.ramen.title'},      
-      {path: 'aharoni', title: 'en.aharoni.title'},
+      {path: 'ramen', title: 'en.ramen.title'},            
       {path: 'menu', title: 'en.menu.title'},
       {path: 'gallery', title: 'en.gallery.title'},
       {path: 'visitus', title: 'en.visitUs.title'}
@@ -168,7 +167,7 @@ class NavBar extends React.Component {
               <a href="https://www.instagram.com/hirotlv/" target="_blank">
                 <img src={instagramMobileSvg} className="mobile-nav-social-img"/>
               </a>
-              <a href="https://www.facebook.com/HiroramenbyAharoni/" target="_blank">
+              <a href="https://www.facebook.com/HiroRamenBar/" target="_blank">
                 <img src={facebookMobileSvg} className="mobile-nav-social-img"/>
               </a>
             </div>
@@ -208,7 +207,7 @@ class NavBar extends React.Component {
               </a>
             </li>
             <li onMouseOver={() => this.setFacebookIconHover()} onMouseOut={() => this.setFacebookIconNotHover()}>
-              <a href="https://www.facebook.com/HiroramenbyAharoni/" target="_blank">
+              <a href="https://www.facebook.com/HiroRamenBar/" target="_blank">
                 <img src={this.state.facebookIcon} />
               </a>
             </li>
